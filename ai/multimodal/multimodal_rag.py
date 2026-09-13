@@ -55,6 +55,12 @@ def analyze_image(image_path, question):
                 "images": [str(image_path)],
             }
         ],
+        options={
+            "temperature": 0.1,
+            "num_predict": 250,
+            "num_ctx": 2048
+        },
+        keep_alive="30m"
     )
 
     content = response["message"]["content"].strip()
@@ -831,7 +837,13 @@ BAD:
                 "role": "user",
                 "content": prompt
             }
-        ]
+        ],
+        options={
+            "temperature": 0.2,
+            "num_predict": 250,
+            "num_ctx": 2048
+        },
+        keep_alive="30m"
     )
 
     answer = response["message"]["content"].strip()

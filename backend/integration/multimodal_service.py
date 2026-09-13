@@ -134,68 +134,56 @@ def analyze_with_documents(
 # IMAGE-ONLY QUESTION
 # =========================================================
 
+VISION_MODEL = "qwen2.5vl:3b"
+
+
 def answer_image_question(
     image_path,
     question
 ):
     """
-    Answer a simple question using ONLY the uploaded image.
-
-    No RAG.
-    No company documents.
-    No evidence verification.
+    Answer a simple question using ONLY the uploaded image with local Qwen2.5-VL.
+    Direct single-pass inference without redundant JSON extraction or model swapping.
     """
+    from pathlib import Path
+    img_path = Path(image_path).resolve()
+    if not img_path.exists():
+        return "Image not found."
 
-    image_observation = analyze_image_only(
-        image_path
-    )
+    prompt = f"""You are an on-premise sovereign industrial AI vision assistant.
 
-    prompt = f"""
-You are a local industrial vision AI assistant.
-
-Answer ONLY the user's question using the uploaded image.
+Answer the user's question directly, accurately, and concisely based strictly on what is visible in the uploaded image.
 
 USER QUESTION:
 {question}
 
-IMAGE OBSERVATION:
-{json.dumps(image_observation, indent=2)}
-
 RULES:
-
 1. Answer only what the user asked.
-2. Use only information visible in the image.
-3. Do not use maintenance documents.
-4. Do not use external knowledge.
-5. Do not invent measurements.
-6. Do not invent temperature.
-7. Do not invent vibration.
-8. Do not invent damage.
-9. Do not discuss maintenance unless the user asks.
-10. Do not discuss safety unless the user asks.
-11. Do not create unnecessary sections.
-12. Do not add citations.
-13. Do not add evidence verification.
-14. Keep the answer concise.
-
-If the image does not contain enough information, say:
-
-"Insufficient visual evidence."
-
-Return only the answer.
+2. Rely only on visual evidence visible in the image.
+3. Keep the answer concise and direct.
+4. Do not invent measurements, temperatures, vibration, or damage not visible.
+5. If the image does not contain enough information to answer, state: "Insufficient visual evidence."
 """
 
     response = ollama.chat(
-        model=TEXT_MODEL,
+        model=VISION_MODEL,
         messages=[
             {
                 "role": "user",
-                "content": prompt
+                "content": prompt,
+                "images": [str(img_path)]
             }
-        ]
+        ],
+        options={
+            "num_predict": 150,
+            "temperature": 0.1,
+            "num_ctx": 2048
+        },
+        keep_alive="30m"
     )
 
     return response["message"]["content"].strip()
+
 
 
 # =========================================================

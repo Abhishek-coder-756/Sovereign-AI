@@ -22,18 +22,23 @@ MODEL_NAME = "BAAI/bge-small-en-v1.5"
 # EMBEDDING MODEL
 # ============================================================
 
-class EmbeddingModel:
+_SHARED_MODEL = None
 
-    def __init__(self):
 
-        print("Loading LOCAL embedding model...")
-
-        self.model = SentenceTransformer(
+def get_shared_embedding_model():
+    global _SHARED_MODEL
+    if _SHARED_MODEL is None:
+        _SHARED_MODEL = SentenceTransformer(
             MODEL_NAME,
             local_files_only=True
         )
+    return _SHARED_MODEL
 
-        print("Local embedding model loaded.")
+
+class EmbeddingModel:
+
+    def __init__(self):
+        self.model = get_shared_embedding_model()
 
 
     # ========================================================

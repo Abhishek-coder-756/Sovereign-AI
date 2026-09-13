@@ -166,6 +166,41 @@ except Exception as _mig_err:
 agent = build_agent()
 
 
+@app.on_event("startup")
+def startup_prewarm():
+    """
+    Pre-warms embedding model and Ollama text model in background thread
+    so first user requests don't hit cold-load latencies.
+    """
+    import threading
+
+    def _warm():
+        try:
+            print("[Startup Warmup] Pre-warming embedding model...")
+            from ai.embeddings.embedding_model import get_shared_embedding_model
+            emb_m = get_shared_embedding_model()
+            emb_m.encode(["Warmup query"], normalize_embeddings=True)
+            print("[Startup Warmup] Embedding model ready.")
+        except Exception as e:
+            print(f"[Startup Warmup] Embedding prewarm notice: {e}")
+
+        try:
+            print("[Startup Warmup] Pre-warming Ollama text model...")
+            import ollama
+            ollama.chat(
+                model="qwen2.5:3b",
+                messages=[{"role": "user", "content": "ping"}],
+                options={"num_predict": 1},
+                keep_alive="30m"
+            )
+            print("[Startup Warmup] Ollama qwen2.5:3b warmed and active.")
+        except Exception as e:
+            print(f"[Startup Warmup] Ollama prewarm notice: {e}")
+
+    threading.Thread(target=_warm, daemon=True).start()
+
+
+
 
 # ================================================================
 # SETTINGS
@@ -770,9 +805,9 @@ async def upload(
     log_event(
         current_user["username"],
         company,
-        "UPLOAD",
+        "FILE_UPLOADED",
         "SUCCESS",
-        file.filename
+        f"File: {file.filename} ({len(contents)} bytes)"
     )
 
     # Attach to conversation if provided
@@ -783,13 +818,6 @@ async def upload(
                 current_user["username"],
                 conversation_id,
                 file.filename
-            )
-            log_event(
-                current_user["username"],
-                company,
-                "FILE_ATTACHED_TO_CONVERSATION",
-                "SUCCESS",
-                f"{file.filename} -> {conversation_id}"
             )
             # Automatically index uploaded document so RAG is immediately ready
             try:
@@ -813,13 +841,6 @@ async def upload(
                 conversation_id,
                 str(target_path),
                 file.filename
-            )
-            log_event(
-                current_user["username"],
-                company,
-                "IMAGE_ATTACHED_TO_CONVERSATION",
-                "SUCCESS",
-                f"{file.filename} -> {conversation_id}"
             )
         record["conversation_id"] = conversation_id
 
@@ -984,7 +1005,6 @@ def list_conversations(
     company = current_user["company"]
     username = current_user["username"]
     convs = ConversationStore.list_conversations(company, username)
-    log_event(username, company, "CONVERSATION_LOADED", "SUCCESS", f"{len(convs)} chats")
     return convs
 
 
@@ -1259,7 +1279,6 @@ def chat(
     )
 
     start = time.time()
-    log_event(username, company, "AGENT_REQUEST", "RECEIVED", f"Conv {conversation_id} [{knowledge_mode}]: {message[:60]}")
 
     # Build AgentState for LangGraph
     state = {
@@ -1288,7 +1307,8 @@ def chat(
             f"selected_model={result_state.get('selected_model')}\n[/CHAT DEBUG]"
         )
     except Exception as e:
-        log_event(username, company, "AGENT_REQUEST", "FAILED", str(e))
+        execution_time = round(time.time() - start, 3)
+        log_event(username, company, "AI_TASK_FAILED", "FAILED", f"Query: {message[:40]} | Duration: {execution_time}s | Error: {str(e)[:80]}")
         raise HTTPException(
             status_code=500,
             detail=f"Local AI agent error: {str(e)}"
@@ -1305,12 +1325,15 @@ def chat(
     plan = result_state.get("plan", [])
     agent_steps = result_state.get("agent_steps", [])
 
-    # Audit logging
-    log_event(username, company, "AGENT_PLAN", intent, ", ".join(plan)[:120])
-    if knowledge_mode == "global":
-        log_event(username, company, "GLOBAL_QUERY", verification.get("status", "SUCCESS"), f"Conv {conversation_id}: {message[:60]} ({execution_time}s)")
-    else:
-        log_event(username, company, "AGENT_RESPONSE", verification.get("status", "SUCCESS"), f"{message[:60]} ({execution_time}s)")
+    # Audit logging: exactly one clean event with target, query snippet, and duration
+    target_info = Path(active_file_path).name if active_file_path else ("Global Web Sources" if knowledge_mode == "global" else "General Assistant")
+    log_event(
+        username,
+        company,
+        "AI_TASK_COMPLETED",
+        verification.get("status", "SUCCESS"),
+        f"Target: {target_info} | Query: {message[:40]} | Duration: {execution_time}s"
+    )
 
     # Save messages to conversation store
     meta = {
@@ -1414,7 +1437,6 @@ async def chat_multimodal(
         temp_path.write_bytes(contents)
 
         ConversationStore.attach_image(company, username, conversation_id, str(temp_path), image.filename)
-        log_event(username, company, "IMAGE_ATTACHED_TO_CONVERSATION", "SUCCESS", f"{image.filename} -> {conversation_id}")
     else:
         # Fall back to image already attached to conversation
         if conv and conv.get("uploaded_images"):
@@ -1431,7 +1453,6 @@ async def chat_multimodal(
             active_file_path = str(resolved)
 
     start = time.time()
-    log_event(username, company, "AGENT_REQUEST", "RECEIVED", f"Conv {conversation_id} (multimodal) [{mode}]: {question[:60]}")
 
     # Build AgentState for LangGraph
     state = {
@@ -1455,7 +1476,8 @@ async def chat_multimodal(
     try:
         result_state = agent.invoke(state)
     except Exception as e:
-        log_event(username, company, "AGENT_REQUEST", "FAILED", str(e))
+        execution_time = round(time.time() - start, 3)
+        log_event(username, company, "VISION_TASK_FAILED", "FAILED", f"Query: {question[:40]} | Duration: {execution_time}s | Error: {str(e)[:80]}")
         raise HTTPException(
             status_code=500,
             detail=f"Local AI agent error: {str(e)}"
@@ -1472,12 +1494,16 @@ async def chat_multimodal(
     plan = result_state.get("plan", [])
     agent_steps = result_state.get("agent_steps", [])
 
-    # Audit logging
-    log_event(username, company, "AGENT_PLAN", intent, ", ".join(plan)[:120])
-    if mode == "global":
-        log_event(username, company, "GLOBAL_QUERY", verification.get("status", "SUCCESS"), f"Conv {conversation_id} (multimodal): {question[:60]} ({execution_time}s)")
-    else:
-        log_event(username, company, "AGENT_RESPONSE", verification.get("status", "SUCCESS"), f"{question[:60]} ({execution_time}s)")
+    # Audit logging: exactly one clean event with target, query snippet, and duration
+    img_name = (image.filename if (image and image.filename) else (Path(temp_path).name if temp_path else "Image"))
+    target_info = f"Image: {img_name}" + (f" + {Path(active_file_path).name}" if active_file_path else "")
+    log_event(
+        username,
+        company,
+        "VISION_TASK_COMPLETED",
+        verification.get("status", "SUCCESS"),
+        f"Target: {target_info} | Query: {question[:40]} | Duration: {execution_time}s"
+    )
 
     # Save messages to conversation store
     meta = {

@@ -49,15 +49,16 @@ VISION_MODEL = "qwen2.5vl:3b"
 # INTENT CLASSIFICATION & SOURCE SELECTION
 # =========================================================
 
-_EMBEDDING_MODEL_INSTANCE = None
+from ai.embeddings.embedding_model import get_shared_embedding_model
+
 
 def get_embedding_model():
-    global _EMBEDDING_MODEL_INSTANCE
-    if _EMBEDDING_MODEL_INSTANCE is None:
-        os.environ["HF_HUB_OFFLINE"] = "1"
-        os.environ["TRANSFORMERS_OFFLINE"] = "1"
-        _EMBEDDING_MODEL_INSTANCE = SentenceTransformer("BAAI/bge-small-en-v1.5", local_files_only=True)
-    return _EMBEDDING_MODEL_INSTANCE
+    return get_shared_embedding_model()
+
+
+_PICKLE_CACHE: Dict[Tuple[str, float], List[Dict[str, Any]]] = {}
+_DOC_CHUNK_EMBED_CACHE: Dict[Tuple[str, str, float], Tuple[List[Dict[str, Any]], np.ndarray]] = {}
+
 
 
 DOCUMENT_KEYWORDS = [
@@ -616,10 +617,8 @@ def vision_node(state: AgentState) -> AgentState:
         q_lower = query.lower()
         is_person_query = any(w in q_lower for w in ["who is this", "who is in", "person", "man", "woman", "identity"])
 
-        image_obs = analyze_image_only(image_path)
-        state["image_observation"] = image_obs
-
         answer = answer_image_question(image_path, query)
+        state["image_observation"] = {"summary": answer, "image_path": str(image_path)}
 
         # Safety rule: For person images, do not identify the real person's name or identity
         if is_person_query:
@@ -759,7 +758,8 @@ ANSWER:"""
     response = ollama.chat(
         model=TEXT_MODEL,
         messages=[{"role": "user", "content": prompt}],
-        options={"temperature": 0.2}
+        options={"temperature": 0.2, "num_predict": 250, "num_ctx": 2048},
+        keep_alive="30m"
     )
     raw_answer = response["message"]["content"].strip()
     if is_summary and "[Source 1]" not in raw_answer:
@@ -790,42 +790,64 @@ ANSWER:"""
 def retrieve_conversation_file_qa(doc_names: List[str], query: str, company: str = "MRPL") -> Dict[str, Any]:
     """
     Handles targeted factual QA against active conversation file(s).
+    Uses cached chunk embeddings to eliminate redundant encoding on CPU.
     Uses an adaptive threshold (0.35) suited for conversation-scoped retrieval.
     """
     all_candidate_chunks = []
+    chunk_embedding_list = []
+    embed_model = get_embedding_model()
     paths = company_paths(company)
+
+    # Load / cache company chunks from pickle if available
     company_chunks = []
     if paths["documents_pickle"].exists():
-        try:
-            with open(paths["documents_pickle"], "rb") as f:
-                company_chunks = pickle.load(f)
-        except Exception:
-            company_chunks = []
+        p_mtime = paths["documents_pickle"].stat().st_mtime
+        p_key = (company, p_mtime)
+        if p_key in _PICKLE_CACHE:
+            company_chunks = _PICKLE_CACHE[p_key]
+        else:
+            try:
+                with open(paths["documents_pickle"], "rb") as f:
+                    company_chunks = pickle.load(f)
+                _PICKLE_CACHE[p_key] = company_chunks
+            except Exception:
+                company_chunks = []
 
     for doc_name in doc_names:
-        doc_chunks = [c for c in company_chunks if c.get("metadata", {}).get("source") == doc_name]
-        if not doc_chunks:
-            doc_path = find_document_path(doc_name, company)
-            if doc_path:
+        doc_path = find_document_path(doc_name, company)
+        doc_mtime = doc_path.stat().st_mtime if (doc_path and doc_path.exists()) else 0.0
+        cache_key = (company, doc_name, doc_mtime)
+
+        if cache_key in _DOC_CHUNK_EMBED_CACHE:
+            d_chunks, d_embs = _DOC_CHUNK_EMBED_CACHE[cache_key]
+        else:
+            d_chunks = [c for c in company_chunks if c.get("metadata", {}).get("source") == doc_name]
+            if not d_chunks and doc_path:
                 pages = load_pdf(doc_path)
                 if pages:
-                    doc_chunks = chunk_documents(pages)
-        all_candidate_chunks.extend(doc_chunks)
+                    d_chunks = chunk_documents(pages)
+            if d_chunks:
+                chunk_texts = [c["text"] for c in d_chunks]
+                d_embs = embed_model.encode(chunk_texts, normalize_embeddings=True, show_progress_bar=False)
+                d_embs = np.asarray(d_embs, dtype="float32")
+                _DOC_CHUNK_EMBED_CACHE[cache_key] = (d_chunks, d_embs)
+            else:
+                d_embs = np.empty((0, 384), dtype="float32")
 
-    if not all_candidate_chunks:
+        if d_chunks and len(d_embs) > 0:
+            all_candidate_chunks.extend(d_chunks)
+            chunk_embedding_list.append(d_embs)
+
+    if not all_candidate_chunks or not chunk_embedding_list:
         return {
             "answer": "I don't have enough evidence in the provided conversation document to answer this question.",
             "sources": [],
             "verification": {"verified": True, "status": "NO_EVIDENCE", "reason": "No readable chunks found in document.", "method": "retrieval"}
         }
 
-    embed_model = get_embedding_model()
+    c_embs = np.vstack(chunk_embedding_list)
     q_emb = embed_model.encode([query], normalize_embeddings=True)
     q_emb = np.asarray(q_emb, dtype="float32")[0]
-
-    chunk_texts = [c["text"] for c in all_candidate_chunks]
-    c_embs = embed_model.encode(chunk_texts, normalize_embeddings=True, show_progress_bar=False)
-    c_embs = np.asarray(c_embs, dtype="float32")
 
     scores = np.dot(c_embs, q_emb)
     ranked_indices = list(np.argsort(scores)[::-1])
@@ -891,7 +913,8 @@ ANSWER:"""
     response = ollama.chat(
         model=TEXT_MODEL,
         messages=[{"role": "user", "content": prompt}],
-        options={"temperature": 0.2}
+        options={"temperature": 0.2, "num_predict": 180, "num_ctx": 2048},
+        keep_alive="30m"
     )
     raw_answer = response["message"]["content"].strip()
     raw_answer = re.sub(r":\s*\n\s*", ": ", raw_answer)
@@ -1120,7 +1143,8 @@ ANSWER:"""
                 },
                 {"role": "user", "content": prompt}
             ],
-            options={"temperature": 0.2}
+            options={"temperature": 0.2, "num_predict": 250, "num_ctx": 2048},
+            keep_alive="30m"
         )
         raw_answer = response["message"]["content"].strip()
     except Exception as e:
@@ -1367,7 +1391,9 @@ USER QUESTION:
 ANSWER:"""
             llm_resp = ollama.chat(
                 model=TEXT_MODEL,
-                messages=[{"role": "user", "content": prompt}]
+                messages=[{"role": "user", "content": prompt}],
+                options={"temperature": 0.1, "num_predict": 180, "num_ctx": 2048},
+                keep_alive="30m"
             )
             answer_text = llm_resp.get("message", {}).get("content", "").strip()
             if answer_text:
@@ -1437,7 +1463,12 @@ def general_node(state: AgentState) -> AgentState:
     messages.append({"role": "user", "content": query})
 
     try:
-        response = ollama.chat(model=TEXT_MODEL, messages=messages)
+        response = ollama.chat(
+            model=TEXT_MODEL,
+            messages=messages,
+            options={"temperature": 0.3, "num_predict": 250, "num_ctx": 2048},
+            keep_alive="30m"
+        )
         answer = response["message"]["content"].strip()
     except Exception as e:
         answer = f"Error communicating with local LLM: {str(e)}"

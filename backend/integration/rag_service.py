@@ -7,6 +7,7 @@ import ollama
 
 from sentence_transformers import SentenceTransformer
 
+from ai.embeddings.embedding_model import get_shared_embedding_model
 from ai.verification.evidence_checker import EvidenceChecker
 
 from .storage import company_paths
@@ -58,10 +59,7 @@ class CompanyRetriever:
         os.environ["HF_HUB_OFFLINE"] = "1"
         os.environ["TRANSFORMERS_OFFLINE"] = "1"
 
-        self.model = SentenceTransformer(
-            EMBEDDING_MODEL,
-            local_files_only=True
-        )
+        self.model = get_shared_embedding_model()
 
     def search(self, query, top_k=5):
 
@@ -243,7 +241,13 @@ Answer concisely.
                 "role": "user",
                 "content": prompt
             }
-        ]
+        ],
+        options={
+            "temperature": 0.2,
+            "num_predict": 200,
+            "num_ctx": 2048
+        },
+        keep_alive="30m"
     )
 
     answer = response["message"]["content"].strip()

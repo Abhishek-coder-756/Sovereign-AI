@@ -38,13 +38,28 @@ def list_events(
             LEFT JOIN companies c ON a.company_id = c.id
             LEFT JOIN users u ON (a.user_id = u.id OR a.username = u.username)
         """
-        params = []
+        EXCLUDED_INTERNAL_ACTIONS = (
+            "AGENT_REQUEST",
+            "AGENT_PLAN",
+            "AGENT_RESPONSE",
+            "CONVERSATION_LOADED",
+            "GLOBAL_QUERY",
+            "IMAGE_ATTACHED_TO_CONVERSATION",
+            "FILE_ATTACHED_TO_CONVERSATION",
+            "INDEX_DOCUMENTS",
+            "RAG_RETRIEVAL",
+            "INTENT_ROUTING"
+        )
+        placeholders = ", ".join(["%s"] * len(EXCLUDED_INTERNAL_ACTIONS))
+        where_clauses = [f"a.action NOT IN ({placeholders})"]
+        params = list(EXCLUDED_INTERNAL_ACTIONS)
 
         if company:
-            query += " WHERE c.name = %s OR (a.company_id IS NULL AND a.details LIKE %s)"
+            where_clauses.append("(c.name = %s OR (a.company_id IS NULL AND a.details LIKE %s))")
             params.append(company)
             params.append(f"%{company}%")
 
+        query += " WHERE " + " AND ".join(where_clauses)
         query += " ORDER BY a.created_at DESC, a.id DESC LIMIT %s"
         params.append(limit)
 
