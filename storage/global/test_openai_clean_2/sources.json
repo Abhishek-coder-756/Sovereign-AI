@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "source_id": 1,
+    "url": "https://en.wikipedia.org/wiki/OpenAI",
+    "title": "OpenAI - Wikipedia",
+    "chunks_count": 97,
+    "added_at": "2026-09-13T06:33:42.123092+00:00",
+    "last_fetched_at": "2026-09-13T06:33:42.123092+00:00",
+    "status": "FETCHED"
+  }
+]

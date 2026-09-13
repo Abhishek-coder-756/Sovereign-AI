@@ -1,0 +1,355 @@
+{
+  "conversation_id": "c_b29eee1ae60e",
+  "title": "Give me summary of this file",
+  "company": "MRPL",
+  "username": "akif",
+  "created_at": "2026-09-10T09:32:14.962979+00:00",
+  "updated_at": "2026-09-13T10:34:28.123056+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "give me summary of this file",
+      "timestamp": "2026-09-13T10:15:52.655078+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The document 'TECH BYTE(SIH 2026).pdf' outlines a proposal for a Sovereign On-Premise Agentic AI Workbench designed for confidential industrial data. The workbench aims to bring AI capabilities to industrial data without sending data outside the organization's infrastructure. The proposed solution focuses on secure, private, and multimodal AI processing using open-weight multilingual language models (LLM). Key features include local deployment, role-based access control, and the use of domain-specific knowledge bases. The technical approach involves ingestion and processing of documents, vector store and retrieval, and agentic AI and tools. The feasibility and viability of the solution are discussed, addressing challenges such as limited compute resources, complex documents, AI hallucination, sensitive data, code execution safety, and integration with existing IT systems. The document emphasizes the potential benefits for engineers and technical teams, management and decision-makers, and organizations, including faster document analysis, reduced manual work, optimized resource costs, and enhanced compliance. The solution is grounded in research and best practices, leveraging frameworks like RAG, ReAct, LangGraph, Ollama, and FAISS. The workbench is designed to be secure, scalable, and ready for real-world deployment in industrial environments. [Source 1]",
+      "timestamp": "2026-09-13T10:15:52.656149+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 1,
+            "score": 1.0,
+            "text": "SMART INDIA HACKATHON 2026\n\u2022Problem Statement ID : 26117 \n\u2022Problem Statement Title : Sovereign On-Premise Agentic AI Workbench \nusing Open-Weight Multimodal LLMs for Confidential Industrial Work  \n\u2022Theme : Smart Automation \n\u2022PS Category : Software \n\u2022Team ID : TBD \n\u2022Team Name : Tech Byte\nSOVEREIGN AI WORKBENCH"
+          },
+          {
+            "id": 2,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 2,
+            "score": 1.0,
+            "text": "@SIH Idea submission- Template\nProposed Solution Prototype\n2\nYour Data \nYour Infrastructure\nOpen-Source & \nCost-Effective\nDomain-Specific \nIntelligence\nProductivity \nAt Scale\nSecure,Compliant \n&Future-Ready\n1. SECURE & PRIV ATE                                  KEEP YOUR DATA IN YOUR CONTROL\nOn-premise/ air-gapped deployment \nData stays inside the o..."
+          },
+          {
+            "id": 3,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 3,
+            "score": 1.0,
+            "text": "3\nTECHNICAL APPROACH\n1User Input 2Ingestion & \nProcessing 3Vector Store & \nRetrieval 4Agentic AI & Tools 5Generation & Output 6Deliver Result\nUpload Document\n(PDF / Image / Text)\nDocuments\nImages\nText\nIngest\n(ingest.py)\nLoad and preprocess \ndocuments\nExtract & Parse\n(pdf_loader.py)\nExtract text, tables and \nstructure\nChunk & Embed\n(chunking_embeddi..."
+          },
+          {
+            "id": 4,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 4,
+            "score": 1.0,
+            "text": "FEASIBILITY AND VIABILITY\nCAN THIS WORK IN A REAL INDUSTRIAL ENVIRONMENT ?\nYes \u2014 with the right architecture, safeguards and domain adaptation, our solution is practical, scalable and ready for real-world use.\nREAL PROBLEMS \nREAL SOLUTIONS\nWHAT WE HAVE BUILT\nKEY COMPONENTS OF OUR SOLUTION\nKEY CHALLENGESREAL-WORLD CONSTRAINTS\nOUR MITIGATION STRATEGI..."
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUMMARY_VERIFIED",
+          "reason": "Whole-file analysis generated directly from active conversation file 'TECH BYTE(SIH 2026).pdf'.",
+          "method": "whole_file_analysis"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as conversation file retrieval",
+          "Retrieve evidence from active conversation file(s): TECH BYTE(SIH 2026).pdf",
+          "Verify factual claims against document content",
+          "Deliver answer based on uploaded document"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Using active conversation file",
+          "Retrieving evidence from 'TECH BYTE(SIH 2026).pdf'",
+          "Performing whole-file analysis",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 40.072,
+        "audit_id": "6e73d16428f7"
+      }
+    },
+    {
+      "role": "user",
+      "content": "what is this about website",
+      "timestamp": "2026-09-13T10:16:53.508905+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "This website is about a confidential on-premise industrial AI platform called Sovereign AI. It is designed for companies to use for their company manuals, spreadsheets, schematics, and vision analysis. The platform supports local inference and does not transmit external data. It also includes features for document intelligence, spreadsheet and data analysis, and multimodal vision. The platform uses local models like Qwen2.5:3B and Qwen2.5-VL 3B for inference, and it has strict company data isolation and separate global indices. The platform is currently in a private mode, and it does not have any external AI or cloud LLM APIs configured. It also has a strict SSRF defense mechanism to protect localhost, private IPs, and cloud metadata. The website also mentions the ability to add sources for public web text, but it is not yet surfaced in the user interface.",
+      "timestamp": "2026-09-13T10:16:53.510542+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 1,
+            "score": 0.85,
+            "text": "Title: Sovereign AI \u2014 SIH26117",
+            "source_type": "global_web"
+          },
+          {
+            "id": 2,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 4,
+            "score": 0.5851072072982788,
+            "text": "\ud83c\udf10\nGLOBAL KNOWLEDGE SOURCES\nLocal Inference \u00b7 Public Web Text\n+ Add Source\nActive Context:\n\ud83d\udcce\n\ud83d\udcc4\nUpload file\nPDF, Word, Excel, CSV, PPTX, TXT\n\ud83d\uddbc\nUpload image\nPNG, JPG, WEBP for Vision\n\u2191\nEnter to send \u00b7 Shift+Enter for a new line\n\ud83d\udcc4\nDrag & drop documents or spreadsheets here\nPDF, DOCX, XLSX, CSV, PPTX, TXT\nBrowse Files\nIndex Documents\nFilename\nType\nSize\nStatus\nPages\nChunks\nNo documents uploaded yet.\n\ud83d\uddbc\nDrag & drop an image here\nor click to browse\nBrowse Image\nAnalyze Image\nImage Analysis\nText-only question\n\u2192\nQwen2.5 3B (via Ollama)\nQuestion + image\n\u2192\nQwen2.5-VL 3B (via Ollama)\nEmbeddings\n\u2192\nBGE-small-en-v1.5\nVector search\n\u2192\nFAISS (per-company index)\nIntegration pending \u2014 available via the existing\n/agent\nAPI, not yet surfaced in this UI.\nTimestamp\nUser\nAction\nStatus\nDetails\nNo audit events yet.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 3,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 5,
+            "score": 0.5528120994567871,
+            "text": "Integration pending \u2014 available via the existing\n/agent\nAPI, not yet surfaced in this UI.\nTimestamp\nUser\nAction\nStatus\nDetails\nNo audit events yet.\nKnowledge Mode Sovereignty Specifications\n\ud83c\udfe2 PRIVATE MODE (DEFAULT)\nAI Inference:\nLOCAL (Qwen2.5:3B)\nKnowledge:\nPrivate Company Data (On-Premise)\nVector Storage:\nFAISS (storage/<company>/index/)\nExternal AI:\nNONE (Zero Data Leaves Server)\nWeb Access:\nBLOCKED (Fully Air-Gapped Capable)\n\ud83c\udf10 GLOBAL MODE\nAI Inference:\nLOCAL (Qwen2.5:3B On-Premise)\nKnowledge:\nPublic Web Sources (User Explicit URLs)\nVector Storage:\nIsolated FAISS (storage/global/conv_id/)\nExternal AI:\nNONE (Strictly Local Inference)\nWeb Access:\nENABLED (Strict SSRF Protected)\nImportant Guarantee:",
+            "source_type": "global_web"
+          },
+          {
+            "id": 4,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 6,
+            "score": 0.5448949337005615,
+            "text": "External AI:\nNONE (Strictly Local Inference)\nWeb Access:\nENABLED (Strict SSRF Protected)\nImportant Guarantee:\nGlobal mode accesses public web content via strict SSRF-safe fetching, but all AI reasoning and inference remain 100% on-premise.\n\u2713\nJWT authentication & role prefix enforcement\n\u2713\nRole-based access control (Admin / Operator / Employee)\n\u2713\nStrict company data isolation & separate global indices\n\u2713\nLocal-only models (Qwen2.5 3B & Qwen2.5-VL 3B via Ollama)\n\u2713\nNo external AI / Cloud LLM APIs configured\n\u2713\nSSRF Defense: Localhost, private IPs & cloud metadata blocked\n\u2713\nMySQL audit logging for queries, approvals & web fetches\n\u2713\nEvidence verified with citations before final answer\nComing soon.\nTotal Users\n0\nPending Requests\n0\nApproved Users\n0\nActive Users\n0\nDisabled Users\n0\nEmployees\n0",
+            "source_type": "global_web"
+          },
+          {
+            "id": 5,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 9,
+            "score": 0.5426312685012817,
+            "text": "Spreadsheets (Data Analysis)\n.xlsx\n,\n.xls\n,\n.csv\n\u2014 Statistical analysis, row inspection & vector search\nMultimodal Vision\n.png\n,\n.jpg\n,\n.jpeg\n,\n.webp\n\u2014 Local vision analysis & multimodal queries\nActive Session Files",
+            "source_type": "global_web"
+          },
+          {
+            "id": 6,
+            "source": "Sovereign AI \u2014 SIH26117",
+            "title": "Sovereign AI \u2014 SIH26117",
+            "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+            "page": 3,
+            "score": 0.5399358868598938,
+            "text": "Submit registration for administrative approval. New accounts start as PENDING.\nAlready have an account?\nSign In\n\u2630\nSovereign Agentic AI Workbench\nConfidential on-premise industrial AI for company manuals, spreadsheets, schematics & vision analysis. Zero external data transmission.\n\ud83d\udcd6\nDocument Intelligence\nAsk questions, extract procedures, or summarize PDF, Word, and PPTX documents.\n\ud83d\udcca\nSpreadsheet & Data Analysis\nInspect Excel & CSV records, find highest values, calculate totals & statistics.\n\ud83d\udd0d\nMultimodal Vision\nAttach equipment photos or schematics for local neural vision inspection.\n\ud83d\udee1\ufe0f\nSovereign Knowledge RAG\nEvidence-backed answers verified with citations from company records.\n\ud83c\udf10\nGLOBAL KNOWLEDGE SOURCES\nLocal Inference \u00b7 Public Web Text\n+ Add Source\nActive Context:\n\ud83d\udcce\n\ud83d\udcc4\nUpload file",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 22.756,
+        "audit_id": "ed2cc035c58a"
+      }
+    },
+    {
+      "role": "user",
+      "content": "Give me  summary",
+      "timestamp": "2026-09-13T10:23:22.303482+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The document 'TECH BYTE(SIH FINAL 1).pdf' outlines a solution for a sovereign On-Premise Agentic AI Workbench designed for confidential industrial data processing. The workbench aims to bring AI capabilities to industrial data without sending data outside the organization's infrastructure, ensuring data privacy and security. The proposed solution includes a secure, cost-effective, and scalable AI workbench that leverages open-weight multimodal large language models (LLMs) like Llama, Qwen, and LLaVA. The workbench supports various data types including PDFs, images, and tables, and employs local OCR, vision processing, and RAG (Retrieval-Augmented Generation) to understand and retrieve relevant information. The workbench is agentic, meaning it plans and executes multi-step tasks autonomously using local tools and plans. It also features a RAG pipeline, an agentic workflow, and a modular architecture to ensure scalability and modularity. The document highlights the feasibility and viability of the solution in real-world industrial environments, addressing challenges such as limited compute resources, complex documents, AI hallucination, sensitive data, and code execution safety. The solution's key benefits include faster document analysis, reduced manual effort, optimized resource cost efficiency, and enhanced productivity. The workbench is designed to be secure, compliant, and future-ready, ensuring confidential industrial information stays private and secure. [Source 1]",
+      "timestamp": "2026-09-13T10:23:22.306523+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "TECH BYTE(SIH FINAL 1).pdf",
+            "page": 1,
+            "score": 1.0,
+            "text": "SMART INDIA HACKATHON 2026\n\u2022Problem Statement ID : 26117 \n\u2022Problem Statement Title : Sovereign On-Premise Agentic AI Workbench \nusing Open-Weight Multimodal LLMs for Confidential Industrial Work  \n\u2022Theme : Smart Automation \n\u2022PS Category : Software \n\u2022Team ID : TBD \n\u2022Team Name : Tech Byte\nSOVEREIGN AI WORKBENCH"
+          },
+          {
+            "id": 2,
+            "source": "TECH BYTE(SIH FINAL 1).pdf",
+            "page": 2,
+            "score": 1.0,
+            "text": "@SIH Idea submission- Template\nProposed Solution Prototype\n2\nYour Data \nYour Infrastructure\nOpen-Source & \nCost-Effective\nDomain-Specific \nIntelligence\nProductivity \nAt Scale\nSecure,Compliant \n&Future-Ready\n1. SECURE & PRIV ATE                                  KEEP YOUR DATA IN YOUR CONTROL\nOn-premise/ air-gapped deployment \nData stays inside the o..."
+          },
+          {
+            "id": 3,
+            "source": "TECH BYTE(SIH FINAL 1).pdf",
+            "page": 3,
+            "score": 1.0,
+            "text": "3\nTECHNICAL APPROACH\n1User Input 2Ingestion & \nProcessing 3Vector Store & \nRetrieval 4Agentic AI & Tools 5Generation & Output 6Deliver Result\nUpload Document\n(PDF / Image / Text)\nDocuments\nImages\nText\nIngest\n(ingest.py)\nLoad and preprocess \ndocuments\nExtract & Parse\n(pdf_loader.py)\nExtract text, tables and \nstructure\nChunk & Embed\n(chunking_embeddi..."
+          },
+          {
+            "id": 4,
+            "source": "TECH BYTE(SIH FINAL 1).pdf",
+            "page": 4,
+            "score": 1.0,
+            "text": "FEASIBILITY AND VIABILITY\nCAN THIS WORK IN A REAL INDUSTRIAL ENVIRONMENT ?\nYes \u2014 with the right architecture, safeguards and domain adaptation, our solution is practical, scalable and ready for real-world use.\nREAL PROBLEMS \nREAL SOLUTIONS\nWHAT WE HAVE BUILT\nKEY COMPONENTS OF OUR SOLUTION\nKEY CHALLENGESREAL-WORLD CONSTRAINTS\nOUR MITIGATION STRATEGI..."
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUMMARY_VERIFIED",
+          "reason": "Whole-file analysis generated directly from active conversation file 'TECH BYTE(SIH FINAL 1).pdf'.",
+          "method": "whole_file_analysis"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as conversation file retrieval",
+          "Retrieve evidence from active conversation file(s): TECH BYTE(SIH FINAL 1).pdf",
+          "Verify factual claims against document content",
+          "Deliver answer based on uploaded document"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Using active conversation file",
+          "Retrieving evidence from 'TECH BYTE(SIH FINAL 1).pdf'",
+          "Performing whole-file analysis",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 40.941,
+        "audit_id": "4d9b614626aa"
+      }
+    },
+    {
+      "role": "user",
+      "content": "Summary of this file",
+      "timestamp": "2026-09-13T10:32:17.398020+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Could not extract readable text from 'Mohammad_Akif_akhtar.pdf'. The file may be empty or image-only.",
+      "timestamp": "2026-09-13T10:32:17.399494+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as conversation file retrieval",
+          "Retrieve evidence from active conversation file(s): Mohammad_Akif_akhtar.pdf",
+          "Verify factual claims against document content",
+          "Deliver answer based on uploaded document"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Using active conversation file",
+          "Retrieving evidence from 'Mohammad_Akif_akhtar.pdf'",
+          "Performing whole-file analysis",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 0.017,
+        "audit_id": "e7cd48133e5c"
+      }
+    },
+    {
+      "role": "user",
+      "content": "Give summary of this file",
+      "timestamp": "2026-09-13T10:34:28.120405+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The document is an offer letter for a Machine Learning Internship at AxonCore Technologies. The internship is for 1-3 months, with a start date to be chosen by the candidate. The stipend for the internship is \u20b918,500/- per month. Successful completion of the internship will lead to a full-time position with AxonCore Technologies, subject to the company's requirements and policies. The internship will be conducted remotely, with tasks and assignments submitted through the company's Learning Management System. The candidate will be required to complete training modules on the partner platform and work on a live project in accordance with the project requirements. All work created during the internship will be the exclusive intellectual property of AxonCore Technologies, and candidates are prohibited from sharing or distributing any company-related material. The internship terms and conditions are subject to change by the company. Upon successful completion of the internship, the candidate will receive a stipend and may be considered for a full-time position. [Source 1]",
+      "timestamp": "2026-09-13T10:34:28.122759+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf",
+            "page": 1,
+            "score": 1.0,
+            "text": "Greetings from AxonCore Technologies!\nWe are delighted to offer you the opportunity to join AxonCore Technologies as an Intern for a\nperiod of 1-3 months, Your internship period will be for 1-3 months. The start date can be chosen by\nyou at the time of completing the registration process. This internship is designed to provide you\nwith hands-on exp..."
+          },
+          {
+            "id": 2,
+            "source": "offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf",
+            "page": 2,
+            "score": 1.0,
+            "text": "Important Information: Upon successful completion of the payment process, your login credentials\nwill be issued immediately. \nTerms & Conditions of Internship\nYour internship with AxonCore Technologies shall be governed by the following terms and\nconditions, which may be amended by the company from time to time.\nYou are being selected for 1-3 month..."
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUMMARY_VERIFIED",
+          "reason": "Whole-file analysis generated directly from active conversation file 'offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf'.",
+          "method": "whole_file_analysis"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as conversation file retrieval",
+          "Retrieve evidence from active conversation file(s): offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf",
+          "Verify factual claims against document content",
+          "Deliver answer based on uploaded document"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Using active conversation file",
+          "Retrieving evidence from 'offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf'",
+          "Performing whole-file analysis",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 23.313,
+        "audit_id": "f9a099867d51"
+      }
+    }
+  ],
+  "uploaded_files": [
+    "offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf"
+  ],
+  "uploaded_images": [],
+  "global_sources": [
+    {
+      "id": 1,
+      "source_id": 1,
+      "url": "https://cdna-applicants-spectrum-emissions.trycloudflare.com/",
+      "title": "Sovereign AI \u2014 SIH26117",
+      "chunks_count": 9,
+      "added_at": "2026-09-13T10:16:12.891630+00:00",
+      "last_fetched_at": "2026-09-13T10:16:12.891630+00:00",
+      "status": "FETCHED"
+    }
+  ]
+}

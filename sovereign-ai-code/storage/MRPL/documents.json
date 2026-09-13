@@ -1,0 +1,102 @@
+[
+  {
+    "id": "905a544440bb",
+    "filename": "Maintenance_Manual.pdf",
+    "category": "document",
+    "size": 2573,
+    "indexed": true,
+    "pages": 1,
+    "chunks": 3,
+    "uploaded_at": "2026-09-06T06:38:33.192088+00:00"
+  },
+  {
+    "id": "e56393cf7c5c",
+    "filename": "Safety_SOP.pdf",
+    "category": "document",
+    "size": 2547,
+    "indexed": true,
+    "pages": 1,
+    "chunks": 2,
+    "uploaded_at": "2026-09-06T06:38:33.197686+00:00"
+  },
+  {
+    "id": "1c6f9e1d9028",
+    "filename": "Inspection_Report.pdf",
+    "category": "document",
+    "size": 2406,
+    "indexed": true,
+    "pages": 1,
+    "chunks": 2,
+    "uploaded_at": "2026-09-06T06:45:30.438808+00:00"
+  },
+  {
+    "id": "2c30e0b93868",
+    "filename": "Project-Submission-Indian-Elections.pdf",
+    "category": "document",
+    "size": 296460,
+    "indexed": true,
+    "pages": 18,
+    "chunks": 66,
+    "uploaded_at": "2026-09-12T07:15:29.207154+00:00"
+  },
+  {
+    "id": "057d1674b2ad",
+    "filename": "TECH BYTE(SIH 2026).pdf",
+    "category": "document",
+    "size": 4817588,
+    "indexed": true,
+    "pages": 6,
+    "chunks": 18,
+    "uploaded_at": "2026-09-13T09:22:44.620724+00:00"
+  },
+  {
+    "id": "c14eac6aad12",
+    "filename": "TECH BYTE(SIH 2026).pdf",
+    "category": "document",
+    "size": 4817588,
+    "indexed": true,
+    "pages": 6,
+    "chunks": 18,
+    "uploaded_at": "2026-09-13T09:22:55.452479+00:00"
+  },
+  {
+    "id": "777cb44f7182",
+    "filename": "TECH BYTE(SIH 2026).pdf",
+    "category": "document",
+    "size": 4817588,
+    "indexed": true,
+    "pages": 6,
+    "chunks": 18,
+    "uploaded_at": "2026-09-13T10:15:06.692395+00:00"
+  },
+  {
+    "id": "1c44999f5983",
+    "filename": "TECH BYTE(SIH FINAL 1).pdf",
+    "category": "document",
+    "size": 4817588,
+    "indexed": true,
+    "pages": 6,
+    "chunks": 18,
+    "uploaded_at": "2026-09-13T10:22:28.480757+00:00"
+  },
+  {
+    "id": "53b6fbb348c0",
+    "filename": "Mohammad_Akif_akhtar.pdf",
+    "category": "document",
+    "size": 412368,
+    "indexed": true,
+    "pages": 0,
+    "chunks": 0,
+    "uploaded_at": "2026-09-13T10:32:02.122177+00:00"
+  },
+  {
+    "id": "4a49af0a4675",
+    "filename": "offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf",
+    "category": "document",
+    "size": 230850,
+    "indexed": true,
+    "pages": 2,
+    "chunks": 8,
+    "uploaded_at": "2026-09-13T10:33:45.218843+00:00"
+  }
+]

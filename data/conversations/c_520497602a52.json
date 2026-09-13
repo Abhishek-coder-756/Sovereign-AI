@@ -1,0 +1,822 @@
+{
+  "conversation_id": "c_520497602a52",
+  "title": "What is in this link",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T06:36:06.585640+00:00",
+  "updated_at": "2026-09-13T07:00:21.365192+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is in this link",
+      "timestamp": "2026-09-13T06:36:43.189960+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The provided excerpts detail information about OpenAI, an American artificial intelligence company. Key points include: - OpenAI was founded on December 8, 2015, and is headquartered in San Francisco, California, U.S.\n- The company's main products include ChatGPT, GPT-6, OpenAI Codex, GPT Image, and Deep Research.\n- OpenAI's revenue is projected to be US$13.1 billion by 2025, with a projected net income of US$\u22129 billion in the same year.\n- OpenAI has faced legal issues, including copyright infringement lawsuits from media organizations such as The Intercept, New York Times, Tribune Media, and Ziff Davis.\n- OpenAI has developed various AI models and tools, such as GPT-2, GPT-3, DALL-E, and Whisper.\n- OpenAI has partnerships with companies like Wix, Base44, Replit, Lovable, Figma, and Emergent.\n- OpenAI has also entered into a potential partnership with Amazon, where OpenAI's models could be integrated into Amazon's digital assistant Alexa.\n- OpenAI has faced criticism over the use of copyrighted material in its training datasets, such as the destruction of Books1 and Books2 training datasets, which were believed to contain over 100,000 copyrighted books.\n- OpenAI has also been involved in partnerships with Disney and Apple Inc.\n\nThese excerpts cover OpenAI's history, products, partnerships, and legal issues.",
+      "timestamp": "2026-09-13T06:36:43.190885+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 1,
+            "score": 0.85,
+            "text": "OpenAI - Wikipedia\nFrom Wikipedia, the free encyclopedia\nAmerican artificial intelligence company\nNot to be confused with\nOpenAL\n,\nOpenAPI\n, or\nOpen-source artificial intelligence\n.\nOpenAI\nHeadquarters in 1515\nThird Street\n,\nSan Francisco\nType\nPrivate\nIndustry\nGenerative AI\nFounded\nDecember\n8, 2015\n(10 years ago)\n(\n2015-12-08\n)\nFounders\nElon Musk\nSam Altman\nIlya Sutskever\nGreg Brockman\nTrevor Blackwell\n(et al.)\nHeadquarters\n1455 and 1515\nThird Street\n,\nSan Francisco\n, California, U.S.\nKey\npeople\nBret Taylor\n(\nchairman\n)\nSam Altman (\nCEO\n)\nGreg Brockman (\npresident\nand CEO of Applications)\nSarah Friar\n(\nCFO\n)\nProducts\nChatGPT\nGPT-6\nOpenAI Codex\nGPT Image\nDeep Research\nChatGPT agent\nChatGPT Atlas\nChatGPT Health\nRevenue\nUS$\n13.1\nbillion\n(2025)\nNet income\nUS$\u22129\nbillion\n(\n2025\nest.\n)\nOwners",
+            "source_type": "global_web"
+          },
+          {
+            "id": 2,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 97,
+            "score": 0.6418117880821228,
+            "text": ".\nThe New Yorker\n.\nISSN\n0028-792X\n.\nArchived\nfrom the original on December 22, 2023\n. Retrieved\nJanuary 15,\n2024\n.\nNotes\nExternal links\nWikimedia Commons has media related to\n.\nOfficial website\nPortals\n:\n2010s\n2020s\nCompanies\nInternet\nSan Francisco Bay Area\nTechnology\nSearch\nOpenAI\n94 languages\nAdd topic",
+            "source_type": "global_web"
+          },
+          {
+            "id": 3,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 80,
+            "score": 0.5761171579360962,
+            "text": "Delaware federal court\nfor copyright infringement. Ziff Davis is known for publications such as\nZDNet\n,\nPCMag\n,\nCNET\n,\nIGN\nand\nLifehacker\n.\nOn June 24, 2026, a group of local newspaper publishers also sued OpenAI and Microsoft for copyright infringement.\nA number of lawsuits filed by media organizations including\nThe Intercept\n,\nNew York Times\n,\nTribune Media\n,\nand\nZiff Davis\nwere consolidated under district judge\nSidney Stein\n.\nGDPR compliance\nIn April 2023, the EU's\nEuropean Data Protection Board",
+            "source_type": "global_web"
+          },
+          {
+            "id": 4,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 48,
+            "score": 0.5659704208374023,
+            "text": "In February 2019,\nGPT-2\nwas announced, which gained attention for its ability to generate human-like text.\nIn 2020, OpenAI announced\nGPT-3\n, a language model trained on large internet datasets. GPT-3 is aimed at natural language answering questions, but it can also translate between languages and coherently generate improvised text. It also announced that an associated API, named\nthe API\n, would form the heart of its first commercial product.\nEleven employees left OpenAI, mostly between December 2020 and January 2021, in order to establish\nAnthropic\n.\nIn 2021, OpenAI introduced\nDALL-E\n, a specialized deep learning model adept at generating complex digital images from textual descriptions, utilizing a variant of the GPT-3 architecture.\nThe release of\nChatGPT\nwas a major event in the",
+            "source_type": "global_web"
+          },
+          {
+            "id": 5,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 42,
+            "score": 0.5645021200180054,
+            "text": "Marvel\n,\nStar Wars\nand\nPixar\ncharacters would be available to OpenAI users.\nDisney would later exit this deal in late March 2026, due to Sora being discontinued.\nIn early 2026,\nAmazon\nentered advanced discussions to invest up to $50\u202fbillion in OpenAI as part of a potential artificial intelligence partnership. Under the proposed agreement, OpenAI's models could be integrated into Amazon's digital assistant\nAlexa\nand other internal projects.\nIn June 2026, OpenAI announced partnerships with\nWix\n, Base44,\nReplit\n,\nLovable\n,\nFigma\n, and Emergent to support its new Sites feature in Codex, which enables users to publish outputs as hosted, interactive websites rather than local files.\nIn June 2024,\nApple Inc.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 6,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 75,
+            "score": 0.5630367994308472,
+            "text": "In May 2024 it was revealed that OpenAI had destroyed its Books1 and Books2 training datasets, which were used in the\ntraining of GPT-3\n, and which the Authors Guild believed to have contained over 100,000 copyrighted books.\nIn 2021, OpenAI developed a\nspeech recognition\ntool called Whisper. OpenAI used it to transcribe more than one million hours of YouTube videos into text for training GPT-4. The automated transcription of YouTube videos raised concerns within OpenAI employees regarding potential violations of YouTube's terms of service, which prohibit the use of videos for applications independent of the platform, as well as any type of automated access to its videos. Despite these concerns, the project proceeded with notable involvement from OpenAI's president,\nGreg Brockman",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The response contains general statements without uncited claims.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 33.554,
+        "audit_id": "6f3284ace678"
+      }
+    },
+    {
+      "role": "user",
+      "content": "give me summary of this page",
+      "timestamp": "2026-09-13T06:39:36.115336+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The provided excerpts detail the operations and history of OpenAI, an American artificial intelligence company. Founded in December 8, 2015, OpenAI is headquartered in San Francisco, California. The company is primarily involved in the development of generative AI products, including ChatGPT, GPT-6, and OpenAI Codex. \n\nOpenAI's revenue is projected to reach US$13.1 billion by 2025, with a projected net income of US$\u22129 billion. The company is owned by Microsoft (27%), OpenAI Foundation (26%), and employees and investors (47%). OpenAI has a workforce of approximately 4,500 employees.\n\nIn 2019, OpenAI introduced GPT-2, which generated human-like text. In 2020, they released GPT-3, a language model trained on large internet datasets, aimed at natural language answering questions and capable of translation and text generation. OpenAI also developed DALL-E, a deep learning model for generating complex images from text descriptions.\n\nOpenAI has faced legal challenges, including a lawsuit in 2024 filed by eight newspapers for alleged illegal harvesting of their copyrighted articles. In response, OpenAI entered into an agreement with News Corp to integrate news content from several publications into its AI platform. Additionally, OpenAI has faced criticism over the potential use of ChatGPT for surveillance, leading to the amendment of its contract to include more safeguards.\n\nOpenAI's products include ChatGPT, ChatGPT Deep Research, ChatGPT Search, ChatGPT Atlas, and OpenAI Codex, among others. The company also provides an API that gives access to various OpenAI models.",
+      "timestamp": "2026-09-13T06:39:36.116960+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 1,
+            "score": 0.85,
+            "text": "OpenAI - Wikipedia\nFrom Wikipedia, the free encyclopedia\nAmerican artificial intelligence company\nNot to be confused with\nOpenAL\n,\nOpenAPI\n, or\nOpen-source artificial intelligence\n.\nOpenAI\nHeadquarters in 1515\nThird Street\n,\nSan Francisco\nType\nPrivate\nIndustry\nGenerative AI\nFounded\nDecember\n8, 2015\n(10 years ago)\n(\n2015-12-08\n)\nFounders\nElon Musk\nSam Altman\nIlya Sutskever\nGreg Brockman\nTrevor Blackwell\n(et al.)\nHeadquarters\n1455 and 1515\nThird Street\n,\nSan Francisco\n, California, U.S.\nKey\npeople\nBret Taylor\n(\nchairman\n)\nSam Altman (\nCEO\n)\nGreg Brockman (\npresident\nand CEO of Applications)\nSarah Friar\n(\nCFO\n)\nProducts\nChatGPT\nGPT-6\nOpenAI Codex\nGPT Image\nDeep Research\nChatGPT agent\nChatGPT Atlas\nChatGPT Health\nRevenue\nUS$\n13.1\nbillion\n(2025)\nNet income\nUS$\u22129\nbillion\n(\n2025\nest.\n)\nOwners",
+            "source_type": "global_web"
+          },
+          {
+            "id": 2,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 97,
+            "score": 0.6396398544311523,
+            "text": ".\nThe New Yorker\n.\nISSN\n0028-792X\n.\nArchived\nfrom the original on December 22, 2023\n. Retrieved\nJanuary 15,\n2024\n.\nNotes\nExternal links\nWikimedia Commons has media related to\n.\nOfficial website\nPortals\n:\n2010s\n2020s\nCompanies\nInternet\nSan Francisco Bay Area\nTechnology\nSearch\nOpenAI\n94 languages\nAdd topic",
+            "source_type": "global_web"
+          },
+          {
+            "id": 3,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 77,
+            "score": 0.5650954246520996,
+            "text": "On April 30, 2024, eight newspapers filed a lawsuit in the\nSouthern District of New York\nagainst OpenAI and Microsoft, claiming illegal harvesting of their copyrighted articles. The suing publications included\nThe Mercury News\n,\nThe Denver Post\n,\nThe Orange County Register\n,\nSt. Paul Pioneer Press\n,\nChicago Tribune\n,\nOrlando Sentinel\n,\nSun Sentinel\n, and\nNew York Daily News\n.\nOn May 22, 2024, OpenAI entered into an agreement with\nNews Corp\nto integrate news content from\nThe Wall Street Journal\n, the\nNew York Post\n,\nThe Times\n, and\nThe Sunday Times\ninto its AI platform. Meanwhile, other publications like\nThe New York Times\nchose to sue OpenAI and\nMicrosoft\nfor copyright infringement over the use of their content to train AI models.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 4,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 48,
+            "score": 0.5646255612373352,
+            "text": "In February 2019,\nGPT-2\nwas announced, which gained attention for its ability to generate human-like text.\nIn 2020, OpenAI announced\nGPT-3\n, a language model trained on large internet datasets. GPT-3 is aimed at natural language answering questions, but it can also translate between languages and coherently generate improvised text. It also announced that an associated API, named\nthe API\n, would form the heart of its first commercial product.\nEleven employees left OpenAI, mostly between December 2020 and January 2021, in order to establish\nAnthropic\n.\nIn 2021, OpenAI introduced\nDALL-E\n, a specialized deep learning model adept at generating complex digital images from textual descriptions, utilizing a variant of the GPT-3 architecture.\nThe release of\nChatGPT\nwas a major event in the",
+            "source_type": "global_web"
+          },
+          {
+            "id": 5,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 2,
+            "score": 0.5549126863479614,
+            "text": "GPT Image\nDeep Research\nChatGPT agent\nChatGPT Atlas\nChatGPT Health\nRevenue\nUS$\n13.1\nbillion\n(2025)\nNet income\nUS$\u22129\nbillion\n(\n2025\nest.\n)\nOwners\nEmployees and investors (47%)\nMicrosoft\n(27%)\nOpenAI Foundation (26%)\nNumber of employees\n4,500 (2026)\nSubsidiaries\nOpenAI Deployment Company\nWebsite\nopenai\n.com\nPart of\na series\non\nArtificial intelligence (AI)\nMajor goals\nArtificial general intelligence\nsuperintelligence\nIntelligent agent\nRecursive self-improvement\nPlanning\nComputer vision\nGeneral game playing\nKnowledge representation\nNatural language processing\nRobotics\nAI safety\nApproaches\nMachine learning\nData mining\nSymbolic\nDeep learning\nBayesian networks\nEvolutionary algorithms\nNeuro-symbolic AI\nSystems integration\nOpen-source\nOpen weights\nAI data centers\nApplications\nArt\nMusic",
+            "source_type": "global_web"
+          },
+          {
+            "id": 6,
+            "source": "OpenAI - Wikipedia",
+            "title": "OpenAI - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/OpenAI",
+            "page": 47,
+            "score": 0.5532205104827881,
+            "text": "Following backlash over the potential use of ChatGPT for surveillance, Altman amended the contract to include more safeguards, though only excerpts of the contract were made public and critics remained concerned that it was purposefully vague and contained carve-outs for domestic surveillance.\nServices\nMain article:\nProducts and applications of OpenAI\nProducts\nChatGPT\nChatGPT Deep Research\nChatGPT Search\nChatGPT Atlas\nOpenAI Codex\nCodex CLI\nGPT Image\nWhisper (speech recognition system)\nAn\nAPI\nthat gives access to various OpenAI models\nDevelopment\nIn February 2019,\nGPT-2\nwas announced, which gained attention for its ability to generate human-like text.\nIn 2020, OpenAI announced\nGPT-3",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 36.059,
+        "audit_id": "03690c0bcc0a"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this page",
+      "timestamp": "2026-09-13T06:43:01.691186+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "This page discusses various aspects of Cadbury Dairy Milk, including its history, marketing, and production. The main subjects covered are: - Cadbury Dairy Milk is a British brand of milk chocolate manufactured by Cadbury since 1905. It is known for its high milk content and has a long history of marketing campaigns.\n- In 1928, Cadbury introduced the \"glass and a half\" slogan to advertise the bar's higher milk content.\n- In 2005, Cadbury launched a limited edition bar in reproduction 1905 packaging to celebrate the Centenary of Cadbury Dairy Milk.\n- In 2012, Cadbury won a trademark dispute with Nestl\u00e9 in the United Kingdom for the purple color of its chocolate bar wrappers, a color introduced in 1914 as a tribute to Queen Victoria.\n- In 2018, Cadbury announced it would launch a new Dairy Milk version with 30% less sugar, and the chief nutritionist of Public Health England, Alison Tedstone, praised the move.\n- Cadbury has launched various marketing campaigns, including advertisements featuring songs by artists like Phil Collins, Queen, Bonnie Tyler, and Baccara.\n- Cadbury has also launched marketing campaigns in different regions, such as the \"Joyville\" concept in Asia and the \"Free The Joy\" campaign in India.\n- Cadbury has also used vintage packaging designs for limited edition Dairy Milk bars, such as those from 1915, 1940, 1961, 1980, 1993, 2003, and 2024, to celebrate its 200th anniversary in 2024.\n- Cadbury has also used a new \"record label\" called Zingolo to promote Fairtrade Dairy Milk, and a music video was made incorporating the 60-second ads.\n- Cadbury has also used a new advertising campaign called \"Gorilla\" in 2007, which was premi\u00e8red during the season finale of Big Brother 2007, including the Phil Collins song \"In the Air Tonight.\"\n- Cadbury has also used the \"Joyville\" concept in Asia, where Singapore bloggers were invited to join in the campaign in 2013.\n- Cadbury has used the \"Free The Joy\" campaign in India, where the song in a television advert is \"Yes Sir, I Can Boogie\" by Baccara.\n\nI could not find enough information in the provided public sources to answer this reliably.",
+      "timestamp": "2026-09-13T06:43:01.694448+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 1,
+            "score": 0.85,
+            "text": "Cadbury Dairy Milk - Wikipedia\nFrom Wikipedia, the free encyclopedia\nBrand of chocolate bar\nCadbury Dairy Milk\nLogo used since 2020\nA Dairy Milk Caramel bar in its foil wrapper\nProduct type\nConfectionery\nOwner\nCadbury\nCountry\nUnited Kingdom\nIntroduced\nJune\n1905\n;\n121\nyears ago\n(\n1905-06\n)\nRelated brands\nList of Cadbury products\nMarkets\nWorldwide\nWebsite\ncadbury.co.uk/dairy-milk\nCadbury Dairy Milk\nis a British brand of\nmilk chocolate\nmanufactured by\nCadbury\nsince 1905. Every product in the Dairy Milk line is made exclusively with\nmilk chocolate\n. In 1928, Cadbury introduced the \"glass and a half\"\nslogan\nto accompany the Dairy Milk\nchocolate bar\nto advertise the bar's higher milk content.\nThe bar was developed by\nGeorge Cadbury Jr\n, and by 1914 had become the company's best-selling product.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 2,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 5,
+            "score": 0.5213208198547363,
+            "text": "A limited edition bar in reproduction 1905 packaging was launched in 2005, to celebrate the Centenary of Cadbury Dairy Milk.\nAlso in 2005, Cadbury buried a\ntime capsule\nat the Bournville factory, stating \"\nWe're going to bury a Time Capsule that won't be opened until Cadbury Dairy Milk is 200 years young. But, we need your help in deciding what we should leave for future generations.\n\"\nIn 2012, Cadbury won a\ntrademark\ndispute with\nNestl\u00e9\nin the United Kingdom for the purple colour (\nPantone\n2685C) of its chocolate bar wrappers,\na colour introduced in 1914 as a tribute to\nQueen Victoria\n.\nNestl\u00e9 successfully appealed the decision in October 2013.\nIn July 2018, Cadbury announced it would launch a new Dairy Milk version with 30% less sugar. The chief\nnutritionist\nof\nPublic Health England\n,",
+            "source_type": "global_web"
+          },
+          {
+            "id": 3,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 6,
+            "score": 0.5111187696456909,
+            "text": "In July 2018, Cadbury announced it would launch a new Dairy Milk version with 30% less sugar. The chief\nnutritionist\nof\nPublic Health England\n,\nAlison Tedstone\n, said she was \"\"pleased that\nMondelez\nis the latest ... to commit to offering healthier products.\"\nIn 2024, as part of Cadbury's 200th anniversary, limited edition Dairy Milk bars were packaged in one of seven reproduction packaging designs from 1915, 1940, 1961, 1980, 1993, 2003, and 2024.\nMore recently, consumers have complained that Cadbury has altered the taste and texture of its chocolate, as well as shrinking the size of their bars.\nWhile Mondelez maintains that its recipes are high quality,\nwidespread concerns persist regarding altered taste, often linked to cost-cutting measures, particularly in UK/Ireland markets.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 4,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 11,
+            "score": 0.5058865547180176,
+            "text": "The advert was premi\u00e8red during the season finale of\nBig Brother 2007\n, including the\nPhil Collins\nsong \"\nIn the Air Tonight\n\".\nOn 28 March 2008, the second Dairy Milk advert produced by Glass and a Half Full Productions aired. The ad includes\nQueen\n's \"\nDon't Stop Me Now\n\".\nOn 5 September 2008, an ad was launched with\nBonnie Tyler\n's \"\nTotal Eclipse of the Heart\n\"\n\u2013 a reference to online\nmash-ups\nof the commercial, and another using\nBon Jovi\n's song \"\nLivin' on a Prayer\n\". Both remakes premiered once again during the finale of\nBig Brother 2008\n.\nIn January 2009, '\nEyebrows\n', the third advert in the series, was released, including \"Don't Stop the Rock\" by Freestyle.\nGlass and a Half Full Records\nMain article:\nZingolo",
+            "source_type": "global_web"
+          },
+          {
+            "id": 5,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 12,
+            "score": 0.5037381649017334,
+            "text": "', the third advert in the series, was released, including \"Don't Stop the Rock\" by Freestyle.\nGlass and a Half Full Records\nMain article:\nZingolo\nA new 'record label' was launched as part of the Glass and a Half Full Productions campaign. The first song released was\nZingolo\nfeaturing Tinny, to promote Fairtrade Dairy Milk. A full music video was made incorporating the 60-second ads, as well as a Facebook page.\n[\ncitation needed\n]\nJoyville (2012\u20132014)\nIn addition, Cadbury brought the \"Joyville\" concept into Asia, where Singapore bloggers were invited to join in the campaign in 2013.\nFree The Joy (2014)\nIn 2014, Joyville was replaced with the \"Free The Joy\" campaign. The song in a television advert is \"\nYes Sir, I Can Boogie\n\" by\nBaccara\n.\nMarketing in India",
+            "source_type": "global_web"
+          },
+          {
+            "id": 6,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 10,
+            "score": 0.4929143786430359,
+            "text": "Frank Muir\nsinging \"Everyone's a fruit and nutcase\" to the tune of \"Danse des mirlitons\" from\nTchaikovsky\n's ballet\nThe Nutcracker\n.\nIn Ireland, Cadbury Dairy Milk used the jingle \"The Perfect Word For Chocolate\" from 1986 to 1988. Between 1989 and 1996, the jingle \"The Choice Is Yours The Taste Is Cadbury\" with the slogan \"Mysteries of Love\" was a advertisement.\nA display of antique Cadbury's Dairy Milk chocolate tins at the\nBeamish Museum\nGlass and a Half Full Productions (2007\u20132011)\nIn 2007, Cadbury launched a new advertising campaign entitled\nGorilla\n, from a new in-house production company called \"Glass And A Half Full Productions\".\nThe advert was premi\u00e8red during the season finale of\nBig Brother 2007\n, including the\nPhil Collins\nsong \"\nIn the Air Tonight\n\".",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 60.689,
+        "audit_id": "95aed28a33d4"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell abou  this link",
+      "timestamp": "2026-09-13T06:44:47.780315+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "This link contains information about Cadbury Dairy Milk, a British brand of milk chocolate manufactured by Cadbury since 1905. The main subjects and details found in the excerpts include: - Cadbury Dairy Milk is a milk chocolate product, introduced in 1905 and has been the company's best-selling product since 1914.\n- The brand has used various slogans and jingles over the years, including \"Glass and a Half\" in 1928, \"The Perfect Word For Chocolate\" in 1986, \"The Choice Is Yours The Taste Is Cadbury\" with the slogan \"Mysteries of Love\" in 1989, and the \"Gorilla\" campaign in 2007.\n- Cadbury Dairy Milk has launched limited edition bars in 2005 to celebrate its Centenary, and a time capsule was buried at the Bournville factory in 2005, with a promise to open it when the brand reaches 200 years old.\n- Cadbury has also won a trademark dispute with Nestl\u00e9 in the United Kingdom over the purple color of its chocolate bar wrappers, which was introduced in 1914 as a tribute to Queen Victoria.\n- Cadbury has launched a new Dairy Milk version with 30% less sugar in 2018, and the company has also used music in its advertising, including songs by Frank Muir, Phil Collins, Bonnie Tyler, Baccara, and others.\n- Cadbury has also brought the \"Joyville\" concept into Asia, where Singapore bloggers were invited to join in the campaign in 2013, and replaced it with the \"Free The Joy\" campaign in 2014.\n- The brand has also used Fairtrade Dairy Milk in its marketing, featuring a song by Baccara in a television advert.",
+      "timestamp": "2026-09-13T06:44:47.783704+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 1,
+            "score": 0.85,
+            "text": "Cadbury Dairy Milk - Wikipedia\nFrom Wikipedia, the free encyclopedia\nBrand of chocolate bar\nCadbury Dairy Milk\nLogo used since 2020\nA Dairy Milk Caramel bar in its foil wrapper\nProduct type\nConfectionery\nOwner\nCadbury\nCountry\nUnited Kingdom\nIntroduced\nJune\n1905\n;\n121\nyears ago\n(\n1905-06\n)\nRelated brands\nList of Cadbury products\nMarkets\nWorldwide\nWebsite\ncadbury.co.uk/dairy-milk\nCadbury Dairy Milk\nis a British brand of\nmilk chocolate\nmanufactured by\nCadbury\nsince 1905. Every product in the Dairy Milk line is made exclusively with\nmilk chocolate\n. In 1928, Cadbury introduced the \"glass and a half\"\nslogan\nto accompany the Dairy Milk\nchocolate bar\nto advertise the bar's higher milk content.\nThe bar was developed by\nGeorge Cadbury Jr\n, and by 1914 had become the company's best-selling product.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 2,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 10,
+            "score": 0.5524998307228088,
+            "text": "Frank Muir\nsinging \"Everyone's a fruit and nutcase\" to the tune of \"Danse des mirlitons\" from\nTchaikovsky\n's ballet\nThe Nutcracker\n.\nIn Ireland, Cadbury Dairy Milk used the jingle \"The Perfect Word For Chocolate\" from 1986 to 1988. Between 1989 and 1996, the jingle \"The Choice Is Yours The Taste Is Cadbury\" with the slogan \"Mysteries of Love\" was a advertisement.\nA display of antique Cadbury's Dairy Milk chocolate tins at the\nBeamish Museum\nGlass and a Half Full Productions (2007\u20132011)\nIn 2007, Cadbury launched a new advertising campaign entitled\nGorilla\n, from a new in-house production company called \"Glass And A Half Full Productions\".\nThe advert was premi\u00e8red during the season finale of\nBig Brother 2007\n, including the\nPhil Collins\nsong \"\nIn the Air Tonight\n\".",
+            "source_type": "global_web"
+          },
+          {
+            "id": 3,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 5,
+            "score": 0.5481382012367249,
+            "text": "A limited edition bar in reproduction 1905 packaging was launched in 2005, to celebrate the Centenary of Cadbury Dairy Milk.\nAlso in 2005, Cadbury buried a\ntime capsule\nat the Bournville factory, stating \"\nWe're going to bury a Time Capsule that won't be opened until Cadbury Dairy Milk is 200 years young. But, we need your help in deciding what we should leave for future generations.\n\"\nIn 2012, Cadbury won a\ntrademark\ndispute with\nNestl\u00e9\nin the United Kingdom for the purple colour (\nPantone\n2685C) of its chocolate bar wrappers,\na colour introduced in 1914 as a tribute to\nQueen Victoria\n.\nNestl\u00e9 successfully appealed the decision in October 2013.\nIn July 2018, Cadbury announced it would launch a new Dairy Milk version with 30% less sugar. The chief\nnutritionist\nof\nPublic Health England\n,",
+            "source_type": "global_web"
+          },
+          {
+            "id": 4,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 9,
+            "score": 0.5381849408149719,
+            "text": "lecithin\n, and \"natural and artificial flavorings\". Cadbury supplied its chocolate crumb to Hershey, which then added cocoa butter during processing. Cadbury said they try \"to replicate the taste people grew up with,\" in the United States, that means a bar that is more akin to a\nHershey bar\n, which to many British palates tastes sour.\nAdvertising\nPre\u20132007 advertising\nCadbury's Fruit & Nut appeared in a 1970s television advertisement that featured humourist\nFrank Muir\nsinging \"Everyone's a fruit and nutcase\" to the tune of \"Danse des mirlitons\" from\nTchaikovsky\n's ballet\nThe Nutcracker\n.",
+            "source_type": "global_web"
+          },
+          {
+            "id": 5,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 11,
+            "score": 0.5364916920661926,
+            "text": "The advert was premi\u00e8red during the season finale of\nBig Brother 2007\n, including the\nPhil Collins\nsong \"\nIn the Air Tonight\n\".\nOn 28 March 2008, the second Dairy Milk advert produced by Glass and a Half Full Productions aired. The ad includes\nQueen\n's \"\nDon't Stop Me Now\n\".\nOn 5 September 2008, an ad was launched with\nBonnie Tyler\n's \"\nTotal Eclipse of the Heart\n\"\n\u2013 a reference to online\nmash-ups\nof the commercial, and another using\nBon Jovi\n's song \"\nLivin' on a Prayer\n\". Both remakes premiered once again during the finale of\nBig Brother 2008\n.\nIn January 2009, '\nEyebrows\n', the third advert in the series, was released, including \"Don't Stop the Rock\" by Freestyle.\nGlass and a Half Full Records\nMain article:\nZingolo",
+            "source_type": "global_web"
+          },
+          {
+            "id": 6,
+            "source": "Cadbury Dairy Milk - Wikipedia",
+            "title": "Cadbury Dairy Milk - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk",
+            "page": 12,
+            "score": 0.534049391746521,
+            "text": "', the third advert in the series, was released, including \"Don't Stop the Rock\" by Freestyle.\nGlass and a Half Full Records\nMain article:\nZingolo\nA new 'record label' was launched as part of the Glass and a Half Full Productions campaign. The first song released was\nZingolo\nfeaturing Tinny, to promote Fairtrade Dairy Milk. A full music video was made incorporating the 60-second ads, as well as a Facebook page.\n[\ncitation needed\n]\nJoyville (2012\u20132014)\nIn addition, Cadbury brought the \"Joyville\" concept into Asia, where Singapore bloggers were invited to join in the campaign in 2013.\nFree The Joy (2014)\nIn 2014, Joyville was replaced with the \"Free The Joy\" campaign. The song in a television advert is \"\nYes Sir, I Can Boogie\n\" by\nBaccara\n.\nMarketing in India",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 41.617,
+        "audit_id": "74bb378562a5"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this pages",
+      "timestamp": "2026-09-13T06:45:08.158738+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I could not find enough information in the provided public sources to answer this reliably.",
+      "timestamp": "2026-09-13T06:45:08.161986+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "takeUforward - Best Coding Tutorials for Free",
+            "title": "takeUforward - Best Coding Tutorials for Free",
+            "url": "https://takeuforward.org/",
+            "page": 1,
+            "score": 0.5541926622390747,
+            "text": "takeUforward - Best Coding Tutorials for Free",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 2.493,
+        "audit_id": "71a1ffd96d51"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this site",
+      "timestamp": "2026-09-13T06:45:34.677948+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I could not find enough information in the provided public sources to answer this reliably.",
+      "timestamp": "2026-09-13T06:45:34.681456+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "takeUforward - Best Coding Tutorials for Free",
+            "title": "takeUforward - Best Coding Tutorials for Free",
+            "url": "https://takeuforward.org/",
+            "page": 1,
+            "score": 0.5929122567176819,
+            "text": "takeUforward - Best Coding Tutorials for Free",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 2.245,
+        "audit_id": "6b023ed4729e"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this site",
+      "timestamp": "2026-09-13T06:46:05.285880+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I could not find enough information in the provided public sources to answer this reliably.",
+      "timestamp": "2026-09-13T06:46:05.288853+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "takeUforward - Best Coding Tutorials for Free",
+            "title": "takeUforward - Best Coding Tutorials for Free",
+            "url": "https://takeuforward.org/",
+            "page": 1,
+            "score": 0.5929122567176819,
+            "text": "takeUforward - Best Coding Tutorials for Free",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "NO_EVIDENCE",
+          "reason": "The model determined the provided public web sources were insufficient.",
+          "method": "insufficient_evidence_refusal"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 1.483,
+        "audit_id": "60ae2998d845"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this site",
+      "timestamp": "2026-09-13T06:50:55.043219+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "This site is called takeUforward and it offers free coding tutorials. It can be found at the URL: https://takeuforward.org/. The site provides educational resources for free, specifically for coding. [Source 1]",
+      "timestamp": "2026-09-13T06:50:55.047172+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "takeUforward - Best Coding Tutorials for Free",
+            "title": "takeUforward - Best Coding Tutorials for Free",
+            "url": "https://takeuforward.org/",
+            "page": 1,
+            "score": 0.5929122567176819,
+            "text": "takeUforward - Best Coding Tutorials for Free",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUPPORTED",
+          "reason": "One or more factual claims could not be verified against their cited evidence.",
+          "method": "claim_citation_verification",
+          "evidence_map": [
+            {
+              "claim": "This site is called takeUforward and it offers free coding tutorials. It can be found at the URL: https://takeuforward.org/. The site provides educational resources for free, specifically for coding.",
+              "citations": [
+                "[Source 1]"
+              ],
+              "evidence": [
+                {
+                  "source_id": 1,
+                  "document": "takeUforward - Best Coding Tutorials for Free",
+                  "page": 1,
+                  "score": 0.5929122567176819,
+                  "text": "takeUforward - Best Coding Tutorials for Free",
+                  "status": "CITATION_MISMATCH"
+                }
+              ],
+              "status": "CITATION_MISMATCH"
+            }
+          ]
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 5.569,
+        "audit_id": "878021ccc458"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this",
+      "timestamp": "2026-09-13T06:52:51.185370+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "No public web sources have been added to this conversation. Please enter a public URL above and click '+ Add Source' to ask questions in Global Knowledge mode.",
+      "timestamp": "2026-09-13T06:52:51.188942+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_SOURCES",
+          "reason": "No public sources attached to this conversation in Global mode.",
+          "method": "global_rag"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Global mode: No public sources attached",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 0.021,
+        "audit_id": "534724b76acc"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this website",
+      "timestamp": "2026-09-13T06:59:17.475502+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "No public web sources have been added to this conversation. Please enter a public URL above and click '+ Add Source' to ask questions in Global Knowledge mode.",
+      "timestamp": "2026-09-13T06:59:17.479049+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Global mode: No public sources attached",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 0.023,
+        "audit_id": "d61c631bae1c"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this site",
+      "timestamp": "2026-09-13T06:59:31.536630+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "No public web sources have been added to this conversation. Please enter a public URL above and click '+ Add Source' to ask questions in Global Knowledge mode.",
+      "timestamp": "2026-09-13T06:59:31.540715+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Global mode: No public sources attached",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 0.015,
+        "audit_id": "ba525f5f66fd"
+      }
+    },
+    {
+      "role": "user",
+      "content": "tell me about this website",
+      "timestamp": "2026-09-13T07:00:21.359827+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "This website is for Mohammad Akif Akhtar, an AI & Machine Learning Engineer. The site is hosted at https://mdakifakhtar.github.io/. The page includes a section for his projects, a brief introduction about himself, and a list of his skills. Mohammad Akif Akhtar is passionate about building intelligent systems and modern web applications. He enjoys deploying ML models and creating responsive user interfaces. His skills include Machine Learning, Data Analytics, and Web Development. [Source 1]",
+      "timestamp": "2026-09-13T07:00:21.364646+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "Mohammad Akif Akhtar| AI & ML Engineer",
+            "title": "Mohammad Akif Akhtar| AI & ML Engineer",
+            "url": "https://mdakifakhtar.github.io/",
+            "page": 1,
+            "score": 0.5320500135421753,
+            "text": "Title: Mohammad Akif Akhtar| AI & ML Engineer\n\nContent:\nMohammad Akif Akhtar| AI & ML Engineer\nMohammad Akif Akhtar\nAI & ML Engineer\nView My Projects\nAbout Me\nI am an AI & Machine Learning Engineering student passionate about\nbuilding intelligent systems and modern web applications.\nI enjoy deploying ML models and creating responsive user interfaces.\nSkills\nMachine Learning\nData Analytics\nWeb Development\nContact Me",
+            "source_type": "global_web"
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUPPORTED",
+          "reason": "Industrial numerical reasoning is consistent with the evidence.",
+          "method": "deterministic_threshold",
+          "evidence_map": [
+            {
+              "claim": "This website is for Mohammad Akif Akhtar, an AI & Machine Learning Engineer. The site is hosted at https://mdakifakhtar.github.io/. The page includes a section for his projects, a brief introduction about himself, and a list of his skills. Mohammad Akif Akhtar is passionate about building intelligent systems and modern web applications. He enjoys deploying ML models and creating responsive user interfaces. His skills include Machine Learning, Data Analytics, and Web Development.",
+              "citations": [
+                "[Source 1]"
+              ],
+              "evidence": [
+                {
+                  "source_id": 1,
+                  "document": "Mohammad Akif Akhtar| AI & ML Engineer",
+                  "page": 1,
+                  "score": 0.5320500135421753,
+                  "text": "Title: Mohammad Akif Akhtar| AI & ML Engineer\n\nContent:\nMohammad Akif Akhtar| AI & ML Engineer\nMohammad Akif Akhtar\nAI & ML Engineer\nView My Projects\nAbout Me\nI am an AI & Machine Learning Engineering student passionate about\nbuilding intelligent systems and modern web applications.\nI enjoy deploying ML models and creating responsive user interfaces.\nSkills\nMachine Learning\nData Analytics\nWeb Development\nContact Me",
+                  "status": "SUPPORTED"
+                }
+              ],
+              "status": "SUPPORTED"
+            }
+          ]
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Operating in GLOBAL Knowledge Mode",
+          "Retrieve evidence from explicitly attached public web sources using local FAISS",
+          "Generate grounded answer via local Qwen2.5-3B",
+          "Verify claims using EvidenceChecker with source citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving public web evidence across 1 global source(s)",
+          "Global web evidence retrieved, local answer generated & verified",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "global",
+        "execution_time": 12.895,
+        "audit_id": "d2254195a1ef"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": [],
+  "global_sources": [
+    {
+      "id": 1,
+      "source_id": 1,
+      "url": "https://mdakifakhtar.github.io/",
+      "title": "Mohammad Akif Akhtar| AI & ML Engineer",
+      "chunks_count": 1,
+      "added_at": "2026-09-13T06:59:54.559625+00:00",
+      "last_fetched_at": "2026-09-13T06:59:54.559625+00:00",
+      "status": "FETCHED"
+    }
+  ]
+}

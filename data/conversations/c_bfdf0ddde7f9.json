@@ -1,0 +1,82 @@
+{
+  "conversation_id": "c_bfdf0ddde7f9",
+  "title": "What do you observe in this...",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T11:48:35.385348+00:00",
+  "updated_at": "2026-09-13T11:49:30.012993+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What do you observe in this image?",
+      "timestamp": "2026-09-13T11:49:30.011515+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "What do you observe in this image?\nYou can see Engine components, Compressor, Combustion chamber, Exhaust, and the visible text \"INLAAT\", \"COMPRESSIE\", \"VERBRANDING\", \"EXPANSIE\", and \"UITLAAT\". The operation is normal.",
+      "timestamp": "2026-09-13T11:49:30.012817+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "IMAGE_ONLY",
+          "reason": "Question answered directly from the uploaded image without document retrieval.",
+          "method": "vision_only"
+        },
+        "image_observation": {
+          "image_type": "Industrial machinery cross-section",
+          "visible_objects": [
+            "Engine components"
+          ],
+          "visible_equipment": [
+            "Compressor",
+            "Combustion chamber",
+            "Exhaust"
+          ],
+          "visible_components": [
+            "Inlet",
+            "Compression",
+            "Combustion",
+            "Expansion",
+            "Exhaust"
+          ],
+          "visible_text": [
+            "INLAAT",
+            "COMPRESSIE",
+            "VERBRANDING",
+            "EXPANSIE",
+            "UITLAAT"
+          ],
+          "visible_conditions": [
+            "Normal operation"
+          ],
+          "visible_damage": [],
+          "abnormalities": [],
+          "confidence": 0.9
+        },
+        "agent_used": true,
+        "intent": "image_only",
+        "plan": [
+          "Classify intent as image analysis",
+          "Examine visual features using Qwen2.5-VL",
+          "Generate concise visual observation without document RAG"
+        ],
+        "agent_steps": [
+          "Request classified as 'image_only'",
+          "Vision analysis initiated using Qwen2.5-VL",
+          "Vision analysis completed",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5vl:3b",
+        "knowledge_mode": "private",
+        "execution_time": 54.588,
+        "audit_id": "6ff0340e2c9c"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": [
+    "/Users/mohammadakifakhtar/PROGRAM/Jupyter/sovereign-ai-final/storage/MRPL/images/chat_a347ab2c.jpeg"
+  ],
+  "global_sources": []
+}

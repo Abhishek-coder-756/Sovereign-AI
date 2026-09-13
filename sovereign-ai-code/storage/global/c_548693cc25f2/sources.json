@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "source_id": 1,
+    "url": "https://en.wikipedia.org/wiki/Refinery",
+    "title": "Oil Refinery Overview",
+    "chunks_count": 1,
+    "added_at": "2026-09-13T06:05:32.925616+00:00",
+    "last_fetched_at": "2026-09-13T06:05:32.925616+00:00",
+    "status": "FETCHED"
+  }
+]

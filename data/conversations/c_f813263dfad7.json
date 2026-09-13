@@ -1,0 +1,52 @@
+{
+  "conversation_id": "c_f813263dfad7",
+  "title": "Binary search in two sentences",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T11:47:09.013728+00:00",
+  "updated_at": "2026-09-13T11:47:09.331141+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Explain binary search in two sentences.",
+      "timestamp": "2026-09-13T11:47:09.330787+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have enough evidence in the provided documents to answer this question.",
+      "timestamp": "2026-09-13T11:47:09.331089+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as company document search",
+          "Retrieve company evidence using BGE-small embeddings & FAISS",
+          "Verify factual claims against retrieved evidence",
+          "Generate evidence-backed answer with citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving company documents for 'MRPL'",
+          "Evidence retrieved",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 0.28,
+        "audit_id": "c9ca09b7e8e8"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": [],
+  "global_sources": []
+}

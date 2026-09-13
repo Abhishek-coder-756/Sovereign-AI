@@ -1,0 +1,85 @@
+{
+  "conversation_id": "c_a5dcf7d81a6e",
+  "title": "What is  written in resume",
+  "company": "MRPL",
+  "username": "akif_admin",
+  "created_at": "2026-09-10T09:26:14.857241+00:00",
+  "updated_at": "2026-09-10T09:27:18.086635+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "what is  written in resume",
+      "timestamp": "2026-09-10T09:26:43.479487+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "A resume, also known as a curriculum vitae (CV) in some fields, is a document used to market one's skills, experiences, and qualifications for a job. It typically includes information about education, work experience, skills, achievements, and sometimes personal details. The content can vary based on the job application and the requirements of the employer.",
+      "timestamp": "2026-09-10T09:26:43.480398+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "General conversational response; no document-derived claims requiring verification.",
+          "method": "general_chat"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Classify intent as general local conversation",
+          "Synthesize direct response via local Qwen2.5 3B",
+          "Finalize response without RAG retrieval"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Synthesized answer via local Qwen2.5 3B",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "execution_time": 9.193,
+        "audit_id": "78783b2389c4"
+      }
+    },
+    {
+      "role": "user",
+      "content": "resume summary which is uploaded",
+      "timestamp": "2026-09-10T09:27:18.086178+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have enough evidence in the provided documents to answer this question.",
+      "timestamp": "2026-09-10T09:27:18.086575+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "The answer contains no document-derived claims requiring verification.",
+          "method": "evidence_checker"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as company document search",
+          "Retrieve company evidence using BGE-small embeddings & FAISS",
+          "Verify factual claims against retrieved evidence",
+          "Generate evidence-backed answer with citations"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Retrieving company documents for 'MRPL'",
+          "Evidence retrieved",
+          "Evidence verified",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "execution_time": 1.427,
+        "audit_id": "888f1031e752"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": []
+}

@@ -1,0 +1,83 @@
+{
+  "conversation_id": "c_9a5db8eb1ed3",
+  "title": "Give me summary of this file",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T07:01:42.219129+00:00",
+  "updated_at": "2026-09-13T09:23:46.646128+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "give me summary of this file",
+      "timestamp": "2026-09-13T09:23:46.644844+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The document 'TECH BYTE(SIH 2026).pdf' outlines a proposal for a Sovereign On-Premise Agentic AI Workbench designed for confidential industrial data processing. The workbench aims to bring AI capabilities to industrial environments without exposing data to external clouds, ensuring data privacy and security. The proposed solution includes a secure, on-premise deployment with local models (like Llama, Qwen) for processing various data types including PDFs, images, and tables. The workbench uses an RAG (Retrieval-Augmented Generation) pipeline to fetch relevant context from a vector store, enabling the use of domain-specific knowledge and local tools for tasks such as calculations and document analysis. The workbench is designed to be scalable, modular, and secure, with features like local authentication, access control, and a sandbox environment for safe code execution. The document also discusses the challenges and mitigation strategies for implementing such a system in real-world industrial environments, including limitations like GPU constraints and the need for task-specific models. The key benefits of the proposed solution include improved productivity, reduced manual effort, and enhanced compliance and transparency. The workbench is designed to be compliant with regulatory requirements and to support sustainable operations. [Source 1]",
+      "timestamp": "2026-09-13T09:23:46.645933+00:00",
+      "metadata": {
+        "sources": [
+          {
+            "id": 1,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 1,
+            "score": 1.0,
+            "text": "SMART INDIA HACKATHON 2026\n\u2022Problem Statement ID : 26117 \n\u2022Problem Statement Title : Sovereign On-Premise Agentic AI Workbench \nusing Open-Weight Multimodal LLMs for Confidential Industrial Work  \n\u2022Theme : Smart Automation \n\u2022PS Category : Software \n\u2022Team ID : TBD \n\u2022Team Name : Tech Byte\nSOVEREIGN AI WORKBENCH"
+          },
+          {
+            "id": 2,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 2,
+            "score": 1.0,
+            "text": "@SIH Idea submission- Template\nProposed Solution Prototype\n2\nYour Data \nYour Infrastructure\nOpen-Source & \nCost-Effective\nDomain-Specific \nIntelligence\nProductivity \nAt Scale\nSecure,Compliant \n&Future-Ready\n1. SECURE & PRIV ATE                                  KEEP YOUR DATA IN YOUR CONTROL\nOn-premise/ air-gapped deployment \nData stays inside the o..."
+          },
+          {
+            "id": 3,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 3,
+            "score": 1.0,
+            "text": "3\nTECHNICAL APPROACH\n1User Input 2Ingestion & \nProcessing 3Vector Store & \nRetrieval 4Agentic AI & Tools 5Generation & Output 6Deliver Result\nUpload Document\n(PDF / Image / Text)\nDocuments\nImages\nText\nIngest\n(ingest.py)\nLoad and preprocess \ndocuments\nExtract & Parse\n(pdf_loader.py)\nExtract text, tables and \nstructure\nChunk & Embed\n(chunking_embeddi..."
+          },
+          {
+            "id": 4,
+            "source": "TECH BYTE(SIH 2026).pdf",
+            "page": 4,
+            "score": 1.0,
+            "text": "FEASIBILITY AND VIABILITY\nCAN THIS WORK IN A REAL INDUSTRIAL ENVIRONMENT ?\nYes \u2014 with the right architecture, safeguards and domain adaptation, our solution is practical, scalable and ready for real-world use.\nREAL PROBLEMS \nREAL SOLUTIONS\nWHAT WE HAVE BUILT\nKEY COMPONENTS OF OUR SOLUTION\nKEY CHALLENGESREAL-WORLD CONSTRAINTS\nOUR MITIGATION STRATEGI..."
+          }
+        ],
+        "verification": {
+          "verified": true,
+          "status": "SUMMARY_VERIFIED",
+          "reason": "Whole-file analysis generated directly from active conversation file 'TECH BYTE(SIH 2026).pdf'.",
+          "method": "whole_file_analysis"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document_rag",
+        "plan": [
+          "Classify intent as conversation file retrieval",
+          "Retrieve evidence from active conversation file(s): TECH BYTE(SIH 2026).pdf",
+          "Verify factual claims against document content",
+          "Deliver answer based on uploaded document"
+        ],
+        "agent_steps": [
+          "Request classified as 'document_rag'",
+          "Using active conversation file",
+          "Retrieving evidence from 'TECH BYTE(SIH 2026).pdf'",
+          "Performing whole-file analysis",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 40.881,
+        "audit_id": "6e55f5bb6da4"
+      }
+    }
+  ],
+  "uploaded_files": [
+    "TECH BYTE(SIH 2026).pdf"
+  ],
+  "uploaded_images": [],
+  "global_sources": []
+}

@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+ollama
+pypdf
+numpy
+faiss-cpu
+sentence-transformers
+langchain-text-splitters
+torch
+transformers
+langgraph
+mysql-connector-python
+passlib
+bcrypt
+python-jose[cryptography]

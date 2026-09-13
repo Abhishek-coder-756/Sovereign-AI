@@ -1,0 +1,1206 @@
+2026-09-07T17:16:24.806517+00:00 | user=admin | company= | action=LOGIN | status=FAILED | details=Invalid credentials
+2026-09-07T17:16:36.082169+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-07T17:16:36.090440+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-07T17:16:36.112667+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-07T17:16:36.116241+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_dc3d0f44188e
+2026-09-07T17:16:36.118649+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:16:50.846500+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Tech-Byte-SIH2026.pdf
+2026-09-07T17:16:50.846852+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Tech-Byte-SIH2026.pdf -> c_dc3d0f44188e
+2026-09-07T17:16:51.478405+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:17:18.765669+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: analyze this and generate 5 question from this file.
+2026-09-07T17:17:39.588696+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:17:39.589336+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=analyze this and generate 5 question from this file. (20.823s)
+2026-09-07T17:17:39.598873+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:36:11.609224+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: tell me the overview from this pdf give me best point from t
+2026-09-07T17:36:28.546900+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:36:28.547662+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=tell me the overview from this pdf give me best point from t (16.937s)
+2026-09-07T17:36:28.562369+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:38:25.866612+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: how much you rate from out of 10
+2026-09-07T17:38:29.608558+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:38:29.609365+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=how much you rate from out of 10 (3.742s)
+2026-09-07T17:38:29.626914+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:39:40.126918+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: tell me more about technical approach from this pdf in detai
+2026-09-07T17:39:43.735552+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:39:43.736504+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=tell me more about technical approach from this pdf in detai (3.608s)
+2026-09-07T17:39:43.752047+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:40:31.181749+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: tell me brief summary from this pdf
+2026-09-07T17:40:43.425905+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:40:43.426850+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=tell me brief summary from this pdf (12.244s)
+2026-09-07T17:40:43.441622+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:41:31.823912+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: can you generate 5 important question from this pdf as judge
+2026-09-07T17:41:34.311306+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:41:34.312143+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=can you generate 5 important question from this pdf as judge (2.487s)
+2026-09-07T17:41:34.327374+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:43:56.295959+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: analyze this and generate 5 question from this file.
+2026-09-07T17:44:14.417576+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:44:14.418407+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=analyze this and generate 5 question from this file. (18.121s)
+2026-09-07T17:44:14.432322+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:45:09.620485+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Resume_Akif.pdf
+2026-09-07T17:45:09.623994+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Resume_Akif.pdf -> c_dc3d0f44188e
+2026-09-07T17:45:10.212916+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:45:34.095693+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: analyse this and give me ats score of this file
+2026-09-07T17:45:37.372602+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-07T17:45:37.373461+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=analyse this and give me ats score of this file (3.277s)
+2026-09-07T17:45:37.392745+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:45:54.297758+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: summary of this file
+2026-09-07T17:46:11.176569+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:46:11.177443+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=summary of this file (16.879s)
+2026-09-07T17:46:11.193541+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:46:43.698643+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: give ats score of this resume
+2026-09-07T17:46:48.986515+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:46:48.987522+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=give ats score of this resume (5.288s)
+2026-09-07T17:46:49.007306+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-07T17:48:45.271908+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_80df44d7edcb
+2026-09-07T17:48:45.280186+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-07T17:48:58.763640+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_3a88cfdadcd2
+2026-09-07T17:48:58.771782+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:52:10.597979+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: bhai naam kya hai resume mein jiska resume hai
+2026-09-07T17:52:16.960967+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:52:16.961786+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=bhai naam kya hai resume mein jiska resume hai (6.363s)
+2026-09-07T17:52:16.980323+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:52:40.542024+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: bhai ye kiska resume hai
+2026-09-07T17:52:42.620083+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:52:42.620842+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUPPORTED | details=bhai ye kiska resume hai (2.078s)
+2026-09-07T17:52:42.638220+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:53:04.978570+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: assalmo alaikum mtlb
+2026-09-07T17:53:09.700700+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:53:09.701602+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=assalmo alaikum mtlb (4.722s)
+2026-09-07T17:53:09.719261+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:53:19.574148+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: what is india
+2026-09-07T17:53:21.694340+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:53:21.695380+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=what is india (2.12s)
+2026-09-07T17:53:21.714020+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:53:32.747345+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: capital of india
+2026-09-07T17:53:34.808975+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:53:34.810279+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=capital of india (2.061s)
+2026-09-07T17:53:34.832590+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:54:17.621895+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: in resume which tools mention
+2026-09-07T17:54:19.693261+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:54:19.694228+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=in resume which tools mention (2.071s)
+2026-09-07T17:54:19.714376+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-07T17:54:38.546522+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: in resume number of project mention
+2026-09-07T17:54:40.692845+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Resume_Akif.pdf, Ver
+2026-09-07T17:54:40.693774+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=in resume number of project mention (2.146s)
+2026-09-07T17:54:40.715477+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T07:42:45.226079+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T07:42:45.238581+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T07:42:45.290928+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T07:42:49.580146+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_05c6d73ce7ea
+2026-09-08T07:42:49.589699+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:43:36.420284+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-08T07:43:36.424106+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=16_june_reseach_paper.pdf -> c_dc3d0f44188e
+2026-09-08T07:43:40.216482+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:43:50.372747+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: give me summary of this file
+2026-09-08T07:45:11.406964+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): 16_june_reseach_pape
+2026-09-08T07:45:11.407600+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary of this file (81.034s)
+2026-09-08T07:45:11.428177+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:46:11.291523+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: what is main objective of this file
+2026-09-08T07:46:20.056801+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): 16_june_reseach_pape
+2026-09-08T07:46:20.057596+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=what is main objective of this file (8.765s)
+2026-09-08T07:46:20.081024+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:47:25.837447+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_dc3d0f44188e: what is machine
+2026-09-08T07:47:43.668737+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-08T07:47:43.669231+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=what is machine (17.831s)
+2026-09-08T07:47:43.687497+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:47:57.631147+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_05c6d73ce7ea: what is machine
+2026-09-08T07:48:01.402870+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-08T07:48:01.404126+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=what is machine (3.772s)
+2026-09-08T07:48:01.417788+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:48:20.604898+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: capital of india
+2026-09-08T07:48:21.389897+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-08T07:48:21.390473+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=capital of india (0.785s)
+2026-09-08T07:48:21.399949+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:48:56.541238+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: kya bhai india ka cpital kya hai
+2026-09-08T07:48:57.447032+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-08T07:48:57.447956+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=kya bhai india ka cpital kya hai (0.906s)
+2026-09-08T07:48:57.459454+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:49:16.909024+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: are you crazy
+2026-09-08T07:49:19.515348+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-08T07:49:19.516146+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=are you crazy (2.606s)
+2026-09-08T07:49:19.530083+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T07:59:37.441882+00:00 | user=admin | company=MRPL | action=IMAGE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=test1.jpg -> c_3a88cfdadcd2
+2026-09-08T07:59:37.442373+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2 (multimodal): what is this shown in this image
+2026-09-08T08:00:26.475459+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=image_only | details=Classify intent as image analysis, Examine visual features using Qwen2.5-VL, Generate concise visual observation without
+2026-09-08T08:00:26.477386+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=IMAGE_ONLY | details=what is this shown in this image (49.033s)
+2026-09-08T08:00:26.501644+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T08:00:49.052136+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: explain what what things contain in this image
+2026-09-08T08:01:53.416226+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=multimodal_rag | details=Classify intent as multimodal inspection, Analyze equipment image using Qwen2.5-VL, Retrieve evidence from knowledge bas
+2026-09-08T08:01:53.417958+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_EVIDENCE | details=explain what what things contain in this image (64.364s)
+2026-09-08T08:01:53.433803+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T08:35:51.799055+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-08T08:35:51.801270+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=16_june_reseach_paper.pdf -> c_3a88cfdadcd2
+2026-09-08T08:35:55.579284+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T08:36:00.650884+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: give me summary of this file
+2026-09-08T08:37:08.928778+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): 16_june_reseach_pape
+2026-09-08T08:37:08.929500+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary of this file (68.278s)
+2026-09-08T08:37:08.944778+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T09:24:26.477806+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T09:24:26.486727+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T09:24:26.510971+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T09:27:13.887629+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T09:27:13.896053+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T09:27:13.948722+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:47:01.378713+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T16:47:01.391310+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-08T16:47:01.439567+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-08T16:47:01.442969+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_b27c112d657e
+2026-09-08T16:47:01.446254+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T16:47:13.678019+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_5ce60fa3b768
+2026-09-08T16:47:13.687099+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:47:14.495643+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_e07b030a0184
+2026-09-08T16:47:14.503359+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T16:47:50.685193+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_5ce60fa3b768
+2026-09-08T16:47:50.690085+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_41348af22592
+2026-09-08T16:47:50.696074+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T16:47:54.847650+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_41348af22592
+2026-09-08T16:47:54.852763+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_b102983a90a3
+2026-09-08T16:47:54.860102+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T16:47:59.447311+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_e07b030a0184
+2026-09-08T16:47:59.461593+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:48:08.195199+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_b27c112d657e
+2026-09-08T16:48:08.200101+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_cc00fd44dfbc
+2026-09-08T16:48:08.205168+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:48:12.105554+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_b102983a90a3
+2026-09-08T16:48:12.111927+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T16:48:56.722637+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=MFT-JAVA.pdf
+2026-09-08T16:49:07.308246+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=MFT-JAVA.pdf
+2026-09-08T16:49:17.498736+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=Project-Submission-Indian-Elections.pdf
+2026-09-08T16:49:24.093684+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_cc00fd44dfbc
+2026-09-08T16:49:24.098521+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_6fe18252b41a
+2026-09-08T16:49:24.107065+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T16:49:27.298312+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_6fe18252b41a
+2026-09-08T16:49:27.304102+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_2e3a5d44e059
+2026-09-08T16:49:27.310973+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T16:49:30.978235+00:00 | user=operator | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_2e3a5d44e059
+2026-09-08T16:49:30.984793+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_248bf256e499
+2026-09-08T16:49:30.992494+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T16:49:32.425834+00:00 | user=operator | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_53be804897b6
+2026-09-08T16:49:32.436104+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:49:38.182136+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=Project-Submission-Indian-Elections.pdf
+2026-09-08T16:50:04.181656+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=MFT-JAVA.pdf
+2026-09-08T16:50:34.592157+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T16:50:34.600723+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:50:34.616757+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:51:12.010333+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=MFT-JAVA.pdf
+2026-09-08T16:51:12.011926+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=MFT-JAVA.pdf -> c_3a88cfdadcd2
+2026-09-08T16:51:16.013808+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:51:28.802251+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: give me 5 most msq question
+2026-09-08T16:51:51.879532+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): MFT-JAVA.pdf, Verify
+2026-09-08T16:51:51.880307+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUPPORTED | details=give me 5 most msq question (23.077s)
+2026-09-08T16:51:51.895508+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:55:19.923757+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T16:55:19.931540+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:55:19.958924+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T16:55:32.712426+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=MFT-JAVA.pdf
+2026-09-08T16:55:46.326225+00:00 | user=operator | company=MRPL | action=UPLOAD | status=DENIED | details=MFT-JAVA.pdf
+2026-09-08T16:56:30.388738+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T16:56:30.397049+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:56:30.413756+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T16:56:50.656489+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3a88cfdadcd2: which file is uploaded yet
+2026-09-08T16:56:57.800277+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): MFT-JAVA.pdf, Verify
+2026-09-08T16:56:57.801246+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=which file is uploaded yet (7.144s)
+2026-09-08T16:56:57.821040+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T17:11:35.811474+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_05c6d73ce7ea
+2026-09-08T17:11:35.818132+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_8dc8738425b0
+2026-09-08T17:11:35.824178+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T17:11:38.928840+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_3a88cfdadcd2
+2026-09-08T17:11:38.935484+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T17:11:42.473233+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_dc3d0f44188e
+2026-09-08T17:11:42.480114+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:26:05.607939+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T17:26:05.616910+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:26:05.641850+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:36:41.702697+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T17:36:41.712576+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:36:41.742073+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:38:42.024492+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_eb5c158c9042
+2026-09-08T17:38:42.035000+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T17:38:43.390996+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_24ab1579b9a8
+2026-09-08T17:38:43.398739+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-08T17:39:33.053665+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_eb5c158c9042
+2026-09-08T17:39:33.062280+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-08T17:39:36.082187+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_8dc8738425b0
+2026-09-08T17:39:36.088596+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T17:39:38.981599+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_80df44d7edcb
+2026-09-08T17:39:38.987112+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T17:39:51.962242+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Project-Submission-Indian-Elections.pdf
+2026-09-08T17:39:51.963009+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Project-Submission-Indian-Elections.pdf -> c_24ab1579b9a8
+2026-09-08T17:39:57.529669+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T17:40:16.563377+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_24ab1579b9a8: give summary of this file
+2026-09-08T17:42:14.150838+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Project-Submission-I
+2026-09-08T17:42:14.152066+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give summary of this file (117.587s)
+2026-09-08T17:42:14.166707+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-08T17:46:23.313491+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_027a3d3e5951
+2026-09-08T17:46:23.322661+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:05:47.892979+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-08T18:05:47.900584+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:05:47.928277+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:06:23.469831+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-08T18:06:23.470472+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=16_june_reseach_paper.pdf -> c_027a3d3e5951
+2026-09-08T18:06:28.727733+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:06:52.775090+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-08T18:06:52.775752+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=16_june_reseach_paper.pdf -> c_027a3d3e5951
+2026-09-08T18:06:57.445775+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:07:19.079862+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-08T18:07:19.080505+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=16_june_reseach_paper.pdf -> c_027a3d3e5951
+2026-09-08T18:07:23.614819+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:07:36.094346+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_027a3d3e5951: give me summary in 200 word
+2026-09-08T18:08:18.751637+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): 16_june_reseach_pape
+2026-09-08T18:08:18.752424+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary in 200 word (42.657s)
+2026-09-08T18:08:18.766615+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-08T18:10:13.598392+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_2cae4f4c7462
+2026-09-08T18:10:13.607250+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:07:04.916643+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-10T06:07:04.935929+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:07:04.989087+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:08:18.383007+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-10T06:08:18.397104+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T06:08:18.414584+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T06:08:36.714897+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=
+2026-09-10T06:08:36.731978+00:00 | user=other_user | company=OTHER_COMPANY | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T06:08:36.751925+00:00 | user=other_user | company=OTHER_COMPANY | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T06:08:36.761220+00:00 | user=other_user | company=OTHER_COMPANY | action=CONVERSATION_CREATED | status=SUCCESS | details=c_6b89d3a3ee38
+2026-09-10T06:08:36.769456+00:00 | user=other_user | company=OTHER_COMPANY | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T06:08:49.295181+00:00 | user=admin | company= | action=LOGIN | status=FAILED | details=Invalid credentials
+2026-09-10T06:19:13.261957+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=
+2026-09-10T06:19:13.277901+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:19:13.298867+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:19:33.579050+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-10T06:19:33.580464+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf -> c_027a3d3e5951
+2026-09-10T06:19:40.505642+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:19:44.557975+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_027a3d3e5951: give summary of this file
+2026-09-10T06:20:22.197731+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): TECH BYTE(SIH 2026).
+2026-09-10T06:20:22.198602+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give summary of this file (37.64s)
+2026-09-10T06:20:22.221292+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:43:19.256667+00:00 | user=admin | company=MRPL | action=TEST_ACTION | status=SUCCESS | details=Testing audit integration
+2026-09-10T06:49:35.864603+00:00 | user=emp_test_eb201b | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_eb201b | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-10T06:49:36.299724+00:00 | user=op_test_eb201b | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_eb201b | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-10T06:49:36.745191+00:00 | user=emp_test_eb201b | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-10T06:49:37.184774+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T06:49:37.613157+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T06:49:37.651257+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'admin' approved employee 'emp_test_eb201b'
+2026-09-10T06:49:38.077185+00:00 | user=emp_test_eb201b | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_eb201b signed in
+2026-09-10T06:49:38.119206+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_eb201b | details=Admin 'admin' rejected operator 'op_test_eb201b'
+2026-09-10T06:49:38.544500+00:00 | user=op_test_eb201b | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-10T06:49:38.583219+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'admin' disabled employee 'emp_test_eb201b'
+2026-09-10T06:49:39.029322+00:00 | user=emp_test_eb201b | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T06:49:39.072005+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'admin' enabled employee 'emp_test_eb201b'
+2026-09-10T06:49:39.497205+00:00 | user=emp_test_eb201b | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_eb201b signed in
+2026-09-10T06:49:39.962116+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-10T06:49:40.125472+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'admin' removed employee 'emp_test_eb201b'
+2026-09-10T06:49:40.555059+00:00 | user=emp_test_eb201b | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T06:49:40.629661+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T06:49:40.648027+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_ab8c0ac696b8
+2026-09-10T06:49:40.664961+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_ab8c0ac696b8
+2026-09-10T06:49:41.090973+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-10T07:17:34.267470+00:00 | user=emp_test_9864ae | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_9864ae | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-10T07:17:34.702197+00:00 | user=op_test_9864ae | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_9864ae | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-10T07:17:35.149874+00:00 | user=emp_test_9864ae | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-10T07:17:35.584308+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T07:17:36.009440+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T07:17:36.040004+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'admin' approved employee 'emp_test_9864ae'
+2026-09-10T07:17:36.467810+00:00 | user=emp_test_9864ae | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_9864ae signed in
+2026-09-10T07:17:36.512156+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_9864ae | details=Admin 'admin' rejected operator 'op_test_9864ae'
+2026-09-10T07:17:36.963155+00:00 | user=op_test_9864ae | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-10T07:17:36.997697+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'admin' disabled employee 'emp_test_9864ae'
+2026-09-10T07:17:37.425412+00:00 | user=emp_test_9864ae | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T07:17:37.477638+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'admin' enabled employee 'emp_test_9864ae'
+2026-09-10T07:17:37.909002+00:00 | user=emp_test_9864ae | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_9864ae signed in
+2026-09-10T07:17:38.376407+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-10T07:17:38.539695+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'admin' removed employee 'emp_test_9864ae'
+2026-09-10T07:17:38.981800+00:00 | user=emp_test_9864ae | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T07:17:39.056650+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:17:39.072755+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_ecc7ca9dc06d
+2026-09-10T07:17:39.088841+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_ecc7ca9dc06d
+2026-09-10T07:17:39.534850+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-10T07:22:45.957064+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T07:22:53.518300+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T07:22:55.073818+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T07:25:15.629237+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T07:25:15.661228+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:25:15.709046+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:29:06.849681+00:00 | user=abhishek_75 | company=MRPL | action=USER_REGISTER | status=PENDING | target=abhishek_75 | details=New admin registration submitted by Abhishek Singh Chauhan (8218257366)
+2026-09-10T07:29:20.884540+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T07:29:20.906381+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:29:20.928528+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:29:32.017795+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=abhishek_75 | details=Admin 'admin' approved admin 'abhishek_75'
+2026-09-10T07:30:52.859612+00:00 | user=akif_admin | company=MRPL | action=USER_REGISTER | status=PENDING | target=akif_admin | details=New admin registration submitted by Mohammad Akif Akhtar (7070210887)
+2026-09-10T07:31:28.334764+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-10T07:31:43.561972+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T07:31:43.582899+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:31:43.612014+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T07:31:55.598818+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=akif_admin | details=Admin 'admin' approved admin 'akif_admin'
+2026-09-10T07:32:37.909380+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_9864ae | details=Admin 'admin' removed operator 'op_test_9864ae'
+2026-09-10T07:32:44.437998+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_9864ae | details=Admin 'admin' removed operator 'op_test_9864ae'
+2026-09-10T08:20:18.768636+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T08:20:18.800359+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T08:20:18.817210+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T08:20:18.835026+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_619ca782efb9
+2026-09-10T08:20:18.849601+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T08:22:18.162958+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'akif_admin' removed employee 'emp_test_eb201b'
+2026-09-10T08:22:20.861076+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'akif_admin' removed employee 'emp_test_eb201b'
+2026-09-10T08:22:29.253397+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'akif_admin' removed employee 'emp_test_eb201b'
+2026-09-10T08:22:33.533100+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'akif_admin' removed employee 'emp_test_eb201b'
+2026-09-10T08:22:37.719155+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_eb201b | details=Admin 'akif_admin' removed operator 'op_test_eb201b'
+2026-09-10T08:23:45.059055+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-10T08:23:45.078811+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T08:23:45.104396+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T08:24:04.450298+00:00 | user=operator | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_53be804897b6: hiii
+2026-09-10T08:24:08.444835+00:00 | user=operator | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-10T08:24:08.458402+00:00 | user=operator | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=hiii (3.991s)
+2026-09-10T08:24:08.495659+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T08:26:24.295413+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T08:26:24.319717+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T08:26:24.341523+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T08:26:39.520218+00:00 | user=akif_admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=admin | details=Admin 'akif_admin' disabled admin 'admin'
+2026-09-10T08:26:43.839836+00:00 | user=akif_admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=operator | details=Admin 'akif_admin' disabled operator 'operator'
+2026-09-10T08:26:50.142145+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'akif_admin' removed employee 'emp_test_9864ae'
+2026-09-10T08:26:52.802280+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_9864ae | details=Admin 'akif_admin' removed operator 'op_test_9864ae'
+2026-09-10T08:26:55.269824+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_eb201b | details=Admin 'akif_admin' removed operator 'op_test_eb201b'
+2026-09-10T08:26:57.950129+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_eb201b | details=Admin 'akif_admin' removed employee 'emp_test_eb201b'
+2026-09-10T08:39:13.420342+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T08:39:13.449903+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T08:39:13.472735+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T08:54:39.735810+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T08:54:39.770932+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T08:54:39.787429+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T08:55:03.660453+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_9864ae | details=Admin 'admin' removed employee 'emp_test_9864ae'
+2026-09-10T08:55:07.243269+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_9864ae | details=Admin 'admin' removed operator 'op_test_9864ae'
+2026-09-10T08:55:09.990797+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_eb201b | details=Admin 'admin' removed operator 'op_test_eb201b'
+2026-09-10T08:57:19.904437+00:00 | user=emp_test_abae3e | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_abae3e | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-10T08:57:20.352696+00:00 | user=op_test_abae3e | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_abae3e | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-10T08:57:20.795579+00:00 | user=emp_test_abae3e | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-10T08:57:21.228021+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T08:57:21.656211+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T08:57:21.696391+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_abae3e | details=Admin 'admin' approved employee 'emp_test_abae3e'
+2026-09-10T08:57:22.121850+00:00 | user=emp_test_abae3e | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_abae3e signed in
+2026-09-10T08:57:22.161669+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_abae3e | details=Admin 'admin' rejected operator 'op_test_abae3e'
+2026-09-10T08:57:22.590566+00:00 | user=op_test_abae3e | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-10T08:57:22.627206+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_abae3e | details=Admin 'admin' disabled employee 'emp_test_abae3e'
+2026-09-10T08:57:23.064156+00:00 | user=emp_test_abae3e | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T08:57:23.109950+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_abae3e | details=Admin 'admin' enabled employee 'emp_test_abae3e'
+2026-09-10T08:57:23.529533+00:00 | user=emp_test_abae3e | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_abae3e signed in
+2026-09-10T08:57:23.992638+00:00 | user=operator | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T08:58:20.707115+00:00 | user=emp_test_ce59d5 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_ce59d5 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-10T08:58:21.140099+00:00 | user=op_test_ce59d5 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_ce59d5 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-10T08:58:21.587048+00:00 | user=emp_test_ce59d5 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-10T08:58:22.017237+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T08:58:22.444127+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-10T08:58:22.483965+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_ce59d5 | details=Admin 'admin' approved employee 'emp_test_ce59d5'
+2026-09-10T08:58:22.910031+00:00 | user=emp_test_ce59d5 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_ce59d5 signed in
+2026-09-10T08:58:22.950385+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_ce59d5 | details=Admin 'admin' rejected operator 'op_test_ce59d5'
+2026-09-10T08:58:23.379186+00:00 | user=op_test_ce59d5 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-10T08:58:23.437210+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_ce59d5 | details=Admin 'admin' disabled employee 'emp_test_ce59d5'
+2026-09-10T08:58:23.859860+00:00 | user=emp_test_ce59d5 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T08:58:23.910803+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_ce59d5 | details=Admin 'admin' enabled employee 'emp_test_ce59d5'
+2026-09-10T08:58:24.341077+00:00 | user=emp_test_ce59d5 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_ce59d5 signed in
+2026-09-10T08:58:24.822783+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-10T08:58:24.950171+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'admin' removed admin 'admin'
+2026-09-10T08:58:25.421001+00:00 | user=emp_test_ce59d5 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_ce59d5 signed in
+2026-09-10T08:58:25.910485+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-10T09:00:12.738141+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-10T09:04:55.643284+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:04:55.673110+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:04:55.689709+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:07:04.241457+00:00 | user=ahzam | company=MRPL | action=USER_REGISTER | status=PENDING | target=ahzam | details=New operator registration submitted by Ahzam khan (6386887396)
+2026-09-10T09:07:32.308809+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:07:32.332200+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:07:32.351835+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:07:44.769346+00:00 | user=akif_admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=ahzam | details=Admin 'akif_admin' approved operator 'ahzam'
+2026-09-10T09:07:54.316794+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=operator | details=Admin 'akif_admin' removed operator 'operator'
+2026-09-10T09:13:55.114854+00:00 | user=akif_admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'akif_admin' removed admin 'admin'
+2026-09-10T09:14:08.734151+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-10T09:16:05.199327+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:16:05.222498+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:16:05.252364+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:17:22.601608+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_85e81cb6724d
+2026-09-10T09:17:22.627933+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T09:17:23.809458+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_3c3094840e8d
+2026-09-10T09:17:23.843884+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T09:17:28.659789+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_3c3094840e8d
+2026-09-10T09:17:28.687288+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_45485c75c8ae
+2026-09-10T09:17:28.717780+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T09:17:31.566003+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_45485c75c8ae
+2026-09-10T09:17:31.597330+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_9be459a908d4
+2026-09-10T09:17:31.627842+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-10T09:17:34.513536+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_85e81cb6724d
+2026-09-10T09:17:34.544272+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T09:17:37.891281+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_619ca782efb9
+2026-09-10T09:17:37.924414+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:17:45.835694+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-10T09:17:49.585178+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-10T09:26:14.870167+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_a5dcf7d81a6e
+2026-09-10T09:26:14.902191+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-10T09:26:18.793952+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_9be459a908d4
+2026-09-10T09:26:18.821131+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:26:34.271793+00:00 | user=akif_admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a5dcf7d81a6e: what is  written in resume
+2026-09-10T09:26:43.467911+00:00 | user=akif_admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-10T09:26:43.478925+00:00 | user=akif_admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=what is  written in resume (9.193s)
+2026-09-10T09:26:43.510895+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:27:16.645107+00:00 | user=akif_admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a5dcf7d81a6e: resume summary which is uploaded
+2026-09-10T09:27:18.075960+00:00 | user=akif_admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-10T09:27:18.085854+00:00 | user=akif_admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=resume summary which is uploaded (1.427s)
+2026-09-10T09:27:18.112904+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:27:43.511113+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=Tech-Byte-SIH2026.pdf
+2026-09-10T09:27:46.526355+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=Resume_Akif.pdf
+2026-09-10T09:27:50.833200+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-10T09:27:53.861253+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-10T09:27:56.665122+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=MFT-JAVA.pdf
+2026-09-10T09:27:59.160376+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=Project-Submission-Indian-Elections.pdf
+2026-09-10T09:28:01.826255+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=16_june_reseach_paper.pdf
+2026-09-10T09:28:05.468729+00:00 | user=akif_admin | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-10T09:28:47.677347+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:28:47.705542+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:28:47.749277+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:30:44.622123+00:00 | user=akif | company=MRPL | action=USER_REGISTER | status=PENDING | target=akif | details=New admin registration submitted by Administrator (7070210887)
+2026-09-10T09:31:05.859078+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:31:05.882159+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:31:05.900177+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:31:25.142556+00:00 | user=akif_admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif_admin signed in
+2026-09-10T09:31:25.164994+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:31:25.181711+00:00 | user=akif_admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:31:35.938453+00:00 | user=akif_admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=akif | details=Admin 'akif_admin' approved admin 'akif'
+2026-09-10T09:32:14.913170+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-10T09:32:14.935097+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T09:32:14.954342+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-10T09:32:14.970190+00:00 | user=akif | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_b29eee1ae60e
+2026-09-10T09:32:14.987714+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T09:32:27.910946+00:00 | user=akif | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=akif_admin | details=Admin 'akif' disabled admin 'akif_admin'
+2026-09-10T09:32:29.964181+00:00 | user=akif | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=akif_admin | details=Admin 'akif' enabled admin 'akif_admin'
+2026-09-10T09:32:33.393223+00:00 | user=akif | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=akif_admin | details=Admin 'akif' disabled admin 'akif_admin'
+2026-09-10T09:32:35.839594+00:00 | user=akif | company=MRPL | action=USER_DELETED | status=SUCCESS | target=akif_admin | details=Admin 'akif' removed admin 'akif_admin'
+2026-09-10T13:32:01.665008+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-10T13:32:01.700694+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-10T13:32:01.734051+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:13:08.667472+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-12T07:13:08.700902+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:13:08.733618+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:15:19.634208+00:00 | user=ahzam | company=MRPL | action=LOGIN | status=SUCCESS | details=User ahzam signed in
+2026-09-12T07:15:19.671990+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-12T07:15:19.691308+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=0 chats
+2026-09-12T07:15:19.708382+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_511e79ebc143
+2026-09-12T07:15:19.723438+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:15:29.216424+00:00 | user=ahzam | company=MRPL | action=UPLOAD | status=SUCCESS | details=Project-Submission-Indian-Elections.pdf
+2026-09-12T07:15:29.223549+00:00 | user=ahzam | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Project-Submission-Indian-Elections.pdf -> c_511e79ebc143
+2026-09-12T07:15:32.210997+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:15:40.450816+00:00 | user=ahzam | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_511e79ebc143: hiii
+2026-09-12T07:15:51.434739+00:00 | user=ahzam | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Project-Submission-I
+2026-09-12T07:15:51.444797+00:00 | user=ahzam | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=hiii (10.981s)
+2026-09-12T07:15:51.482285+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-12T07:16:27.039397+00:00 | user=ahzam | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_511e79ebc143: summary give me of this file
+2026-09-12T07:18:48.411218+00:00 | user=ahzam | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Project-Submission-I
+2026-09-12T07:18:48.423161+00:00 | user=ahzam | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=summary give me of this file (141.37s)
+2026-09-12T07:18:48.461850+00:00 | user=ahzam | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T06:01:55.124365+00:00 | user=emp_test_16e6a3 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_16e6a3 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:01:55.560706+00:00 | user=op_test_16e6a3 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_16e6a3 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:01:56.002910+00:00 | user=emp_test_16e6a3 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:01:56.460125+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:01:56.886162+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:01:56.919115+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_16e6a3 | details=Admin 'admin' approved employee 'emp_test_16e6a3'
+2026-09-13T06:01:57.344342+00:00 | user=emp_test_16e6a3 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_16e6a3 signed in
+2026-09-13T06:01:57.384367+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_16e6a3 | details=Admin 'admin' rejected operator 'op_test_16e6a3'
+2026-09-13T06:01:57.807112+00:00 | user=op_test_16e6a3 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:01:57.836008+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_16e6a3 | details=Admin 'admin' disabled employee 'emp_test_16e6a3'
+2026-09-13T06:01:58.262437+00:00 | user=emp_test_16e6a3 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:01:58.307402+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_16e6a3 | details=Admin 'admin' enabled employee 'emp_test_16e6a3'
+2026-09-13T06:01:58.740336+00:00 | user=emp_test_16e6a3 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_16e6a3 signed in
+2026-09-13T06:01:59.199078+00:00 | user=operator | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:02:34.772139+00:00 | user=emp_test_7714e0 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_7714e0 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:02:35.200718+00:00 | user=op_test_7714e0 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_7714e0 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:02:35.641467+00:00 | user=emp_test_7714e0 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:02:36.064941+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:02:36.512599+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:02:36.552717+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_7714e0 | details=Admin 'admin' approved employee 'emp_test_7714e0'
+2026-09-13T06:02:36.980307+00:00 | user=emp_test_7714e0 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_7714e0 signed in
+2026-09-13T06:02:37.024930+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_7714e0 | details=Admin 'admin' rejected operator 'op_test_7714e0'
+2026-09-13T06:02:37.449770+00:00 | user=op_test_7714e0 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:02:37.487482+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_7714e0 | details=Admin 'admin' disabled employee 'emp_test_7714e0'
+2026-09-13T06:02:37.910868+00:00 | user=emp_test_7714e0 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:02:37.955166+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_7714e0 | details=Admin 'admin' enabled employee 'emp_test_7714e0'
+2026-09-13T06:02:38.403029+00:00 | user=emp_test_7714e0 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_7714e0 signed in
+2026-09-13T06:02:38.869736+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:02:38.996336+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'admin' removed admin 'admin'
+2026-09-13T06:02:39.447894+00:00 | user=emp_test_7714e0 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_7714e0 signed in
+2026-09-13T06:02:39.916590+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:03:15.456259+00:00 | user=emp_test_df2943 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_df2943 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:03:15.884208+00:00 | user=op_test_df2943 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_df2943 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:03:16.321364+00:00 | user=emp_test_df2943 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:03:16.751797+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:03:17.185313+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:03:17.220615+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_df2943 | details=Admin 'admin' approved employee 'emp_test_df2943'
+2026-09-13T06:03:17.669428+00:00 | user=emp_test_df2943 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_df2943 signed in
+2026-09-13T06:03:17.709149+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_df2943 | details=Admin 'admin' rejected operator 'op_test_df2943'
+2026-09-13T06:03:18.132622+00:00 | user=op_test_df2943 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:03:18.161857+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_df2943 | details=Admin 'admin' disabled employee 'emp_test_df2943'
+2026-09-13T06:03:18.585607+00:00 | user=emp_test_df2943 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:03:18.629612+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_df2943 | details=Admin 'admin' enabled employee 'emp_test_df2943'
+2026-09-13T06:03:19.051610+00:00 | user=emp_test_df2943 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_df2943 signed in
+2026-09-13T06:03:19.510627+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:03:19.651051+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_df2943 | details=Admin 'admin' removed employee 'emp_test_df2943'
+2026-09-13T06:03:20.079658+00:00 | user=emp_test_df2943 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:03:20.150926+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-13T06:03:20.169436+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_d16207041d4e
+2026-09-13T06:03:20.186669+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_d16207041d4e
+2026-09-13T06:03:20.611034+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:04:57.281437+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:04:57.710963+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:04:59.384807+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_5070ba12a358
+2026-09-13T06:04:59.403866+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_5070ba12a358
+2026-09-13T06:04:59.412404+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:04:59.428274+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_5070ba12a358
+2026-09-13T06:04:59.982984+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=UNREADABLE | details=Unable to extract readable content from this URL.
+2026-09-13T06:05:00.003412+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_a9c6791da2d1
+2026-09-13T06:05:00.023234+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a9c6791da2d1 [private]: Explain distillation column safety
+2026-09-13T06:05:00.253511+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:05:00.262850+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.229s)
+2026-09-13T06:05:00.282575+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a9c6791da2d1 [global]: Explain distillation column safety
+2026-09-13T06:05:00.292398+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:05:00.300966+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_a9c6791da2d1: Explain distillation column safety (0.009s)
+2026-09-13T06:05:00.321147+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_a9c6791da2d1
+2026-09-13T06:05:31.772761+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:05:32.199235+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:05:32.854453+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_548693cc25f2
+2026-09-13T06:05:32.875187+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_548693cc25f2
+2026-09-13T06:05:32.882688+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:05:32.897933+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_548693cc25f2
+2026-09-13T06:05:32.943733+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:05:32.960644+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_8a23b6b80114
+2026-09-13T06:05:32.981497+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_8a23b6b80114 [private]: Explain distillation column safety
+2026-09-13T06:05:33.184839+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:05:33.193463+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.2s)
+2026-09-13T06:05:33.210739+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_8a23b6b80114 [global]: Explain distillation column safety
+2026-09-13T06:05:33.221475+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:05:33.230480+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_8a23b6b80114: Explain distillation column safety (0.011s)
+2026-09-13T06:05:33.248359+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_8a23b6b80114
+2026-09-13T06:06:38.644893+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:06:39.081291+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:06:39.731241+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_81f862504742
+2026-09-13T06:06:39.749469+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_81f862504742
+2026-09-13T06:06:39.755926+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:06:39.770798+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_81f862504742
+2026-09-13T06:06:39.815206+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:06:39.844478+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_f55ecda7ee33
+2026-09-13T06:06:39.864629+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f55ecda7ee33 [private]: Explain distillation column safety
+2026-09-13T06:06:40.064164+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:06:40.072812+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.197s)
+2026-09-13T06:06:40.092660+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f55ecda7ee33 [global]: Explain distillation column safety
+2026-09-13T06:06:40.103244+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:06:40.111848+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_f55ecda7ee33: Explain distillation column safety (0.011s)
+2026-09-13T06:06:40.130923+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_f55ecda7ee33
+2026-09-13T06:07:27.982583+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:07:28.415505+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:07:29.073206+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_3dd3cc7351e8
+2026-09-13T06:07:29.092510+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_3dd3cc7351e8
+2026-09-13T06:07:29.101038+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:07:29.120695+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_3dd3cc7351e8
+2026-09-13T06:07:29.164763+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:07:29.198382+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_3dd3cc7351e8
+2026-09-13T06:07:29.226820+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_3dd3cc7351e8
+2026-09-13T06:07:29.244135+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_e29cd4adcc84
+2026-09-13T06:07:29.261167+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_e29cd4adcc84 [private]: Explain distillation column safety
+2026-09-13T06:07:29.463850+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:07:29.470195+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.199s)
+2026-09-13T06:07:29.487942+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_e29cd4adcc84 [global]: Explain distillation column safety
+2026-09-13T06:07:29.499235+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:07:29.507810+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_e29cd4adcc84: Explain distillation column safety (0.01s)
+2026-09-13T06:07:29.529824+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_e29cd4adcc84
+2026-09-13T06:07:45.698586+00:00 | user=emp_test_c8825a | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_c8825a | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:07:46.121959+00:00 | user=op_test_c8825a | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_c8825a | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:07:46.557463+00:00 | user=emp_test_c8825a | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:07:46.978438+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:07:47.418716+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:07:47.449645+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_c8825a | details=Admin 'admin' approved employee 'emp_test_c8825a'
+2026-09-13T06:07:47.876568+00:00 | user=emp_test_c8825a | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_c8825a signed in
+2026-09-13T06:07:47.913561+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_c8825a | details=Admin 'admin' rejected operator 'op_test_c8825a'
+2026-09-13T06:07:48.338936+00:00 | user=op_test_c8825a | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:07:48.367523+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_c8825a | details=Admin 'admin' disabled employee 'emp_test_c8825a'
+2026-09-13T06:07:48.787215+00:00 | user=emp_test_c8825a | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:07:48.850653+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_c8825a | details=Admin 'admin' enabled employee 'emp_test_c8825a'
+2026-09-13T06:07:49.276005+00:00 | user=emp_test_c8825a | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_c8825a signed in
+2026-09-13T06:07:49.740284+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:07:49.891489+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_c8825a | details=Admin 'admin' removed employee 'emp_test_c8825a'
+2026-09-13T06:07:50.322894+00:00 | user=emp_test_c8825a | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:07:50.397712+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:07:50.414832+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_bfd028671106
+2026-09-13T06:07:50.434158+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_bfd028671106
+2026-09-13T06:07:50.854340+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:11:31.641178+00:00 | user=akif | company= | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:11:48.012894+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:11:48.049688+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:11:48.082508+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:12:57.544714+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:12:57.568444+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:12:57.609190+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:13:31.739802+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_81f862504742
+2026-09-13T06:14:18.106878+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/OpenAI -> Conv: c_81f862504742
+2026-09-13T06:14:19.298864+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=UNREADABLE | details=Unable to extract readable content from this URL.
+2026-09-13T06:14:28.793936+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/OpenAI -> Conv: c_81f862504742
+2026-09-13T06:14:29.826886+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=UNREADABLE | details=Unable to extract readable content from this URL.
+2026-09-13T06:15:54.314710+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:15:54.743376+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:15:56.024177+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_ee2d1f9bddb0
+2026-09-13T06:15:56.045620+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_ee2d1f9bddb0
+2026-09-13T06:15:56.054258+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:15:56.072711+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_ee2d1f9bddb0
+2026-09-13T06:15:56.119102+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:15:56.154431+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_ee2d1f9bddb0
+2026-09-13T06:15:56.178317+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_ee2d1f9bddb0
+2026-09-13T06:15:56.196741+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_a751eea67374
+2026-09-13T06:15:56.213998+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a751eea67374 [private]: Explain distillation column safety
+2026-09-13T06:15:56.437273+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:15:56.446327+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.222s)
+2026-09-13T06:15:56.464833+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a751eea67374 [global]: Explain distillation column safety
+2026-09-13T06:15:56.473543+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:15:56.482575+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_a751eea67374: Explain distillation column safety (0.011s)
+2026-09-13T06:15:56.499619+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_a751eea67374
+2026-09-13T06:16:12.447171+00:00 | user=emp_test_07be5a | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_07be5a | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:16:12.883978+00:00 | user=op_test_07be5a | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_07be5a | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:16:13.352126+00:00 | user=emp_test_07be5a | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:16:13.782745+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:16:14.212252+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:16:14.249146+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_07be5a | details=Admin 'admin' approved employee 'emp_test_07be5a'
+2026-09-13T06:16:14.676137+00:00 | user=emp_test_07be5a | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_07be5a signed in
+2026-09-13T06:16:14.717113+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_07be5a | details=Admin 'admin' rejected operator 'op_test_07be5a'
+2026-09-13T06:16:15.146090+00:00 | user=op_test_07be5a | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:16:15.184180+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_07be5a | details=Admin 'admin' disabled employee 'emp_test_07be5a'
+2026-09-13T06:16:15.623112+00:00 | user=emp_test_07be5a | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:16:15.675187+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_07be5a | details=Admin 'admin' enabled employee 'emp_test_07be5a'
+2026-09-13T06:16:16.100156+00:00 | user=emp_test_07be5a | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_07be5a signed in
+2026-09-13T06:16:16.563782+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:16:16.730851+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_07be5a | details=Admin 'admin' removed employee 'emp_test_07be5a'
+2026-09-13T06:16:17.165521+00:00 | user=emp_test_07be5a | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:16:17.244740+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:16:17.261701+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_c267e3a5c39a
+2026-09-13T06:16:17.275839+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_c267e3a5c39a
+2026-09-13T06:16:17.701425+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:17:57.727301+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:17:57.761690+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:17:57.788643+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T06:18:31.482706+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_1455bb72f925
+2026-09-13T06:18:31.504007+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:18:45.240833+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/OpenAI -> Conv: c_1455bb72f925
+2026-09-13T06:18:50.145102+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=OpenAI - Wikipedia (https://en.wikipedia.org/wiki/OpenAI)
+2026-09-13T06:19:03.678847+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_1455bb72f925 [global]: tell me about  openai
+2026-09-13T06:19:03.789546+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:19:03.796816+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_1455bb72f925: tell me about  openai (0.114s)
+2026-09-13T06:19:03.818954+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:26:36.694901+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:26:36.720503+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:26:36.736870+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:27:12.465490+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_1455bb72f925 [global]: give me summary of open ai
+2026-09-13T06:27:27.249010+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:27:27.261421+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_1455bb72f925: give me summary of open ai (14.781s)
+2026-09-13T06:27:27.313668+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:28:04.690105+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_1455bb72f925 [global]: what is in this link
+2026-09-13T06:28:16.023821+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:28:16.035888+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_1455bb72f925: what is in this link (11.332s)
+2026-09-13T06:28:16.077745+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T06:35:47.580254+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:35:48.011675+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:35:48.867688+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_fac4ba209b3f
+2026-09-13T06:35:48.889296+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_fac4ba209b3f
+2026-09-13T06:35:48.895940+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:35:48.912904+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_fac4ba209b3f
+2026-09-13T06:35:48.960005+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:35:48.992186+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_fac4ba209b3f
+2026-09-13T06:35:49.018124+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_fac4ba209b3f
+2026-09-13T06:35:49.034946+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_36bb4d23abe0
+2026-09-13T06:35:49.055025+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_36bb4d23abe0 [private]: Explain distillation column safety
+2026-09-13T06:35:49.292982+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:35:49.301840+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.236s)
+2026-09-13T06:35:49.323878+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_36bb4d23abe0 [global]: Explain distillation column safety
+2026-09-13T06:35:49.333485+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:35:49.340137+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_36bb4d23abe0: Explain distillation column safety (0.013s)
+2026-09-13T06:35:49.355263+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_36bb4d23abe0
+2026-09-13T06:36:06.574450+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:36:06.603166+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_520497602a52
+2026-09-13T06:36:06.624529+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/OpenAI -> Conv: c_520497602a52
+2026-09-13T06:36:09.593809+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=OpenAI - Wikipedia (https://en.wikipedia.org/wiki/OpenAI)
+2026-09-13T06:36:09.619810+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: what is in this link
+2026-09-13T06:36:43.179079+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:36:43.189064+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: what is in this link (33.554s)
+2026-09-13T06:38:32.700062+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:38:32.735609+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:38:32.755947+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:39:00.039619+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: give me summary of this page
+2026-09-13T06:39:36.104021+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:39:36.114004+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: give me summary of this page (36.059s)
+2026-09-13T06:39:36.152104+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:40:11.972798+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_520497602a52
+2026-09-13T06:41:40.088483+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk -> Conv: c_520497602a52
+2026-09-13T06:41:41.210184+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Cadbury Dairy Milk - Wikipedia (https://en.wikipedia.org/wiki/Cadbury_Dairy_Milk)
+2026-09-13T06:42:00.980341+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this page
+2026-09-13T06:43:01.675077+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:43:01.689405+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell me about this page (60.689s)
+2026-09-13T06:43:01.735699+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:44:06.146553+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell abou  this link
+2026-09-13T06:44:18.276834+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://takeuforward.org/ -> Conv: c_520497602a52
+2026-09-13T06:44:18.995777+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=takeUforward - Best Coding Tutorials for Free (https://takeuforward.org/)
+2026-09-13T06:44:47.765209+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:44:47.778738+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell abou  this link (41.617s)
+2026-09-13T06:44:47.826973+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:44:57.741915+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_520497602a52
+2026-09-13T06:45:05.645676+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this pages
+2026-09-13T06:45:08.144304+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:45:08.157321+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell me about this pages (2.493s)
+2026-09-13T06:45:08.195530+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:45:16.654151+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 2 from c_520497602a52
+2026-09-13T06:45:19.763906+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://takeuforward.org/ -> Conv: c_520497602a52
+2026-09-13T06:45:19.983177+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=takeUforward - Best Coding Tutorials for Free (https://takeuforward.org/)
+2026-09-13T06:45:32.416172+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this site
+2026-09-13T06:45:34.662099+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:45:34.676712+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell me about this site (2.245s)
+2026-09-13T06:45:34.716840+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:45:44.604318+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_520497602a52
+2026-09-13T06:45:55.128247+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://takeuforward.org/ -> Conv: c_520497602a52
+2026-09-13T06:45:55.339812+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=takeUforward - Best Coding Tutorials for Free (https://takeuforward.org/)
+2026-09-13T06:46:03.785445+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this site
+2026-09-13T06:46:05.272137+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:46:05.284170+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_EVIDENCE | details=Conv c_520497602a52: tell me about this site (1.483s)
+2026-09-13T06:46:05.319201+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T06:48:38.218960+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:48:38.250039+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_b1ec91daa7e5
+2026-09-13T06:48:38.270031+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://takeuforward.org/ -> Conv: c_b1ec91daa7e5
+2026-09-13T06:48:39.499440+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=takeUforward - Best Coding Tutorials for Free (https://takeuforward.org/)
+2026-09-13T06:48:39.532486+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b1ec91daa7e5 [global]: tell me about this site
+2026-09-13T06:48:44.612024+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:48:44.625180+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=SUPPORTED | details=Conv c_b1ec91daa7e5: tell me about this site (5.076s)
+2026-09-13T06:49:06.876737+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:49:07.312734+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:49:08.136439+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_74b4f3bbb01d
+2026-09-13T06:49:08.158085+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_74b4f3bbb01d
+2026-09-13T06:49:08.166924+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:49:08.187426+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_74b4f3bbb01d
+2026-09-13T06:49:08.236703+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:49:08.268832+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_74b4f3bbb01d
+2026-09-13T06:49:08.292618+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_74b4f3bbb01d
+2026-09-13T06:49:08.310708+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_4385a1197860
+2026-09-13T06:49:08.330169+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_4385a1197860 [private]: Explain distillation column safety
+2026-09-13T06:49:08.561484+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:49:08.570759+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.229s)
+2026-09-13T06:49:08.591141+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_4385a1197860 [global]: Explain distillation column safety
+2026-09-13T06:49:08.602900+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:49:08.610301+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_4385a1197860: Explain distillation column safety (0.011s)
+2026-09-13T06:49:08.628634+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_4385a1197860
+2026-09-13T06:49:16.473945+00:00 | user=emp_test_71d439 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_71d439 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:49:16.913790+00:00 | user=op_test_71d439 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_71d439 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:49:17.362059+00:00 | user=emp_test_71d439 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:49:17.798156+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:49:18.222040+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:49:18.255865+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_71d439 | details=Admin 'admin' approved employee 'emp_test_71d439'
+2026-09-13T06:49:18.684573+00:00 | user=emp_test_71d439 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_71d439 signed in
+2026-09-13T06:49:18.735925+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_71d439 | details=Admin 'admin' rejected operator 'op_test_71d439'
+2026-09-13T06:49:19.165482+00:00 | user=op_test_71d439 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:49:19.209591+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_71d439 | details=Admin 'admin' disabled employee 'emp_test_71d439'
+2026-09-13T06:49:19.637631+00:00 | user=emp_test_71d439 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:49:19.689435+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_71d439 | details=Admin 'admin' enabled employee 'emp_test_71d439'
+2026-09-13T06:49:20.126737+00:00 | user=emp_test_71d439 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_71d439 signed in
+2026-09-13T06:49:20.593985+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:49:20.779931+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_71d439 | details=Admin 'admin' removed employee 'emp_test_71d439'
+2026-09-13T06:49:21.216827+00:00 | user=emp_test_71d439 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:49:21.305806+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:49:21.326080+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_d4b588a7532e
+2026-09-13T06:49:21.348392+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_d4b588a7532e
+2026-09-13T06:49:21.775359+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:50:49.466380+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this site
+2026-09-13T06:50:55.029264+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:50:55.041760+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=SUPPORTED | details=Conv c_520497602a52: tell me about this site (5.569s)
+2026-09-13T06:50:55.086449+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:51:31.768826+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_520497602a52
+2026-09-13T06:52:51.154629+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this
+2026-09-13T06:52:51.174673+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:52:51.183965+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_SOURCES | details=Conv c_520497602a52: tell me about this (0.021s)
+2026-09-13T06:52:51.224756+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:52:57.271820+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://www.linkedin.com/in/mohammad-akif-akhtar-b4a6042b8?utm_source=share_via&utm_content=profile& -> Conv: c_520497602a52
+2026-09-13T06:52:58.592434+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=FAILED | details=HTTP 999 error fetching URL: <none>
+2026-09-13T06:53:09.324201+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://www.linkedin.com/in/mohammad-akif-akhtar-b4a6042b8?utm_source=share_via&utm_content=profile& -> Conv: c_520497602a52
+2026-09-13T06:53:10.550588+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=FAILED | details=HTTP 999 error fetching URL: <none>
+2026-09-13T06:54:56.252883+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:54:56.699524+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:54:57.698999+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_f4b9e8842ded
+2026-09-13T06:54:57.711328+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_f4b9e8842ded
+2026-09-13T06:54:57.715474+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T06:54:57.726887+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_f4b9e8842ded
+2026-09-13T06:54:57.767748+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T06:54:57.794563+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_f4b9e8842ded
+2026-09-13T06:54:57.815653+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_f4b9e8842ded
+2026-09-13T06:54:57.830535+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_688e180df8f5
+2026-09-13T06:54:57.848473+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_688e180df8f5 [private]: Explain distillation column safety
+2026-09-13T06:54:58.074010+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T06:54:58.080496+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.221s)
+2026-09-13T06:54:58.096867+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_688e180df8f5 [global]: Explain distillation column safety
+2026-09-13T06:54:58.108363+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:54:58.115405+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_688e180df8f5: Explain distillation column safety (0.009s)
+2026-09-13T06:54:58.135620+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_688e180df8f5
+2026-09-13T06:55:05.904103+00:00 | user=emp_test_2c06df | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_2c06df | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T06:55:06.337578+00:00 | user=op_test_2c06df | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_2c06df | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T06:55:06.781616+00:00 | user=emp_test_2c06df | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T06:55:07.213007+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:55:07.642791+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T06:55:07.682061+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_2c06df | details=Admin 'admin' approved employee 'emp_test_2c06df'
+2026-09-13T06:55:08.107292+00:00 | user=emp_test_2c06df | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_2c06df signed in
+2026-09-13T06:55:08.146892+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_2c06df | details=Admin 'admin' rejected operator 'op_test_2c06df'
+2026-09-13T06:55:08.572522+00:00 | user=op_test_2c06df | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T06:55:08.610873+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_2c06df | details=Admin 'admin' disabled employee 'emp_test_2c06df'
+2026-09-13T06:55:09.038604+00:00 | user=emp_test_2c06df | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:55:09.087699+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_2c06df | details=Admin 'admin' enabled employee 'emp_test_2c06df'
+2026-09-13T06:55:09.524071+00:00 | user=emp_test_2c06df | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_2c06df signed in
+2026-09-13T06:55:10.003857+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T06:55:10.156909+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_2c06df | details=Admin 'admin' removed employee 'emp_test_2c06df'
+2026-09-13T06:55:10.587087+00:00 | user=emp_test_2c06df | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T06:55:10.705169+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:55:10.720969+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_c630fbe859f2
+2026-09-13T06:55:10.738660+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_c630fbe859f2
+2026-09-13T06:55:11.166491+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T06:57:41.295757+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T06:57:41.328314+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:57:41.353447+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:59:17.436894+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this website
+2026-09-13T06:59:17.461688+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:59:17.474540+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell me about this website (0.023s)
+2026-09-13T06:59:17.524011+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:59:31.509514+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this site
+2026-09-13T06:59:31.525897+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T06:59:31.535139+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_520497602a52: tell me about this site (0.015s)
+2026-09-13T06:59:31.574197+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T06:59:52.533912+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://mdakifakhtar.github.io/ -> Conv: c_520497602a52
+2026-09-13T06:59:54.581843+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Mohammad Akif Akhtar| AI & ML Engineer (https://mdakifakhtar.github.io/)
+2026-09-13T07:00:08.454292+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_520497602a52 [global]: tell me about this website
+2026-09-13T07:00:21.348793+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T07:00:21.358510+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=SUPPORTED | details=Conv c_520497602a52: tell me about this website (12.895s)
+2026-09-13T07:00:21.400425+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=9 chats
+2026-09-13T07:01:16.468188+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_24ab1579b9a8
+2026-09-13T07:01:16.501041+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=8 chats
+2026-09-13T07:01:19.155772+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_2cae4f4c7462
+2026-09-13T07:01:19.187633+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=7 chats
+2026-09-13T07:01:22.768021+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_027a3d3e5951
+2026-09-13T07:01:22.799598+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=6 chats
+2026-09-13T07:01:25.566603+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_5070ba12a358
+2026-09-13T07:01:25.585796+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=5 chats
+2026-09-13T07:01:28.158519+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_548693cc25f2
+2026-09-13T07:01:28.189898+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-13T07:01:32.532011+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_81f862504742
+2026-09-13T07:01:32.549781+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-13T07:01:35.556049+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_1455bb72f925
+2026-09-13T07:01:35.586050+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T07:01:42.204442+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_b1ec91daa7e5
+2026-09-13T07:01:42.232168+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_9a5db8eb1ed3
+2026-09-13T07:01:42.258122+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:18:36.983361+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T09:18:37.019760+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:18:37.040100+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:19:31.595901+00:00 | user=akif | company=MRPL | action=USER_REGISTER | status=PENDING | target=akif | details=New admin registration submitted by Mohammad Akif Akhtar (7070210887)
+2026-09-13T09:19:47.566689+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T09:19:47.587286+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:19:47.606738+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:19:55.743268+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=akif | details=Admin 'admin' approved admin 'akif'
+2026-09-13T09:20:11.251403+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T09:20:11.271856+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T09:20:11.294895+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T09:21:16.471231+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T09:21:16.492734+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:21:16.512095+00:00 | user=operator | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:21:36.191892+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T09:21:36.213242+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T09:21:36.232443+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T09:22:07.095477+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T09:22:07.117292+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:22:07.150341+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:22:44.628774+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-13T09:22:44.634191+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf -> c_9a5db8eb1ed3
+2026-09-13T09:22:48.838207+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:22:55.459947+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-13T09:22:55.465948+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf -> c_9a5db8eb1ed3
+2026-09-13T09:22:58.073449+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:23:05.750243+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_9a5db8eb1ed3 [private]: give me summary of this file
+2026-09-13T09:23:46.633040+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): TECH BYTE(SIH 2026).
+2026-09-13T09:23:46.643746+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary of this file (40.881s)
+2026-09-13T09:23:46.675341+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:29:58.229138+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T09:29:58.255315+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T09:29:58.278363+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T10:11:57.980712+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:11:58.111261+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:11:58.456447+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:13:30.883980+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T10:13:31.053660+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T10:13:31.446435+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T10:13:52.752409+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:13:52.880650+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:13:53.001988+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:14:05.291003+00:00 | user=akif | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=admin | details=Admin 'akif' disabled admin 'admin'
+2026-09-13T10:14:20.501829+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T10:14:44.291167+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:14:44.406765+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:14:44.770418+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:15:06.703031+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-13T10:15:06.714224+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf -> c_b29eee1ae60e
+2026-09-13T10:15:10.275291+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:15:12.563786+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: give me summary of this file
+2026-09-13T10:15:52.641565+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): TECH BYTE(SIH 2026).
+2026-09-13T10:15:52.653747+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary of this file (40.072s)
+2026-09-13T10:15:52.791183+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:16:11.582148+00:00 | user=akif | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://cdna-applicants-spectrum-emissions.trycloudflare.com/ -> Conv: c_b29eee1ae60e
+2026-09-13T10:16:12.908860+00:00 | user=akif | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Sovereign AI — SIH26117 (https://cdna-applicants-spectrum-emissions.trycloudflare.com)
+2026-09-13T10:16:30.735647+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [global]: what is this about website
+2026-09-13T10:16:53.494690+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T10:16:53.507720+00:00 | user=akif | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_b29eee1ae60e: what is this about website (22.756s)
+2026-09-13T10:16:53.669549+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:20:33.655394+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:20:33.776945+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:20:34.137213+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:21:32.691429+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:21:33.171061+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:21:33.306836+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:22:07.890862+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:22:08.084377+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:22:08.211340+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:22:28.493710+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH FINAL 1).pdf
+2026-09-13T10:22:28.503811+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH FINAL 1).pdf -> c_b29eee1ae60e
+2026-09-13T10:22:32.125858+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:22:41.342806+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: Give me  summary
+2026-09-13T10:23:22.288883+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): TECH BYTE(SIH FINAL 
+2026-09-13T10:23:22.301728+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=Give me  summary (40.941s)
+2026-09-13T10:23:22.529243+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:31:00.521838+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:31:00.651888+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:31:00.983248+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:31:30.058201+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:31:30.235292+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:31:30.403350+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:32:02.133510+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=Mohammad_Akif_akhtar.pdf
+2026-09-13T10:32:02.144533+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Mohammad_Akif_akhtar.pdf -> c_b29eee1ae60e
+2026-09-13T10:32:05.774953+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:32:17.366233+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: Summary of this file
+2026-09-13T10:32:17.387543+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Mohammad_Akif_akhtar
+2026-09-13T10:32:17.397482+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Summary of this file (0.017s)
+2026-09-13T10:32:17.544768+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:33:45.228616+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf
+2026-09-13T10:33:45.240375+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=offer_Mohammad_Akif_Akhtar_Machine_Learning_20260618131615_164660.pdf -> c_b29eee1ae60e
+2026-09-13T10:33:48.665825+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:34:04.793734+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: Give summary of this file
+2026-09-13T10:34:28.109777+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): offer_Mohammad_Akif_
+2026-09-13T10:34:28.119127+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=Give summary of this file (23.313s)
+2026-09-13T10:34:28.303637+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:54:43.310183+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T10:54:43.392343+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T10:54:43.799826+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:13:50.035411+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T11:13:50.118842+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:13:50.417306+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:14:10.684199+00:00 | user=akif | company=MRPL | action=IMAGE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=test.jpeg -> c_b29eee1ae60e
+2026-09-13T11:14:10.692564+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e (multimodal) [private]: tell me about this picture
+2026-09-13T11:14:10.766232+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=vision | details=
+2026-09-13T11:14:10.773436+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=tell me about this picture (0.072s)
+2026-09-13T11:14:10.849703+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:14:46.374708+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=Mohammad_Akif_AIML_Engineer_Resume.pdf
+2026-09-13T11:14:46.386909+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Mohammad_Akif_AIML_Engineer_Resume.pdf -> c_b29eee1ae60e
+2026-09-13T11:14:50.628558+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:14:58.779666+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: tell me aboouyt this file
+2026-09-13T11:15:11.557193+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=general | details=
+2026-09-13T11:15:11.570433+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=tell me aboouyt this file (12.775s)
+2026-09-13T11:15:11.672230+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:15:30.781968+00:00 | user=ahzam03 | company=MRPL | action=USER_REGISTER | status=PENDING | target=ahzam03 | details=New operator registration submitted by Ahzam khan (6386887396)
+2026-09-13T11:15:42.199951+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: give me summary of this file
+2026-09-13T11:15:45.656105+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=general | details=
+2026-09-13T11:15:45.665855+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=give me summary of this file (3.452s)
+2026-09-13T11:15:45.787817+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:15:51.047230+00:00 | user=ahzam03 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T11:16:13.183182+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=Tech-Byte-SIH2026.pdf
+2026-09-13T11:16:13.196300+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Tech-Byte-SIH2026.pdf -> c_b29eee1ae60e
+2026-09-13T11:16:17.206874+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:16:28.822837+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: give summary of this file
+2026-09-13T11:16:34.307681+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=general | details=
+2026-09-13T11:16:34.320491+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=give summary of this file (5.487s)
+2026-09-13T11:16:34.413028+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:16:57.755405+00:00 | user=akif | company=MRPL | action=DELETE_DOCUMENT | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-13T11:17:32.489626+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [global]: tell me about this page
+2026-09-13T11:17:39.171340+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=general | details=
+2026-09-13T11:17:39.184702+00:00 | user=akif | company=MRPL | action=GLOBAL_QUERY | status=SUCCESS | details=Conv c_b29eee1ae60e: tell me about this page (6.677s)
+2026-09-13T11:17:39.275842+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:29:42.261900+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T11:29:42.347114+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:29:42.666448+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:29:56.238613+00:00 | user=akif | company=MRPL | action=UPLOAD | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf
+2026-09-13T11:29:56.252975+00:00 | user=akif | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=TECH BYTE(SIH 2026).pdf -> c_b29eee1ae60e
+2026-09-13T11:30:00.424418+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:30:09.905237+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [private]: give summary
+2026-09-13T11:30:29.484235+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document | details=
+2026-09-13T11:30:29.495831+00:00 | user=akif | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=give summary (19.577s)
+2026-09-13T11:30:29.597730+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T11:31:09.106716+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:31:09.251922+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:31:09.633971+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:31:31.683359+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:31:32.201950+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:31:32.338147+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:32:10.007713+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=SIH Hackathon Application.pdf
+2026-09-13T11:32:10.019506+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=SIH Hackathon Application.pdf -> c_9a5db8eb1ed3
+2026-09-13T11:32:13.512391+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:32:30.343774+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_9a5db8eb1ed3 [private]: Describe this pdf in 10 important point
+2026-09-13T11:32:30.371312+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document | details=
+2026-09-13T11:32:30.380425+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=Describe this pdf in 10 important point (0.023s)
+2026-09-13T11:32:30.548850+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:32:50.695915+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_9a5db8eb1ed3 [private]: Give me summary of this pdf
+2026-09-13T11:32:50.712715+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document | details=
+2026-09-13T11:32:50.719988+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=Give me summary of this pdf (0.018s)
+2026-09-13T11:32:50.853808+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=2 chats
+2026-09-13T11:33:03.227935+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_3e0b32155bf2
+2026-09-13T11:33:03.365741+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-13T11:33:10.606986+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=SIH Hackathon Application.pdf
+2026-09-13T11:33:10.618009+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=SIH Hackathon Application.pdf -> c_3e0b32155bf2
+2026-09-13T11:33:14.766271+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-13T11:33:24.060491+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_3e0b32155bf2 [private]: Give me summary of this
+2026-09-13T11:33:24.077004+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document | details=
+2026-09-13T11:33:24.084129+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUCCESS | details=Give me summary of this (0.015s)
+2026-09-13T11:33:24.204443+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=3 chats
+2026-09-13T11:33:41.147409+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_ae011836dd0e
+2026-09-13T11:33:41.273069+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=4 chats
+2026-09-13T11:35:36.565081+00:00 | user=abhi_756 | company=MRPL | action=USER_REGISTER | status=PENDING | target=abhi_756 | details=New operator registration submitted by Abhishek Singh Chauhan
+2026-09-13T11:36:01.026106+00:00 | user=abhi_756 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T11:43:23.977945+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:43:24.412822+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:43:25.933762+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_84a58fb19d6b
+2026-09-13T11:43:25.954471+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: http://127.0.0.1:8000/secret -> Conv: c_84a58fb19d6b
+2026-09-13T11:43:25.963467+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FAILED | status=BLOCKED_SSRF | details=http://127.0.0.1:8000/secret (Blocked metadata / loopback address: 127.0.0.1)
+2026-09-13T11:43:25.981780+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_ADDED | status=PENDING | details=URL: https://en.wikipedia.org/wiki/Refinery -> Conv: c_84a58fb19d6b
+2026-09-13T11:43:26.029285+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_FETCHED | status=SUCCESS | details=Oil Refinery Overview (https://en.wikipedia.org/wiki/Refinery)
+2026-09-13T11:43:26.062995+00:00 | user=admin | company=MRPL | action=GLOBAL_SOURCE_REMOVED | status=SUCCESS | details=Source 1 from c_84a58fb19d6b
+2026-09-13T11:43:26.089035+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_84a58fb19d6b
+2026-09-13T11:43:26.105984+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_7d49e0b0d1d3
+2026-09-13T11:43:26.126815+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_7d49e0b0d1d3 [private]: Explain distillation column safety
+2026-09-13T11:43:26.425845+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T11:43:26.432646+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain distillation column safety (0.3s)
+2026-09-13T11:43:26.449649+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_7d49e0b0d1d3 [global]: Explain distillation column safety
+2026-09-13T11:43:26.459231+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T11:43:26.467385+00:00 | user=admin | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_7d49e0b0d1d3: Explain distillation column safety (0.01s)
+2026-09-13T11:43:26.486459+00:00 | user=admin | company=MRPL | action=CONVERSATION_DELETED | status=SUCCESS | details=c_7d49e0b0d1d3
+2026-09-13T11:43:54.268029+00:00 | user=emp_test_52c907 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_52c907 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T11:43:54.700528+00:00 | user=op_test_52c907 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_52c907 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T11:43:55.139566+00:00 | user=emp_test_52c907 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T11:43:55.567998+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:43:55.989806+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:43:56.019873+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_52c907 | details=Admin 'admin' approved employee 'emp_test_52c907'
+2026-09-13T11:43:56.442742+00:00 | user=emp_test_52c907 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_52c907 signed in
+2026-09-13T11:43:56.478925+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_52c907 | details=Admin 'admin' rejected operator 'op_test_52c907'
+2026-09-13T11:43:56.916001+00:00 | user=op_test_52c907 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T11:43:56.949728+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_52c907 | details=Admin 'admin' disabled employee 'emp_test_52c907'
+2026-09-13T11:43:57.374193+00:00 | user=emp_test_52c907 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T11:43:57.422703+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_52c907 | details=Admin 'admin' enabled employee 'emp_test_52c907'
+2026-09-13T11:43:57.856679+00:00 | user=emp_test_52c907 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_52c907 signed in
+2026-09-13T11:43:58.321147+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T11:43:58.428630+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'admin' removed admin 'admin'
+2026-09-13T11:43:58.879697+00:00 | user=emp_test_52c907 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_52c907 signed in
+2026-09-13T11:43:59.354695+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T11:44:39.455892+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:44:39.889587+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:45:04.470621+00:00 | user=emp_test_312506 | company=MRPL | action=USER_REGISTER | status=PENDING | target=emp_test_312506 | details=New employee registration submitted by Akif Employee (+91 9876543210)
+2026-09-13T11:45:04.901476+00:00 | user=op_test_312506 | company=MRPL | action=USER_REGISTER | status=PENDING | target=op_test_312506 | details=New operator registration submitted by Akif Operator (+91 9876543211)
+2026-09-13T11:45:05.342915+00:00 | user=emp_test_312506 | company=MRPL | action=LOGIN | status=FAILED | details=Your account is waiting for administrator approval.
+2026-09-13T11:45:05.773262+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:45:06.201354+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:45:06.234360+00:00 | user=admin | company=MRPL | action=USER_APPROVED | status=SUCCESS | target=emp_test_312506 | details=Admin 'admin' approved employee 'emp_test_312506'
+2026-09-13T11:45:06.655807+00:00 | user=emp_test_312506 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_312506 signed in
+2026-09-13T11:45:06.696111+00:00 | user=admin | company=MRPL | action=USER_REJECTED | status=SUCCESS | target=op_test_312506 | details=Admin 'admin' rejected operator 'op_test_312506'
+2026-09-13T11:45:07.122351+00:00 | user=op_test_312506 | company=MRPL | action=LOGIN | status=FAILED | details=Your account registration was rejected.
+2026-09-13T11:45:07.154043+00:00 | user=admin | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=emp_test_312506 | details=Admin 'admin' disabled employee 'emp_test_312506'
+2026-09-13T11:45:07.580775+00:00 | user=emp_test_312506 | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T11:45:07.621724+00:00 | user=admin | company=MRPL | action=USER_ENABLED | status=SUCCESS | target=emp_test_312506 | details=Admin 'admin' enabled employee 'emp_test_312506'
+2026-09-13T11:45:08.060355+00:00 | user=emp_test_312506 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_312506 signed in
+2026-09-13T11:45:08.521886+00:00 | user=operator | company=MRPL | action=LOGIN | status=SUCCESS | details=User operator signed in
+2026-09-13T11:45:08.630636+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'admin' removed admin 'admin'
+2026-09-13T11:45:09.077534+00:00 | user=emp_test_312506 | company=MRPL | action=LOGIN | status=SUCCESS | details=User emp_test_312506 signed in
+2026-09-13T11:45:09.554617+00:00 | user=other_user | company=OTHER_COMPANY | action=LOGIN | status=SUCCESS | details=User other_user signed in
+2026-09-13T11:45:30.447776+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:45:30.878986+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:45:30.930690+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=admin | details=Admin 'admin' removed admin 'admin'
+2026-09-13T11:46:40.470210+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:46:40.902034+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:46:40.927241+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_f09b69c51b05
+2026-09-13T11:46:40.948220+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Inspection_Report.pdf
+2026-09-13T11:46:40.954925+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Inspection_Report.pdf -> c_f09b69c51b05
+2026-09-13T11:46:45.123818+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f09b69c51b05 [private]: Give me a summary of this file.
+2026-09-13T11:47:02.514061+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:47:02.523193+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=Give me a summary of this file. (17.385s)
+2026-09-13T11:47:02.551714+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f09b69c51b05 [private]: What is the main issue mentioned in the inspection report?
+2026-09-13T11:47:06.992893+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:47:07.001986+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUPPORTED | details=What is the main issue mentioned in the inspection report? (4.439s)
+2026-09-13T11:47:07.031061+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f09b69c51b05 [private]: What is the nuclear submarine reactor code in this document?
+2026-09-13T11:47:08.909692+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:47:08.919656+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=What is the nuclear submarine reactor code in this document? (1.878s)
+2026-09-13T11:47:08.949613+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_da89b0a4bdd1
+2026-09-13T11:47:08.975247+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_da89b0a4bdd1 [private]: What is 25 * 17?
+2026-09-13T11:47:08.989365+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=calculator | details=Extract arithmetic expression, Execute deterministic calculation tool, Format mathematical result
+2026-09-13T11:47:08.999570+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=TOOL_EXECUTION | details=What is 25 * 17? (0.014s)
+2026-09-13T11:47:09.023022+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_f813263dfad7
+2026-09-13T11:47:09.045778+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_f813263dfad7 [private]: Explain binary search in two sentences.
+2026-09-13T11:47:09.322579+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as company document search, Retrieve company evidence using BGE-small embeddings & FAISS, Verify factual
+2026-09-13T11:47:09.330588+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain binary search in two sentences. (0.28s)
+2026-09-13T11:48:07.993863+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Invalid username or password
+2026-09-13T11:48:08.422951+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:48:08.448191+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_a70a7bbc2d5e
+2026-09-13T11:48:08.469529+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Inspection_Report.pdf
+2026-09-13T11:48:08.476474+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Inspection_Report.pdf -> c_a70a7bbc2d5e
+2026-09-13T11:48:12.046535+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e [private]: Give me a summary of this file.
+2026-09-13T11:48:20.247943+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:48:20.257445+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=Give me a summary of this file. (8.196s)
+2026-09-13T11:48:20.286256+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e [private]: What is the main issue mentioned in the inspection report?
+2026-09-13T11:48:23.035282+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:48:23.043366+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUPPORTED | details=What is the main issue mentioned in the inspection report? (2.746s)
+2026-09-13T11:48:23.068185+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e [private]: What is the nuclear submarine reactor code in this document?
+2026-09-13T11:48:25.000932+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Inspection_Report.pd
+2026-09-13T11:48:25.012501+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=What is the nuclear submarine reactor code in this document? (1.932s)
+2026-09-13T11:48:25.038004+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_12df2bfb9809
+2026-09-13T11:48:25.061343+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_12df2bfb9809 [private]: What is 25 * 17?
+2026-09-13T11:48:25.072678+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=calculator | details=Extract arithmetic expression, Execute deterministic calculation tool, Format mathematical result
+2026-09-13T11:48:25.080958+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=TOOL_EXECUTION | details=What is 25 * 17? (0.013s)
+2026-09-13T11:48:25.102879+00:00 | user=admin | company=MRPL | action=CONVERSATION_CREATED | status=SUCCESS | details=c_34e7d8e1e794
+2026-09-13T11:48:25.120641+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_34e7d8e1e794 [private]: Explain binary search in two sentences.
+2026-09-13T11:48:30.123019+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=general_local_chat | details=Classify intent as general local conversation, Synthesize direct response via local Qwen2.5 3B, Finalize response withou
+2026-09-13T11:48:30.133178+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_DOCUMENT_CLAIMS | details=Explain binary search in two sentences. (4.997s)
+2026-09-13T11:48:30.167032+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=sample_sales.csv
+2026-09-13T11:48:30.178438+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=sample_sales.csv -> c_34e7d8e1e794
+2026-09-13T11:48:33.604159+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_34e7d8e1e794 [private]: What is the average sales value?
+2026-09-13T11:48:35.350051+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=spreadsheet | details=Verify spreadsheet path, Parse structured table data safely, Return tabular content
+2026-09-13T11:48:35.359755+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=TOOL_EXECUTION | details=What is the average sales value? (1.742s)
+2026-09-13T11:48:35.397680+00:00 | user=admin | company=MRPL | action=IMAGE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=test.jpeg -> c_bfdf0ddde7f9
+2026-09-13T11:48:35.405037+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_bfdf0ddde7f9 (multimodal) [private]: What do you observe in this image?
+2026-09-13T11:49:30.000793+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=image_only | details=Classify intent as image analysis, Examine visual features using Qwen2.5-VL, Generate concise visual observation without
+2026-09-13T11:49:30.010138+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=IMAGE_ONLY | details=What do you observe in this image? (54.588s)
+2026-09-13T11:49:30.046079+00:00 | user=admin | company=MRPL | action=IMAGE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=test.jpeg -> c_a70a7bbc2d5e
+2026-09-13T11:49:30.053055+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e (multimodal) [private]: Compare what you observe in the image with the maintenance g
+2026-09-13T11:51:03.447689+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=multimodal_rag | details=Classify intent as multimodal inspection, Analyze equipment image using Qwen2.5-VL, Retrieve evidence from knowledge bas
+2026-09-13T11:51:03.457786+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUPPORTED | details=Compare what you observe in the image with the maintenance g (93.379s)
+2026-09-13T11:54:05.771635+00:00 | user=admin | company=MRPL | action=LOGIN | status=SUCCESS | details=User admin signed in
+2026-09-13T11:54:05.863571+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=11 chats
+2026-09-13T11:54:06.174722+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=11 chats
+2026-09-13T11:54:28.257475+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_312506 | details=Admin 'admin' removed employee 'emp_test_312506'
+2026-09-13T11:54:31.872303+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_312506 | details=Admin 'admin' removed operator 'op_test_312506'
+2026-09-13T11:54:37.825161+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=emp_test_52c907 | details=Admin 'admin' removed employee 'emp_test_52c907'
+2026-09-13T11:54:41.585387+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=op_test_52c907 | details=Admin 'admin' removed operator 'op_test_52c907'
+2026-09-13T11:55:00.877305+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=ahzam03 | details=Admin 'admin' removed operator 'ahzam03'
+2026-09-13T11:55:12.821323+00:00 | user=admin | company=MRPL | action=USER_DELETED | status=SUCCESS | target=abhi_756 | details=Admin 'admin' removed operator 'abhi_756'
+2026-09-13T11:55:54.305448+00:00 | user=admin | company=MRPL | action=UPLOAD | status=SUCCESS | details=Tech-Byte-SIH2026.pdf
+2026-09-13T11:55:54.316057+00:00 | user=admin | company=MRPL | action=FILE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=Tech-Byte-SIH2026.pdf -> c_a70a7bbc2d5e
+2026-09-13T11:55:58.656827+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=11 chats
+2026-09-13T11:56:06.341430+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e [private]: give me summary of this file
+2026-09-13T11:56:20.798327+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Classify intent as conversation file retrieval, Retrieve evidence from active conversation file(s): Tech-Byte-SIH2026.pd
+2026-09-13T11:56:20.808319+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=SUMMARY_VERIFIED | details=give me summary of this file (14.455s)
+2026-09-13T11:56:20.895777+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=11 chats
+2026-09-13T11:57:03.322293+00:00 | user=admin | company=MRPL | action=IMAGE_ATTACHED_TO_CONVERSATION | status=SUCCESS | details=test.jpeg -> c_a70a7bbc2d5e
+2026-09-13T11:57:03.332111+00:00 | user=admin | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_a70a7bbc2d5e (multimodal) [private]: what you see in this file
+2026-09-13T11:58:32.133510+00:00 | user=admin | company=MRPL | action=AGENT_PLAN | status=multimodal_rag | details=Classify intent as multimodal inspection, Analyze equipment image using Qwen2.5-VL, Retrieve evidence from knowledge bas
+2026-09-13T11:58:32.144240+00:00 | user=admin | company=MRPL | action=AGENT_RESPONSE | status=NO_EVIDENCE | details=what you see in this file (88.78s)
+2026-09-13T11:58:32.247902+00:00 | user=admin | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=11 chats
+2026-09-13T12:00:53.349100+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T12:00:53.481605+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T12:00:53.803613+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T12:01:01.103389+00:00 | user=akif | company=MRPL | action=USER_DISABLED | status=SUCCESS | target=admin | details=Admin 'akif' disabled admin 'admin'
+2026-09-13T12:01:11.916929+00:00 | user=admin | company=MRPL | action=LOGIN | status=FAILED | details=Your account has been disabled.
+2026-09-13T12:01:22.724272+00:00 | user=akif | company=MRPL | action=LOGIN | status=SUCCESS | details=User akif signed in
+2026-09-13T12:01:22.803200+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T12:01:22.885489+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats
+2026-09-13T12:01:43.142716+00:00 | user=akif | company=MRPL | action=AGENT_REQUEST | status=RECEIVED | details=Conv c_b29eee1ae60e [global]: what this site show
+2026-09-13T12:02:10.367905+00:00 | user=akif | company=MRPL | action=AGENT_PLAN | status=document_rag | details=Operating in GLOBAL Knowledge Mode, Retrieve evidence from explicitly attached public web sources using local FAISS, Gen
+2026-09-13T12:02:10.379033+00:00 | user=akif | company=MRPL | action=GLOBAL_QUERY | status=NO_DOCUMENT_CLAIMS | details=Conv c_b29eee1ae60e: what this site show (27.225s)
+2026-09-13T12:02:10.477398+00:00 | user=akif | company=MRPL | action=CONVERSATION_LOADED | status=SUCCESS | details=1 chats

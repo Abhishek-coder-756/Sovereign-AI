@@ -1,0 +1,38 @@
+{
+  "conversation_id": "c_3e0b32155bf2",
+  "title": "Give me summary of this",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T11:33:03.220464+00:00",
+  "updated_at": "2026-09-13T11:33:24.085215+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Give me summary of this",
+      "timestamp": "2026-09-13T11:33:24.084571+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "The document could not be read.",
+      "timestamp": "2026-09-13T11:33:24.085129+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {},
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "document",
+        "plan": [],
+        "agent_steps": [],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 0.015,
+        "audit_id": "343b114f37c1"
+      }
+    }
+  ],
+  "uploaded_files": [
+    "SIH Hackathon Application.pdf"
+  ],
+  "uploaded_images": [],
+  "global_sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "conversation_id": "c_12df2bfb9809",
+  "title": "What is 25 * 17?",
+  "company": "MRPL",
+  "username": "admin",
+  "created_at": "2026-09-13T11:48:25.028721+00:00",
+  "updated_at": "2026-09-13T11:48:25.081723+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is 25 * 17?",
+      "timestamp": "2026-09-13T11:48:25.081242+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Calculated result: 25 * 17 = 425",
+      "timestamp": "2026-09-13T11:48:25.081654+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "TOOL_EXECUTION",
+          "reason": "Deterministic calculation completed successfully.",
+          "method": "calculator"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "calculator",
+        "plan": [
+          "Extract arithmetic expression",
+          "Execute deterministic calculation tool",
+          "Format mathematical result"
+        ],
+        "agent_steps": [
+          "Request classified as 'calculator'",
+          "Mathematical calculation executed",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "knowledge_mode": "private",
+        "execution_time": 0.013,
+        "audit_id": "c4a2012ac4a8"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": [],
+  "global_sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "conversation_id": "c_53be804897b6",
+  "title": "Hiii",
+  "company": "MRPL",
+  "username": "operator",
+  "created_at": "2026-09-08T16:49:32.424185+00:00",
+  "updated_at": "2026-09-10T08:24:08.461430+00:00",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hiii",
+      "timestamp": "2026-09-10T08:24:08.459563+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! How can I assist you today?",
+      "timestamp": "2026-09-10T08:24:08.461267+00:00",
+      "metadata": {
+        "sources": [],
+        "verification": {
+          "verified": true,
+          "status": "NO_DOCUMENT_CLAIMS",
+          "reason": "General conversational response; no document-derived claims requiring verification.",
+          "method": "general_chat"
+        },
+        "image_observation": null,
+        "agent_used": true,
+        "intent": "general_local_chat",
+        "plan": [
+          "Classify intent as general local conversation",
+          "Synthesize direct response via local Qwen2.5 3B",
+          "Finalize response without RAG retrieval"
+        ],
+        "agent_steps": [
+          "Request classified as 'general_local_chat'",
+          "Synthesized answer via local Qwen2.5 3B",
+          "Final answer delivered"
+        ],
+        "model": "qwen2.5:3b",
+        "execution_time": 3.991,
+        "audit_id": "70d183fcac54"
+      }
+    }
+  ],
+  "uploaded_files": [],
+  "uploaded_images": []
+}
