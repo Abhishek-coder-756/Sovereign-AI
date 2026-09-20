@@ -37,3 +37,4 @@ storage/
 *.safetensors
 # Local project data and private documents
 data/
+sovereign-ai-code/
