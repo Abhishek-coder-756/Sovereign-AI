@@ -181,3 +181,70 @@ PNG
 JPG
 JPEG
 WEBP
+
+---
+
+## 👨‍💻 My Contributions — Abhishek Singh Chauhan
+
+I primarily contributed to the **backend development and AI integration** of
+the Sovereign AI Workbench as part of the SIH26117 team project.
+
+### 🔹 Backend Development
+
+- Worked on the **FastAPI backend** and backend API architecture.
+- Worked on API routing and request/response handling.
+- Integrated frontend requests with backend AI workflows.
+- Worked on AI-related backend endpoints and services.
+- Worked with backend health monitoring and service-status functionality.
+- Debugged and tested backend services during development.
+
+### 🔹 RAG & Document Processing
+
+- Worked on the backend **Retrieval-Augmented Generation (RAG)** workflow.
+- Worked with document loading and processing.
+- Worked with embeddings and **FAISS vector search**.
+- Worked on connecting retrieved document context with local LLM processing.
+- Tested document-based question-answering workflows.
+
+### 🔹 CSV & Spreadsheet Processing
+
+- Worked on backend processing of CSV and spreadsheet data.
+- Worked on **column-wise CSV data handling**.
+- Tested structured-data analysis through the backend.
+- Worked on connecting spreadsheet analysis with AI responses.
+
+### 🔹 Local AI Integration
+
+- Worked on integrating **Ollama** with the backend.
+- Connected backend workflows with locally running open-weight models.
+- Worked with Qwen, Qwen2.5-Coder, LLaVA and Llama.
+- Worked on connecting different AI models with appropriate backend workflows.
+
+### 🔹 Multimodal / Vision AI
+
+- Worked on the backend multimodal AI workflow.
+- Integrated image-analysis requests with the local vision model.
+- Worked with the FastAPI → AI workflow → Ollama → LLaVA pipeline.
+- Tested and optimized image-analysis functionality.
+- Worked on reducing vision-processing latency.
+
+### 🔹 Performance Optimization
+
+- Worked on improving local AI response performance.
+- Worked with Ollama keep-alive configuration.
+- Worked with embedding-cache optimization.
+- Worked on optimizing the vision-processing workflow.
+
+### 🔹 Security & Testing
+
+- Worked with backend authentication and **Role-Based Access Control (RBAC)**.
+- Worked with company/user access separation.
+- Worked with audit-related backend functionality.
+- Debugged FastAPI, dependency and AI integration issues.
+- Tested backend APIs and complete AI workflows.
+
+### 🔹 Development & Integration
+
+- Integrated different backend components into the final application.
+- Worked on debugging issues across backend, RAG, CSV and multimodal workflows.
+- Contributed to testing and stabilizing the overall Sovereign AI Workbench.
