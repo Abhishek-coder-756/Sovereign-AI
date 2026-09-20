@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sovereign AI — SIH26117</title>
+<<link rel="stylesheet" href="/style.css?v=2026.4" />
+<style>
+/* ================= GUARANTEED COMPONENT & SHELL STYLES ================= */
+:root {
+  --bg-deep: #070b12;
+  --bg-mid: #0b111a;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-strong: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text-primary: #eaf0f7;
+  --text-secondary: #93a1b5;
+  --text-muted: #5c6a80;
+  --accent: #22d3ee;
+  --accent-strong: #06b6d4;
+  --violet: #a78bfa;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --critical: #f87171;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+.app-shell { display: flex; height: 100vh; overflow: hidden; width: 100%; }
+
+/* ================= CHATGPT-GRADE COLLAPSIBLE SIDEBAR ================= */
+.sidebar {
+  width: 260px; min-width: 260px; max-width: 260px;
+  background: rgba(8, 14, 22, 0.94);
+  border-right: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(24px);
+  display: flex; flex-direction: column;
+  padding: 16px 12px;
+  transition: width 0.22s cubic-bezier(0.4, 0, 0.2, 1), min-width 0.22s, max-width 0.22s, padding 0.22s;
+  position: relative; z-index: 20;
+}
+
+.sidebar.collapsed {
+  width: 60px !important; min-width: 60px !important; max-width: 60px !important;
+  padding: 14px 6px !important;
+}
+
+.sidebar.collapsed .sidebar-brand-text,
+.sidebar.collapsed .btn-text,
+.sidebar.collapsed .conversations-wrapper,
+.sidebar.collapsed .nav-text,
+.sidebar.collapsed .nav-group-label,
+.sidebar.collapsed .user-chip-text,
+.sidebar.collapsed .logout-btn,
+.sidebar.collapsed .sidebar-collapse-btn {
+  display: none !important;
+}
+
+.sidebar.collapsed .sidebar-header {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0 0 12px !important;
+  margin-bottom: 12px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10) !important;
+}
+
+.sidebar.collapsed .brand-group {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+.sidebar.collapsed .tech-byte-logo {
+  margin: 0 auto !important;
+  width: 38px !important; height: 38px !important;
+  cursor: pointer !important;
+}
+.sidebar.collapsed .tech-byte-logo:hover {
+  filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.7));
+  transform: scale(1.08);
+}
+
+.sidebar.collapsed .new-chat-btn {
+  width: 44px !important; height: 44px !important;
+  border-radius: 12px !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 auto 12px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.sidebar.collapsed .new-chat-btn .btn-icon { font-size: 20px !important; margin: 0 !important; line-height: 1 !important; }
+
+.sidebar.collapsed .nav-item {
+  width: 44px !important; height: 42px !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 3px auto !important;
+  border-radius: 10px !important;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.sidebar.collapsed .nav-icon { font-size: 18px !important; line-height: 1 !important; width: auto !important; margin: 0 !important; }
+
+.sidebar.collapsed .sidebar-footer {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 12px 0 4px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.10) !important;
+}
+
+.sidebar.collapsed .user-chip {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+.sidebar.collapsed .user-avatar {
+  margin: 0 auto !important;
+  width: 38px !important; height: 38px !important;
+  font-size: 14px !important; font-weight: 700 !important;
+  cursor: pointer !important;
+}
+
+/* Tooltips */
+.sidebar.collapsed [data-tooltip] { position: relative; }
+.sidebar.collapsed [data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: calc(100% + 12px);
+  top: 50%;
+  transform: translateY(-50%) translateX(2px);
+  background: #080f1a;
+  color: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid rgba(34, 211, 238, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 99999;
+}
+.sidebar.collapsed [data-tooltip]:hover::after {
+  opacity: 1; visibility: visible;
+  transform: translateY(-50%) translateX(6px);
+}
+
+/* Sidebar Brand Header */
+.sidebar-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 0 2px 14px;
+}
+.brand-group { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.tech-byte-logo {
+  width: 34px; height: 34px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: transform 0.15s, filter 0.15s;
+}
+.tech-byte-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(34, 211, 238, 0.55));
+}
+.team-badge {
+  font-size: 8.5px; font-weight: 800; letter-spacing: 0.14em;
+  color: var(--accent); background: rgba(34, 211, 238, 0.12);
+  border: 1px solid rgba(34, 211, 238, 0.28); border-radius: 4px;
+  padding: 1px 5px; display: inline-block; margin-bottom: 2px;
+}
+
+/* ================= EMPTY STATE & DEDICATED UPLOAD CARD ================= */
+.chat-empty {
+  max-width: 620px;
+  margin: 2.5vh auto 0;
+  text-align: center;
+  padding: 0 16px 24px;
+}
+.chat-welcome-header { margin-bottom: 16px; text-align: center; }
+.welcome-tb-badge {
+  margin: 0 auto 10px; width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+}
+.chat-welcome-header h2 {
+  font-size: 21px; font-weight: 800; letter-spacing: 0.02em;
+  color: #f8fafc; margin: 0 0 6px;
+}
+.welcome-subtitle {
+  color: var(--text-secondary); font-size: 13px; max-width: 520px;
+  margin: 0 auto; line-height: 1.5;
+}
+
+/* ================= WELCOME SUGGESTIONS (HOME SCREEN) ================= */
+.welcome-suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 14px;
+  max-width: 740px;
+  margin: 28px auto 0;
+  width: 100%;
+}
+@media (max-width: 680px) {
+  .welcome-suggestions-grid { grid-template-columns: 1fr; }
+}
+.suggestion-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.suggestion-card:hover {
+  background: rgba(34, 211, 238, 0.07);
+  border-color: rgba(34, 211, 238, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.suggestion-icon { font-size: 24px; margin-bottom: 2px; }
+.suggestion-title { font-size: 14px; font-weight: 600; color: #fff; }
+.suggestion-desc { font-size: 12px; color: var(--text-secondary); line-height: 1.45; }
+
+/* ================= ATTACHMENT DROPDOWN POPOVER ================= */
+.attach-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.attach-menu-btn {
+  width: 36px; height: 36px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  font-size: 17px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.attach-menu-btn:hover {
+  background: rgba(34, 211, 238, 0.16);
+  border-color: rgba(34, 211, 238, 0.45);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+.attach-dropdown {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 0;
+  width: 280px;
+  background: rgba(11, 18, 28, 0.98);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(34, 211, 238, 0.15);
+  backdrop-filter: blur(24px);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 200;
+  animation: attachDropIn 0.15s ease-out;
+}
+.attach-dropdown[hidden] { display: none !important; }
+@keyframes attachDropIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.attach-dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.attach-dropdown-item:hover {
+  background: rgba(34, 211, 238, 0.12);
+}
+.attach-item-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
+.attach-item-text { display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+.attach-item-title { font-size: 13.5px; font-weight: 600; color: #fff; }
+.attach-item-desc { font-size: 11px; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ================= AI RESPONSE MARKDOWN TYPOGRAPHY ================= */
+.msg-ai-body {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  word-break: break-word;
+  white-space: normal;
+}
+.msg-ai-body p.ai-p {
+  margin: 0 0 12px 0;
+  line-height: 1.7;
+}
+.msg-ai-body p.ai-p:last-child { margin-bottom: 0; }
+.msg-ai-body .ai-h2 {
+  font-size: 17px; font-weight: 700; color: #fff; margin: 16px 0 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 4px;
+}
+.msg-ai-body .ai-h3 {
+  font-size: 15.5px; font-weight: 700; color: var(--accent); margin: 14px 0 6px 0;
+}
+.msg-ai-body .ai-h4 {
+  font-size: 14.5px; font-weight: 600; color: #f1f5f9; margin: 12px 0 6px 0;
+}
+.msg-ai-body .ai-h5, .msg-ai-body .ai-h6 {
+  font-size: 13.5px; font-weight: 600; color: var(--violet); margin: 10px 0 4px 0;
+}
+.msg-ai-body .ai-ul, .msg-ai-body .ai-ol {
+  margin: 6px 0 12px 0;
+  padding-left: 22px;
+}
+.msg-ai-body .ai-li {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+.msg-ai-body strong {
+  font-weight: 700;
+  color: #fff;
+}
+.msg-ai-body em {
+  font-style: italic;
+  color: #d1d5db;
+}
+.msg-ai-body .ai-table-wrap {
+  overflow-x: auto;
+  margin: 14px 0;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.25);
+}
+.msg-ai-body .ai-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+.msg-ai-body .ai-table th {
+  background: rgba(34, 211, 238, 0.12);
+  color: var(--accent);
+  font-weight: 700;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+.msg-ai-body .ai-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.msg-ai-body .ai-table tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+.msg-ai-body .ai-code-block {
+  background: #060a10;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  margin: 12px 0;
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+}
+.msg-ai-body .ai-code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+.msg-ai-body .ai-copy-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-secondary);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.msg-ai-body .ai-copy-btn:hover {
+  color: #fff;
+  border-color: var(--accent);
+}
+.msg-ai-body .ai-code-block code {
+  display: block;
+  padding: 12px;
+  overflow-x: auto;
+  color: #a5f3fc;
+  line-height: 1.55;
+  white-space: pre;
+}
+.msg-ai-body .ai-inline-code {
+  background: rgba(34, 211, 238, 0.1);
+  color: var(--accent);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12.5px;
+  border: 1px solid rgba(34, 211, 238, 0.22);
+}
+.msg-ai-body .ai-quote {
+  border-left: 3px solid var(--accent);
+  margin: 10px 0;
+  padding: 6px 14px;
+  background: rgba(34, 211, 238, 0.05);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-secondary);
+}
+.msg-ai-body .ai-hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 16px 0;
+}
+
+/* Modals & Uploaded Lists */
+.card-uploaded-list, .modal-uploaded-grid {
+  display: flex; flex-direction: column; gap: 6px; margin-top: 6px;
+}
+.uploaded-file-card-sm {
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(34, 211, 238, 0.06); border: 1px solid rgba(34, 211, 238, 0.28);
+  border-radius: 8px; padding: 8px 12px; font-size: 12px; text-align: left;
+}
+.uploaded-file-card-sm .file-left { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.uploaded-file-card-sm .file-name {
+  font-weight: 600; color: var(--text-primary); white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; max-width: 280px;
+}
+.uploaded-file-card-sm .file-status-line { color: var(--success); font-size: 11px; font-weight: 600; }
+.uploaded-file-card-sm .file-del-btn {
+  background: none; border: none; color: var(--text-muted);
+  font-size: 16px; cursor: pointer; padding: 0 4px;
+}
+.uploaded-file-card-sm .file-del-btn:hover { color: var(--critical); }
+.btn-browse-file {
+  padding: 8px 24px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #03151c; font-weight: 700; font-size: 13px;
+  border: none; cursor: pointer; box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+  transition: transform 0.12s, filter 0.15s;
+}
+.btn-browse-file:hover { filter: brightness(1.1); transform: translateY(-1px); }
+.dropzone-status-msg { margin-top: 8px; font-size: 12px; font-weight: 600; }
+.dropzone-status-msg.success { color: var(--success); }
+.dropzone-status-msg.error { color: var(--critical); }
+
+/* ================= EVIDENCE PANEL COLLAPSIBLE ================= */
+.evidence-panel {
+  margin-top: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.15s, background 0.15s;
+}
+.evidence-panel:hover { border-color: rgba(34, 211, 238, 0.25); }
+
+.evidence-header-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 8px 12px; cursor: pointer; user-select: none;
+  background: rgba(255, 255, 255, 0.02); transition: background 0.15s;
+}
+.evidence-header-bar:hover { background: rgba(34, 211, 238, 0.06); }
+.evidence-status-wrap { display: flex; align-items: center; gap: 8px; }
+.evidence-toggle-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: none; border: none; color: var(--text-secondary);
+  font-size: 12.5px; font-weight: 600; padding: 0; cursor: pointer;
+}
+.evidence-toggle-btn:hover { color: var(--accent); }
+.evidence-chevron { font-size: 11px; transition: transform 0.2s ease; }
+
+.evidence-list {
+  max-height: 0; opacity: 0; overflow: hidden;
+  display: flex; flex-direction: column; gap: 8px; padding: 0 12px;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease, padding 0.25s ease;
+}
+.evidence-list.expanded {
+  max-height: 3000px; opacity: 1;
+  padding: 10px 12px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.evidence-card {
+  background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 10px 12px; font-size: 12.5px;
+}
+.evidence-card .evidence-source { font-weight: 600; color: var(--text-primary); }
+.evidence-card .evidence-meta { color: var(--text-muted); font-size: 11.5px; margin: 2px 0 6px; }
+.evidence-card .evidence-snippet { color: var(--text-secondary); line-height: 1.5; }
+
+/* Composer Upload CTA */
+.upload-cta-btn {
+  display: inline-flex !important; align-items: center; gap: 5px;
+  padding: 6px 11px !important; background: rgba(34, 211, 238, 0.08) !important;
+  border: 1px solid rgba(34, 211, 238, 0.3) !important; border-radius: var(--radius-sm);
+  color: var(--accent) !important; font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.upload-cta-btn:hover {
+  background: rgba(34, 211, 238, 0.18) !important; border-color: var(--accent) !important;
+}
+
+/* Modals */
+.profile-modal-backdrop, .upload-modal-backdrop {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(4, 8, 14, 0.75); backdrop-filter: blur(10px);
+  z-index: 9000; display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.profile-modal-card, .upload-modal-card {
+  background: #0b121c; border: 1px solid rgba(34, 211, 238, 0.28);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(34, 211, 238, 0.08);
+  width: 100%; max-height: 90vh; overflow-y: auto; padding: 24px;
+}
+.profile-modal-card { max-width: 480px; }
+.upload-modal-card { max-width: 560px; }
+
+.btn-profile-logout {
+  margin-top: 16px; width: 100%; padding: 11px;
+  border-radius: var(--radius-sm); background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.35); color: var(--critical);
+  font-weight: 700; font-size: 13px; cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn-profile-logout:hover {
+  background: rgba(248, 113, 113, 0.24);
+  border-color: var(--critical);
+}
+</style>
+</head>
+<body>
+
+<!-- ================= LOGIN SCREEN ================= -->
+<div id="loginScreen" class="login-screen">
+  <div class="login-card">
+    <div class="login-brand">
+      <div class="brand-mark">S</div>
+      <div>
+        <div class="brand-title">SOVEREIGN AI</div>
+        <div class="brand-subtitle">Private &middot; On-Premise &middot; Secure</div>
+      </div>
+    </div>
+    <h1>Sign in</h1>
+    <p class="login-hint">On-premise agentic AI workbench for confidential industrial work.</p>
+    <form id="loginForm">
+      <label>Username</label>
+      <input type="text" id="loginUsername" autocomplete="username" required />
+      <label>Password</label>
+      <input type="password" id="loginPassword" autocomplete="current-password" required />
+      <button type="submit" class="btn-primary" id="loginSubmit">Sign in</button>
+      <div id="loginError" class="login-error" hidden></div>
+    </form>
+    <div class="login-demo-note">
+      Demo logins &mdash; admin / admin123 &middot; operator / operator123
+    </div>
+  </div>
+</div>
+
+<!-- ================= APP SHELL ================= -->
+<div id="app" class="app-shell" hidden>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-group" id="sidebarBrandGroup" title="Tech Byte · Sovereign AI">
+        <div class="tech-byte-logo" id="techByteLogo">
+          <svg class="tb-logo-svg" viewBox="0 0 38 38" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="38" height="38" rx="9" fill="url(#tb-grad-sidebar)" />
+            <path d="M10 12H28M19 12V26" stroke="#04121a" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M20 19H25C26.5 19 27.5 20 27.5 21.3C27.5 22.6 26.5 23.6 25 23.6H20M25 23.6C26.7 23.6 27.8 24.7 27.8 26.3C27.8 27.9 26.7 29 25 29H19" stroke="#04121a" stroke-width="2.3" stroke-linecap="round"/>
+            <circle cx="19" cy="7" r="1.8" fill="#22d3ee"/>
+            <defs>
+              <linearGradient id="tb-grad-sidebar" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#22d3ee"/>
+                <stop offset="1" stop-color="#a78bfa"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="sidebar-brand-text">
+          <div class="team-badge">TECH BYTE</div>
+          <div class="brand-title">SOVEREIGN AI</div>
+          <div class="brand-subtitle">On-Premise Intelligence</div>
+        </div>
+      </div>
+      <button class="sidebar-collapse-btn" id="sidebarCollapseBtn" title="Collapse sidebar" aria-label="Toggle sidebar">&#9776;</button>
+    </div>
+
+    <button class="new-chat-btn" id="newChatBtn" title="New Chat" data-tooltip="New Chat">
+      <span class="btn-icon">+</span> <span class="btn-text">New Chat</span>
+    </button>
+
+    <!-- CONVERSATIONS (ChatGPT-Style) -->
+    <div class="conversations-wrapper" id="conversationsWrapper">
+      <div class="nav-group-label conv-group-title">Recent Chats</div>
+      <div class="conversation-list" id="conversationList">
+        <div class="conv-empty muted">No previous chats</div>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <div class="nav-group-label">Knowledge</div>
+      <button class="nav-item active" data-view="chat" title="Chat" data-tooltip="Chat"><span class="nav-icon">💬</span> <span class="nav-text">Chat</span></button>
+      <button class="nav-item" data-view="documents" title="Documents" data-tooltip="Documents"><span class="nav-icon">📄</span> <span class="nav-text">Documents</span></button>
+      <button class="nav-item" data-view="vision" title="Vision Analysis" data-tooltip="Vision Analysis"><span class="nav-icon">🖼</span> <span class="nav-text">Vision Analysis</span></button>
+
+      <div class="nav-group-label">AI System</div>
+      <button class="nav-item" data-view="model" title="Model" data-tooltip="Model"><span class="nav-icon">⚙</span> <span class="nav-text">Model</span></button>
+      <button class="nav-item" data-view="tools" title="Tools" data-tooltip="Tools"><span class="nav-icon">🛠</span> <span class="nav-text">Tools</span></button>
+      <button class="nav-item" data-view="audit" title="Audit" data-tooltip="Audit"><span class="nav-icon">📋</span> <span class="nav-text">Audit</span></button>
+
+      <div class="nav-group-label">System</div>
+      <button class="nav-item" data-view="security" title="Security" data-tooltip="Security"><span class="nav-icon">🔒</span> <span class="nav-text">Security</span></button>
+      <button class="nav-item" data-view="status" title="System Status" data-tooltip="System Status"><span class="nav-icon">⚡</span> <span class="nav-text">System Status</span></button>
+      <button class="nav-item" data-view="settings" title="Settings" data-tooltip="Settings"><span class="nav-icon">🔧</span> <span class="nav-text">Settings</span></button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="user-chip" id="userProfileBtn" role="button" tabindex="0" title="Tech Byte Team · Admin Profile" data-tooltip="Admin Profile · Tech Byte">
+        <div class="user-avatar" id="userAvatar">A</div>
+        <div class="user-chip-text">
+          <div class="user-name" id="sidebarUsername">&mdash;</div>
+          <div class="user-meta"><span id="sidebarRole">&mdash;</span> &middot; <span id="sidebarCompany">&mdash;</span></div>
+        </div>
+      </div>
+      <button class="logout-btn" id="logoutBtn" title="Log out" data-tooltip="Log out">&#x21bb;</button>
+    </div>
+  </aside>
+
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">&#9776;</button>
+
+  <!-- MAIN -->
+  <main class="main-area">
+
+    <!-- ===== CHAT VIEW ===== -->
+    <section class="view" id="view-chat">
+      <header class="top-header">
+        <div class="top-header-left">
+          <div class="top-title" id="chatHeaderTitle">SOVEREIGN AI</div>
+          <div class="top-subtitle">Private &middot; On-Premise &middot; Secure</div>
+        </div>
+        <div class="top-header-right">
+          <div class="status-pill" id="llmStatusPill"><span class="dot"></span> Checking&hellip;</div>
+          <div class="status-pill quiet">Qwen2.5 3B &middot; Qwen2.5-VL 3B &middot; BGE-small-en-v1.5</div>
+        </div>
+      </header>
+
+      <div class="chat-scroll" id="chatScroll">
+        <div class="chat-empty" id="chatEmpty">
+          <div class="chat-welcome-header">
+            <div class="welcome-tb-badge">
+              <svg class="tb-logo-svg" viewBox="0 0 38 38" width="48" height="48" fill="none">
+                <rect width="38" height="38" rx="10" fill="url(#tb-grad-empty)" />
+                <path d="M10 12H28M19 12V26" stroke="#04121a" stroke-width="2.8" stroke-linecap="round"/>
+                <path d="M20 19H25C26.5 19 27.5 20 27.5 21.3C27.5 22.6 26.5 23.6 25 23.6H20M25 23.6C26.7 23.6 27.8 24.7 27.8 26.3C27.8 27.9 26.7 29 25 29H19" stroke="#04121a" stroke-width="2.3" stroke-linecap="round"/>
+                <circle cx="19" cy="7" r="1.8" fill="#22d3ee"/>
+                <defs>
+                  <linearGradient id="tb-grad-empty" x1="0" y1="0" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#22d3ee"/>
+                    <stop offset="1" stop-color="#a78bfa"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h2>Sovereign Agentic AI Workbench</h2>
+            <p class="welcome-subtitle">Confidential on-premise industrial AI for company manuals, spreadsheets, schematics &amp; vision analysis. Zero external data transmission.</p>
+          </div>
+
+          <!-- Clean Prompt Suggestions on Home Screen -->
+          <div class="welcome-suggestions-grid">
+            <div class="suggestion-card" data-prompt="Summarize the key procedures in our operating manual">
+              <div class="suggestion-icon">📖</div>
+              <div class="suggestion-title">Document Intelligence</div>
+              <div class="suggestion-desc">Ask questions, extract procedures, or summarize PDF, Word, and PPTX documents.</div>
+            </div>
+            <div class="suggestion-card" data-prompt="Analyze the uploaded spreadsheet and summarize the key metrics">
+              <div class="suggestion-icon">📊</div>
+              <div class="suggestion-title">Spreadsheet &amp; Data Analysis</div>
+              <div class="suggestion-desc">Inspect Excel &amp; CSV records, find highest values, calculate totals &amp; statistics.</div>
+            </div>
+            <div class="suggestion-card" data-prompt="Examine this equipment image and identify any wear or defects">
+              <div class="suggestion-icon">🔍</div>
+              <div class="suggestion-title">Multimodal Vision</div>
+              <div class="suggestion-desc">Attach equipment photos or schematics for local neural vision inspection.</div>
+            </div>
+            <div class="suggestion-card" data-prompt="What safety protocols apply to high pressure steam valves?">
+              <div class="suggestion-icon">🛡️</div>
+              <div class="suggestion-title">Sovereign Knowledge RAG</div>
+              <div class="suggestion-desc">Evidence-backed answers verified with citations from company records.</div>
+            </div>
+          </div>
+        </div>
+        <div id="messages"></div>
+      </div>
+
+      <div class="composer">
+        <!-- Persistent Conversation Attachments -->
+        <div class="active-attachments-bar" id="activeAttachmentsBar" hidden>
+          <span class="active-attachments-label">Active Context:</span>
+          <div class="active-attachments-list" id="activeAttachmentsList"></div>
+        </div>
+
+        <div class="attachment-strip" id="attachmentStrip" hidden></div>
+        <div class="composer-box">
+          <!-- Attachment Dropdown Popover on Left of Composer -->
+          <div class="attach-wrapper" id="attachWrapper">
+            <button type="button" class="composer-icon-btn attach-menu-btn" id="attachMenuBtn" title="Attach file or image" aria-haspopup="true" aria-expanded="false">
+              📎
+            </button>
+            <div class="attach-dropdown" id="attachDropdown" hidden>
+              <button type="button" class="attach-dropdown-item" id="menuUploadFile">
+                <span class="attach-item-icon">📄</span>
+                <div class="attach-item-text">
+                  <span class="attach-item-title">Upload file</span>
+                  <span class="attach-item-desc">PDF, Word, Excel, CSV, PPTX, TXT</span>
+                </div>
+              </button>
+              <button type="button" class="attach-dropdown-item" id="menuUploadImage">
+                <span class="attach-item-icon">🖼</span>
+                <div class="attach-item-text">
+                  <span class="attach-item-title">Upload image</span>
+                  <span class="attach-item-desc">PNG, JPG, WEBP for Vision</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <textarea id="chatInput" placeholder="Ask anything about documents, spreadsheets, or images..." rows="1"></textarea>
+          <button class="send-btn" id="sendBtn" title="Send">&uarr;</button>
+        </div>
+
+        <!-- Universal and Legacy File Inputs -->
+        <input type="file" id="docFileInputUniversal" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.csv,.txt" hidden />
+        <input type="file" id="imageFileInputUniversal" accept=".png,.jpg,.jpeg,.webp" hidden />
+        <input type="file" id="pdfFileInput" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.csv,.txt" hidden />
+        <input type="file" id="imageFileInput" accept=".png,.jpg,.jpeg,.webp" hidden />
+        <div class="composer-hint">Enter to send &middot; Shift+Enter for a new line</div>
+      </div>
+    </section>
+
+    <!-- ===== DOCUMENTS VIEW ===== -->
+    <section class="view hidden" id="view-documents">
+      <header class="view-header">
+        <div>
+          <h1>Knowledge Center</h1>
+          <p>Upload confidential company documents. Processing remains local to this machine.</p>
+        </div>
+      </header>
+
+      <div class="glass-panel dropzone" id="dropzone">
+        <input type="file" id="docFileInput" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.csv,.txt" hidden multiple />
+        <div class="dropzone-icon">📄</div>
+        <div class="dropzone-title">Drag &amp; drop documents or spreadsheets here</div>
+        <div class="dropzone-sub">PDF, DOCX, XLSX, CSV, PPTX, TXT</div>
+        <button class="btn-secondary" id="browseDocsBtn">Browse Files</button>
+      </div>
+
+      <div class="panel-toolbar">
+        <button class="btn-primary" id="indexBtn">Index Documents</button>
+        <span class="muted" id="indexResultMsg"></span>
+      </div>
+
+      <div class="glass-panel">
+        <table class="data-table" id="docsTable">
+          <thead>
+            <tr><th>Filename</th><th>Type</th><th>Size</th><th>Status</th><th>Pages</th><th>Chunks</th><th></th></tr>
+          </thead>
+          <tbody id="docsTableBody"></tbody>
+        </table>
+        <div class="empty-state" id="docsEmptyState" hidden>No documents uploaded yet.</div>
+      </div>
+    </section>
+
+    <!-- ===== VISION VIEW ===== -->
+    <section class="view hidden" id="view-vision">
+      <header class="view-header">
+        <div>
+          <h1>Vision Analysis</h1>
+          <p>Analyze an equipment image with the local vision model. No document evidence is used here.</p>
+        </div>
+      </header>
+
+      <div class="glass-panel dropzone" id="visionDropzone">
+        <input type="file" id="visionFileInput" accept=".png,.jpg,.jpeg,.webp" hidden />
+        <div class="dropzone-icon">🖼</div>
+        <div class="dropzone-title">Drag &amp; drop an image here</div>
+        <div class="dropzone-sub">or click to browse</div>
+        <button class="btn-secondary" id="browseVisionBtn">Browse Image</button>
+      </div>
+
+      <div id="visionPreviewWrap" hidden>
+        <div class="glass-panel vision-preview-panel">
+          <img id="visionPreviewImg" alt="Uploaded image preview" />
+          <button class="btn-primary" id="analyzeVisionBtn">Analyze Image</button>
+        </div>
+      </div>
+
+      <div class="glass-panel" id="visionResultPanel" hidden>
+        <h3>Image Analysis</h3>
+        <div id="visionResultBody"></div>
+      </div>
+    </section>
+
+    <!-- ===== MODEL VIEW ===== -->
+    <section class="view hidden" id="view-model">
+      <header class="view-header"><div><h1>Model Router</h1><p>What actually runs, based on the request type.</p></div></header>
+      <div class="glass-panel">
+        <div class="router-row"><span class="router-label">Text-only question</span><span class="router-arrow">&rarr;</span><span class="router-model">Qwen2.5 3B (via Ollama)</span></div>
+        <div class="router-row"><span class="router-label">Question + image</span><span class="router-arrow">&rarr;</span><span class="router-model">Qwen2.5-VL 3B (via Ollama)</span></div>
+        <div class="router-row"><span class="router-label">Embeddings</span><span class="router-arrow">&rarr;</span><span class="router-model">BGE-small-en-v1.5</span></div>
+        <div class="router-row"><span class="router-label">Vector search</span><span class="router-arrow">&rarr;</span><span class="router-model">FAISS (per-company index)</span></div>
+      </div>
+    </section>
+
+    <!-- ===== TOOLS VIEW (coming soon — not wired into this dashboard) ===== -->
+    <section class="view hidden" id="view-tools">
+      <header class="view-header"><div><h1>Tools</h1><p>The existing agent's calculator / file / code-sandbox tools run through the separate <code>/agent</code> endpoint (backend/app/main.py), not through this dashboard yet.</p></div></header>
+      <div class="glass-panel coming-soon">Integration pending — available via the existing <code>/agent</code> API, not yet surfaced in this UI.</div>
+    </section>
+
+    <!-- ===== AUDIT VIEW ===== -->
+    <section class="view hidden" id="view-audit">
+      <header class="view-header"><div><h1>Audit Log</h1><p>Real events recorded by the existing audit logger, scoped to your company.</p></div></header>
+      <div class="glass-panel">
+        <table class="data-table" id="auditTable">
+          <thead><tr><th>Timestamp</th><th>User</th><th>Action</th><th>Status</th><th>Details</th></tr></thead>
+          <tbody id="auditTableBody"></tbody>
+        </table>
+        <div class="empty-state" id="auditEmptyState" hidden>No audit events yet.</div>
+      </div>
+    </section>
+
+    <!-- ===== SECURITY VIEW ===== -->
+    <section class="view hidden" id="view-security">
+      <header class="view-header"><div><h1>Security</h1><p>How this workbench protects company data.</p></div></header>
+      <div class="glass-panel security-grid">
+        <div class="security-item"><span class="check">&#10003;</span> JWT authentication</div>
+        <div class="security-item"><span class="check">&#10003;</span> Role-based access control (admin / operator)</div>
+        <div class="security-item"><span class="check">&#10003;</span> Company data isolation</div>
+        <div class="security-item"><span class="check">&#10003;</span> Local-only models (Ollama)</div>
+        <div class="security-item"><span class="check">&#10003;</span> No external AI API configured</div>
+        <div class="security-item"><span class="check">&#10003;</span> Audit logging</div>
+        <div class="security-item"><span class="check">&#10003;</span> Evidence verified before final answer</div>
+      </div>
+    </section>
+
+    <!-- ===== SYSTEM STATUS VIEW ===== -->
+    <section class="view hidden" id="view-status">
+      <header class="view-header"><div><h1>System Status</h1><p>Live checks against the local AI stack.</p></div></header>
+      <div class="glass-panel status-grid" id="statusGrid"></div>
+    </section>
+
+    <!-- ===== SETTINGS VIEW (coming soon) ===== -->
+    <section class="view hidden" id="view-settings">
+      <header class="view-header"><div><h1>Settings</h1></div></header>
+      <div class="glass-panel coming-soon">Coming soon.</div>
+    </section>
+
+  </main>
+
+  <!-- ================= ADMIN PROFILE / TEAM PANEL ================= -->
+  <div id="profileModal" class="profile-modal-backdrop" hidden>
+    <div class="profile-modal-card" id="profileModalCard" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <div class="profile-header">
+        <div class="profile-brand">
+          <div class="tech-byte-emblem">TB</div>
+          <div>
+            <div class="profile-org" id="profileTitle">TECH BYTE</div>
+            <div class="profile-team-sub">Team &middot; SIH26117</div>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="closeProfileModalBtn" title="Close profile" aria-label="Close profile">&times;</button>
+      </div>
+
+      <div class="profile-body">
+        <div class="profile-project-badge">
+          <div class="proj-code">SIH26117</div>
+          <div class="proj-title">Sovereign On-Premise Agentic AI Workbench</div>
+          <div class="proj-desc">Industrial Agentic AI using Open-Weight Multimodal LLMs for Confidential Work</div>
+        </div>
+
+        <div class="profile-info-grid">
+          <div class="profile-info-item">
+            <span class="info-label">Active User</span>
+            <span class="info-val highlight" id="profileUsername">admin</span>
+          </div>
+          <div class="profile-info-item">
+            <span class="info-label">Role</span>
+            <span class="info-val role-badge" id="profileRole">Admin</span>
+          </div>
+          <div class="profile-info-item">
+            <span class="info-label">Company / Org</span>
+            <span class="info-val" id="profileCompany">MRPL</span>
+          </div>
+          <div class="profile-info-item">
+            <span class="info-label">Workbench Scope</span>
+            <span class="info-val">On-Premise / Sovereign</span>
+          </div>
+        </div>
+
+        <div class="profile-team-section">
+          <div class="team-section-title">Team Identification</div>
+          <div class="team-meta-box">
+            <div class="team-row"><span class="team-k">Team Name:</span> <span class="team-v">Tech Byte</span></div>
+            <div class="team-row"><span class="team-k">Competition:</span> <span class="team-v">Smart India Hackathon 2026</span></div>
+            <div class="team-row"><span class="team-k">Problem Statement:</span> <span class="team-v">SIH26117</span></div>
+            <div class="team-row"><span class="team-k">Theme:</span> <span class="team-v">Smart Automation &middot; Industrial AI</span></div>
+            <div class="team-row"><span class="team-k">Project:</span> <span class="team-v">Sovereign On-Premise Agentic AI Workbench</span></div>
+            <div class="team-row"><span class="team-k">Team Unit:</span> <span class="team-v">Tech Byte Team</span></div>
+          </div>
+        </div>
+
+        <button type="button" class="btn-profile-logout" id="profileLogoutBtn">Sign Out of Workbench</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= UPLOAD FILE MODAL ================= -->
+  <div id="uploadModal" class="upload-modal-backdrop" hidden>
+    <div class="upload-modal-card" id="uploadModalCard" role="dialog" aria-modal="true" aria-labelledby="uploadModalTitle">
+      <div class="upload-modal-header">
+        <div class="upload-title-wrap">
+          <h3 id="uploadModalTitle">UPLOAD FILE</h3>
+          <span class="upload-title-sub">Local on-premise ingestion for confidential industrial data</span>
+        </div>
+        <button class="modal-close-btn" id="closeUploadModalBtn" title="Close upload" aria-label="Close upload">&times;</button>
+      </div>
+
+      <div class="upload-card-icons">
+        <span title="Documents">📄</span>
+        <span title="Images">🖼</span>
+        <span title="Spreadsheets">📊</span>
+        <span title="Presentations">📑</span>
+      </div>
+
+      <div class="upload-dropzone" id="modalDropzone">
+        <input type="file" id="modalFileInput" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.xls,.csv,.txt,.png,.jpg,.jpeg,.webp" hidden />
+        <div class="drop-prompt-text">Drag &amp; drop files here</div>
+        <div class="drop-or-text">or</div>
+        <button type="button" class="btn-browse-file" id="browseModalFilesBtn">Browse Files</button>
+        <div class="dropzone-status-msg" id="modalUploadStatus" hidden></div>
+      </div>
+
+      <div class="upload-formats-container">
+        <div class="format-badges-primary">
+          PDF &bull; DOCX &bull; PPTX &bull; XLSX &bull; CSV &bull; TXT &bull; PNG &bull; JPG &bull; WEBP
+        </div>
+        <div class="format-distinction-grid">
+          <div class="distinction-card ready">
+            <div class="distinction-header"><span class="status-indicator ready"></span> Documents (RAG Search)</div>
+            <div class="distinction-ext"><code>.pdf</code>, <code>.docx</code>, <code>.pptx</code>, <code>.txt</code> &mdash; Auto-chunked into local FAISS index with source page citations</div>
+          </div>
+          <div class="distinction-card ready">
+            <div class="distinction-header"><span class="status-indicator ready"></span> Spreadsheets (Data Analysis)</div>
+            <div class="distinction-ext"><code>.xlsx</code>, <code>.xls</code>, <code>.csv</code> &mdash; Statistical analysis, row inspection &amp; vector search</div>
+          </div>
+          <div class="distinction-card ready">
+            <div class="distinction-header"><span class="status-indicator ready"></span> Multimodal Vision</div>
+            <div class="distinction-ext"><code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>, <code>.webp</code> &mdash; Local vision analysis &amp; multimodal queries</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-uploaded-list-wrap" id="modalUploadedSection" hidden>
+        <div class="modal-uploaded-title">Active Session Files</div>
+        <div class="modal-uploaded-grid" id="modalUploadedGrid"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="/script.js?v=2026.4"></script>
+</body>
+</html>

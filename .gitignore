@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Generated data
+*.index
+*.pkl
+
+# Private storage
+storage/
+
+# Zip files
+*.zip
+
+# AI model files
+*.gguf
+*.bin
+*.safetensors
+# Local project data and private documents
+data/
